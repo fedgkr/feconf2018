@@ -18,7 +18,7 @@ export class SpeakersSection extends React.Component<SpeakersSectionProps, Speak
   render() {
     const {speakerList} = this.props
     return (
-      <div className={css.SpeakersSection}>
+      <div className={css.SpeakersSection} id="speakers">
         <div className={css.Content}>
           <div className={css.Title}>SPEAKERS</div>
           <div className={css.SpeakersWrap}>

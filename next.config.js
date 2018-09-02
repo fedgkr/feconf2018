@@ -8,7 +8,7 @@ module.exports = withPlugins([
     cssModules: true,
     cssLoaderOptions: {
       importLoaders: 1,
-      localIdentName: isProd ? '[hash:base64:5]' : '[name]-[hash:base64:5]'
+      localIdentName: isProd ? '[hash:base64:5]' : '[local]-[hash:base64:5]'
     }
   }],
   [typescript],

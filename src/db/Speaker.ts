@@ -29,3 +29,7 @@ export const generateSpeakerList = () => {
 }
 
 export const speakerList = generateSpeakerList()
+
+export const getNOrderSpeakers = (order: number) => {
+  return speakerList.filter((speaker) => speaker.order === order)
+}

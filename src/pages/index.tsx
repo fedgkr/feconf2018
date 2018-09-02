@@ -6,6 +6,7 @@ import {HeroSection} from "../components/HeroSection/HeroSection";
 import {IntroSection} from "../components/IntroSection/IntroSection";
 import {SpeakersSection} from "../components/SpeakersSection/SpeakersSection";
 import {speakerList} from "../db/Speaker";
+import {ScheduleSection} from "../components/ScheduleSection/ScheduleSection";
 
 interface IndexPageProps {}
 
@@ -23,17 +24,17 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
                     <meta property="og:type" content="website"/>
                     <meta property="og:title" content="2018 FEConf Korea"/>
                     <meta property="og:description" content="FEConf 2018 컨퍼런스 행사의 일정 및 스피커 그리고 각 세션을 소개합니다. 올해 두번째 열리는 FEConf! 많은 관심과 성원 부탁드립니다."/>
-                    <meta property="og:image" content="https://2018.feconf.kr/static/img/img-og-feconf.png"/>
+                    <meta property="og:image" content="https://2017.feconf.kr/static/img/img-og-feconf.png"/>
                     <meta name="twitter:card" content="summary_large_image"/>
                     <meta name="twitter:title" content="2018 FEConf Korea"/>
                     <meta name="twitter:description" content="FEConf 2018 컨퍼런스 행사의 일정 및 스피커 그리고 각 세션을 소개합니다. 올해 두번째 열리는 FEConf! 많은 관심과 성원 부탁드립니다."/>
                     <meta name="twitter:creator" content="@hckrmoon"/>
-                    <meta name="twitter:image" content="https://2018.feconf.kr/static/img/img-og-feconf.png"/>
+                    <meta name="twitter:image" content="https://2017.feconf.kr/static/img/img-og-feconf.png"/>
                     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
                     <meta httpEquiv="X-UA-Compatible" content="ie=edge"/>
-                    <link rel="icon" href="/static/favicon.ico" />
-                    <link rel="stylesheet" href="/_next/static/style.css"/>
-                    <link rel="stylesheet" href="/static/styles/normalize.css"/>
+                    <link rel="icon" href="static/favicon.ico" />
+                    <link rel="stylesheet" href="_next/static/style.css"/>
+                    <link rel="stylesheet" href="static/styles/normalize.css"/>
                     <script dangerouslySetInnerHTML={{__html: `
                         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -47,6 +48,9 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
                     <HeroSection />
                     <IntroSection />
                     <SpeakersSection
+                      speakerList={speakerList}
+                    />
+                    <ScheduleSection
                       speakerList={speakerList}
                     />
                 </div>
