@@ -1,0 +1,32 @@
+.FlipClock {
+  position: relative;
+  display: inline-block;
+
+  .Title {
+    font-size: 14px;
+    color: #ffeb3b;
+    letter-spacing: 1.6px;
+  }
+  .DigitWrap {
+    margin-top: 8px;
+
+    .Digit {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 100px;
+      background: white;
+      border-radius: 4px;
+
+      &:first-child {
+        margin-right: 12px;
+      }
+      .Front {
+
+      }
+      .Back {
+
+      }
+    }
+  }
+}

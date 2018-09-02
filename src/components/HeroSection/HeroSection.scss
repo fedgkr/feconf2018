@@ -1,0 +1,49 @@
+.HeroSection {
+  position: relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(to bottom, #110a5a, #07042e);
+
+  .Content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 72px 86px;
+
+    .Logo {
+      font-size: 40px;
+      font-weight: 700;
+      color: white;
+    }
+    .ClockWrap {
+      position: relative;
+      margin-top: 40px;
+
+      .Day {
+        margin-bottom: 20px;
+      }
+      .TimeDivider {
+        position: relative;
+        display: inline-block;
+        padding: 38px 16px;
+        width: 41px;
+        height: 100px;
+        box-sizing: border-box;
+
+        .Circle {
+          position: absolute;
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background: white;
+
+          &:first-child {
+            top: 38px;
+          }
+          &:last-child {
+            bottom: 38px;
+          }
+        }
+      }
+    }
+  }
+}
