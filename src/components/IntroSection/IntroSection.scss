@@ -6,6 +6,7 @@
 
   .Content {
     max-width: 1024px;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 180px 86px 100px 86px;
 
@@ -26,6 +27,7 @@
 
       .Title {
         font-size: 24px;
+        font-weight: 700;
         color: $main-color;
       }
       .SubTitle {

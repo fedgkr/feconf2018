@@ -4,6 +4,8 @@ import '../styles/main.scss';
 import css from '../styles/index.scss';
 import {HeroSection} from "../components/HeroSection/HeroSection";
 import {IntroSection} from "../components/IntroSection/IntroSection";
+import {SpeakersSection} from "../components/SpeakersSection/SpeakersSection";
+import {speakerList} from "../db/Speaker";
 
 interface IndexPageProps {}
 
@@ -44,6 +46,9 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
                 <div className={css.Content}>
                     <HeroSection />
                     <IntroSection />
+                    <SpeakersSection
+                      speakerList={speakerList}
+                    />
                 </div>
             </>
         );
