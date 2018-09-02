@@ -1,6 +1,7 @@
 import React from 'react'
 import css from './HeroSection.scss'
 import {FlipClock} from "./components/FlipClock/FlipClock";
+import {Button} from "../Button/Button";
 
 interface HeroSectionProps {
 }
@@ -43,6 +44,15 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
                 value={56}
               />
             </div>
+          </div>
+          <div className={css.ButtonWrap}>
+            <a href="https://festa.io">
+              <Button
+                background="#ffeb3b"
+                color="#000"
+                label="컨퍼런스 참가하기"
+              />
+            </a>
           </div>
         </div>
       </div>

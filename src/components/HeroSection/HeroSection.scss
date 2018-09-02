@@ -6,7 +6,7 @@
   .Content {
     max-width: 1024px;
     margin: 0 auto;
-    padding: 72px 86px;
+    padding: 72px 86px 136px 86px;
 
     .Logo {
       font-size: 40px;
@@ -23,7 +23,7 @@
       .TimeDivider {
         position: relative;
         display: inline-block;
-        padding: 38px 16px;
+        padding: 34px 16px;
         width: 41px;
         height: 100px;
         box-sizing: border-box;
@@ -37,13 +37,16 @@
           background: white;
 
           &:first-child {
-            top: 38px;
+            top: 34px;
           }
           &:last-child {
-            bottom: 38px;
+            bottom: 34px;
           }
         }
       }
+    }
+    .ButtonWrap {
+      margin-top: 72px;
     }
   }
 }
