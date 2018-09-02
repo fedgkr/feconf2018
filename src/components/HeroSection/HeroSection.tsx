@@ -50,8 +50,9 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
               <Button
                 background="#ffeb3b"
                 color="#000"
-                label="컨퍼런스 참가하기"
-              />
+              >
+                컨퍼런스 참가하기
+              </Button>
             </a>
           </div>
         </div>
