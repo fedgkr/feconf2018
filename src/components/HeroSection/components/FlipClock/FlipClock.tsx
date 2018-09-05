@@ -17,19 +17,23 @@ export class FlipClock extends React.Component<FlipClockProps, FlipClockState> {
 
   render() {
     const {title, value = 0} = this.props
-    const strValue = leftPad(value, 2, '0')
+    const strList = leftPad(value, 2, '0').split('')
     return (
       <div className={css.FlipClock}>
         <div className={css.Title}>{title}</div>
         <div className={css.DigitWrap}>
-          <div className={css.Digit}>
-            <div className={css.Front}></div>
-            <div className={css.Back}></div>
-          </div>
-          <div className={css.Digit}>
-            <div className={css.Front}></div>
-            <div className={css.Back}></div>
-          </div>
+          {strList.map((str, idx) => (
+            <div key={idx} className={css.Digit}>
+              <div className={css.Top}>
+                <div className={css.Front}>{str}</div>
+                <div className={css.Back}>{str}</div>
+              </div>
+              <div className={css.Bottom}>
+                <div className={css.Front}>{str}</div>
+                <div className={css.Back}>{str}</div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     )
