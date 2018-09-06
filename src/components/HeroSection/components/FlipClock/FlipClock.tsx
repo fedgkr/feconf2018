@@ -11,10 +11,6 @@ interface FlipClockState {
 }
 
 export class FlipClock extends React.Component<FlipClockProps, FlipClockState> {
-  constructor(props: FlipClockProps) {
-    super(props)
-  }
-
   render() {
     const {title, value = 0} = this.props
     const strList = leftPad(value, 2, '0').split('')
@@ -30,7 +26,6 @@ export class FlipClock extends React.Component<FlipClockProps, FlipClockState> {
               </div>
               <div className={css.Bottom}>
                 <div className={css.Front}>{str}</div>
-                <div className={css.Back}>{str}</div>
               </div>
             </div>
           ))}

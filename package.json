@@ -28,6 +28,7 @@
   },
   "scripts": {
     "dev": "ts-node -P ./tsconfig.json server.ts",
-    "build": "next build src && next export src -o out"
+    "build": "next build src",
+    "export": "next export src -o out"
   }
 }
