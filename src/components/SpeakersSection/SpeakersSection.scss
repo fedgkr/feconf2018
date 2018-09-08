@@ -19,14 +19,12 @@
     }
     .SpeakersWrap {
       margin-top: 100px;
-
-      .SpeakersRow {
-        position: relative;
-        margin-bottom: 52px;
-      }
     }
 
     @include tablet-basic {
+      padding: 120px 200px 140px 200px;
+    }
+    @include mobile-basic {
       max-width: 360px;
       padding: 40px 32px;
 

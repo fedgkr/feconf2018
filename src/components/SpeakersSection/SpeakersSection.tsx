@@ -1,8 +1,8 @@
 import React from 'react'
 import css from './SpeakersSection.scss'
 import {Speaker} from "../../db/Speaker";
-import {SpeakerProfile} from "./components/Speaker/SpeakerProfile";
 import {CONST} from "../../values/Const";
+import {SpeakersRow} from "./components/SpeakersRow/SpeakersRow";
 
 interface SpeakersSectionProps {
   appWidth: number
@@ -39,20 +39,13 @@ export class SpeakersSection extends React.Component<SpeakersSectionProps, Speak
         <div className={css.Content}>
           <div className={css.Title}>SPEAKERS</div>
           <div className={css.SpeakersWrap}>
-            {rowList.map((speakerList, idx) =>
-              <div key={idx} className={css.SpeakersRow}>
-                <>
-                  {speakerList.map((speaker, idx) =>
-                    <SpeakerProfile
-                      key={idx}
-                      speaker={speaker}
-                      isLast={(idx + 1) % num === 0}
-                    />
-                  )}
-                  <div className="clear" />
-                </>
-              </div>
-            )}
+            {rowList.map((speakerList, idx) => (
+               <SpeakersRow
+                 key={idx}
+                 speakerList={speakerList}
+                 num={num}
+               />
+            ))}
           </div>
         </div>
       </div>

@@ -42,7 +42,7 @@
     }
   }
   @include tablet-basic {
-    width: 60px;
+    width: 90px;
 
     &:nth-child(2) {
       position: absolute;
@@ -53,5 +53,11 @@
     &.isLast {
       margin-right: 0;
     }
+  }
+  @include tablet-small {
+    width: 60px;
+  }
+  @include mobile-basic {
+    width: 60px;
   }
 }
