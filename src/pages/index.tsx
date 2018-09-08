@@ -7,6 +7,7 @@ import {IntroSection} from "../components/IntroSection/IntroSection";
 import {SpeakersSection} from "../components/SpeakersSection/SpeakersSection";
 import {speakerList} from "../db/Speaker";
 import {ScheduleSection} from "../components/ScheduleSection/ScheduleSection";
+import {EtcData} from "../db/Etc";
 
 interface IndexPageProps {}
 
@@ -45,7 +46,9 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
                     `}}/>
                 </Head>
                 <div className={css.Content}>
-                    <HeroSection />
+                    <HeroSection
+                      deadline={EtcData.deadline}
+                    />
                     <IntroSection />
                     <SpeakersSection
                       speakerList={speakerList}

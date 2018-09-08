@@ -1,0 +1,75 @@
+@import '../../../../../../styles/variables';
+
+.Digit {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 100px;
+
+  &:first-child {
+    margin-right: 12px;
+  }
+  .Top, .Bottom {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+  }
+  .Front, .Back, .Next {
+    position: absolute;
+    overflow: hidden;
+    background: white;
+    width: 60px;
+    height: 50px;
+    color: $main-color;
+    font-size: 75px;
+    text-align: center;
+    backface-visibility: hidden;
+  }
+  .Top {
+    line-height: 100px;
+
+    .Front, .Next {
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+    }
+    .Back {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  .Bottom {
+    top: 50px;
+    margin-top: 2px;
+    line-height: 0;
+
+    .Front, .Back {
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  .Front {
+    z-index: 2;
+    transform-origin: 0 50px;
+    transform: rotateX(0deg);
+
+    &.Flip {
+      transform: rotateX(180deg);
+      transition: transform 700ms;
+    }
+  }
+  .Back {
+    z-index: 3;
+    top: 52px;
+    transform-origin: 0 -1px;
+    transform: rotateX(180deg);
+    line-height: 0;
+
+    &.Flip {
+      transform: rotateX(0deg);
+      transition: transform 700ms;
+    }
+  }
+  .Next {
+    z-index: 1;
+  }
+}
