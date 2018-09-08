@@ -80,6 +80,7 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
             speakerList={speakerList}
           />
           <ScheduleSection
+            appWidth={appWidth}
             speakerList={speakerList}
           />
         </div>

@@ -22,11 +22,7 @@
     }
 
     @include tablet-basic {
-      padding: 120px 200px 140px 200px;
-    }
-    @include mobile-basic {
-      max-width: 360px;
-      padding: 40px 32px;
+      padding: 40px 200px 40px 200px;
 
       .Title {
         font-size: 16px;
@@ -34,6 +30,10 @@
       .SpeakersWrap {
         margin-top: 32px;
       }
+    }
+    @include mobile-basic {
+      max-width: 360px;
+      padding: 40px 32px;
     }
   }
 }

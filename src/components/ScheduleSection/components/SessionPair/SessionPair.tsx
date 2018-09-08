@@ -1,42 +1,42 @@
 import React from 'react'
 import cc from 'classcat'
-import css from './Session.scss'
+import css from './SessionPair.scss'
 import {Speaker} from "../../../../db/Speaker";
 
-interface SessionProps {
+interface SessionPairProps {
   time: string
   speakerList: Speaker[]
   noSpeaker?: boolean
   content?: string
 }
 
-interface SessionState {
+interface SessionPairState {
 }
 
 /**
- * define Session class inherits React.Component
+ * define SessionPair class inherits React.Component
  * @React View Component
  */
-export class Session extends React.Component<SessionProps, SessionState> {
+export class SessionPair extends React.Component<SessionPairProps, SessionPairState> {
 
   /**
-   * Session class constructor method
+   * SessionPair class constructor method
    * @constructs
    * @param {SessionProps} props
    */
-  constructor(props: SessionProps) {
+  constructor(props: SessionPairProps) {
     super(props)
   }
 
   /**
-   * Session React Component render method
+   * SessionPair React Component render method
    * @returns {JSX.Element}
    */
   render() {
     const {speakerList, time, noSpeaker = false, content = ''} = this.props
     return (
       <div className={cc({
-        [css.Session]: true,
+        [css.SessionPair]: true,
         [css.noSpeaker]: noSpeaker,
       })}>
         <div>
