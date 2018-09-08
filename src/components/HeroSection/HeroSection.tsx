@@ -2,7 +2,6 @@ import React from 'react'
 import css from './HeroSection.scss'
 import {FlipClock} from "./components/FlipClock/FlipClock";
 import {Button} from "../Button/Button";
-import {EtcData} from "../../db/Etc";
 
 interface HeroSectionProps {
   deadline: string
