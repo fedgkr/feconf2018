@@ -2,13 +2,14 @@ import React from 'react'
 import css from './HeroSection.scss'
 import {FlipClock} from "./components/FlipClock/FlipClock";
 import {Button} from "../Button/Button";
+import {EtcData} from "../../db/Etc";
 
 interface HeroSectionProps {
+  deadline: string
 }
 
 interface HeroSectionState {
   presentLeft: LeftTime
-  nextLeft: LeftTime
 }
 
 interface LeftTime {
@@ -24,7 +25,6 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
 
     this.state = {
       presentLeft: this.getLeftTime(Date.now()),
-      nextLeft: this.getLeftTime(Date.now() + 1000),
     }
   }
 
@@ -36,14 +36,13 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
     window.setTimeout(() => {
       this.setState({
         presentLeft: this.getLeftTime(Date.now()),
-        nextLeft: this.getLeftTime(Date.now() + 1000)
       })
       this.timer()
     }, 1000)
   }
 
   getLeftTime(date: number) {
-    const deadline = '2018-11-03'
+    const {deadline} = this.props
     const endDate = Date.parse(deadline)
     const t = endDate - date
     const seconds = Math.floor((t / 1000) % 60)
