@@ -4,6 +4,7 @@ import {FlipClock} from "./components/FlipClock/FlipClock";
 import {Button} from "../Button/Button";
 
 interface HeroSectionProps {
+  appWidth: number
   deadline: string
 }
 

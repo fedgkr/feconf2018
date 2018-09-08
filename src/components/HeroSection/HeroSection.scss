@@ -1,10 +1,12 @@
+@import '../../styles/variables';
+
 .HeroSection {
   position: relative;
   box-sizing: border-box;
   background-image: linear-gradient(to bottom, #110a5a, #07042e);
 
   .Content {
-    max-width: 1024px;
+    max-width: $tablet-basic-width;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 72px 86px 136px 86px;
@@ -48,6 +50,10 @@
     }
     .ButtonWrap {
       margin-top: 72px;
+    }
+
+    @media only screen and (max-width: $tablet-basic-width) {
+      padding: 24px 24px 80px 24px;
     }
   }
 }

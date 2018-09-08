@@ -1,11 +1,12 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .IntroSection {
   position: relative;
   background: white;
 
   .Content {
-    max-width: 1024px;
+    max-width: $tablet-basic-width;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 180px 86px 100px 86px;
@@ -54,6 +55,47 @@
       }
       .ButtonWrap {
         margin-top: 80px;
+      }
+    }
+
+    @include tablet-basic {
+      padding: 72px 24px 52px 24px;
+
+      .TitleArea {
+        float: none;
+        width: 100%;
+        margin-bottom: 40px;
+
+        span {
+          font-size: 24px;
+        }
+      }
+      .DescArea {
+        float: none;
+        width: 100%;
+
+        .Title {
+          font-size: 16px;
+        }
+        .SubTitle {
+          margin-top: 32px;
+        }
+        .Desc {
+          margin-top: 24px;
+        }
+        .Date {
+          margin-top: 32px;
+        }
+        .Location {
+          margin-top: 12px;
+        }
+        .Date, .Location {
+          font-size: 14px;
+        }
+        .ButtonWrap {
+          margin-top: 20px;
+          text-align: center;
+        }
       }
     }
   }

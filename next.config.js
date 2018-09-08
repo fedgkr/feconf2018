@@ -9,7 +9,7 @@ module.exports = withPlugins([
     cssLoaderOptions: {
       importLoaders: 1,
       localIdentName: isProd ? '[hash:base64:5]' : '[local]-[hash:base64:5]'
-    }
+    },
   }],
   [typescript],
 ], {

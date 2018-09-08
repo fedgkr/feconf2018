@@ -1,11 +1,12 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .SpeakersSection {
   position: relative;
   background: #f6f6f6;
 
   .Content {
-    max-width: 1024px;
+    max-width: $tablet-basic-width;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 120px 192px 140px 192px;
@@ -18,6 +19,23 @@
     }
     .SpeakersWrap {
       margin-top: 100px;
+
+      .SpeakersRow {
+        position: relative;
+        margin-bottom: 52px;
+      }
+    }
+
+    @include tablet-basic {
+      max-width: 360px;
+      padding: 40px 32px;
+
+      .Title {
+        font-size: 16px;
+      }
+      .SpeakersWrap {
+        margin-top: 32px;
+      }
     }
   }
 }

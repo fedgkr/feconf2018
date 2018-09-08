@@ -1,8 +1,10 @@
 import React from 'react'
 import css from './IntroSection.scss'
 import {Button} from "../Button/Button";
+import {CONST} from "../../values/Const";
 
 interface IntroSectionProps {
+  appWidth: number
 }
 
 interface IntroSectionState {
@@ -14,6 +16,8 @@ export class IntroSection extends React.Component<IntroSectionProps, IntroSectio
   }
 
   render() {
+    const {appWidth} = this.props
+    const isTabletSize = appWidth < CONST.TABLET_WIDTH
     return (
       <div className={css.IntroSection}>
         <div className={css.Content}>

@@ -1,14 +1,21 @@
 @import '../../../../styles/variables';
+@import '../../../../styles/mixins';
 
 .SpeakerProfile {
   position: relative;
-  display: inline-block;
   width: 120px;
-  margin-right: 53px;
-  margin-bottom: 52px;
+  font-size: 0;
+  float: left;
 
+  &:nth-child(2) {
+    margin-left: 53px;
+  }
+  &:nth-child(3) {
+    float: right;
+  }
   &.isLast {
-    margin-right: 0;
+    float: right;
+    margin-right: 53px;
   }
   .ContentWrap {
     box-sizing: border-box;
@@ -32,6 +39,19 @@
       font-weight: 600;
       text-align: center;
       color: $font-color;
+    }
+  }
+  @include tablet-basic {
+    width: 60px;
+
+    &:nth-child(2) {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 0;
+    }
+    &.isLast {
+      margin-right: 0;
     }
   }
 }

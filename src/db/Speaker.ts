@@ -1,5 +1,5 @@
 import {Company, companyList} from "./Company";
-import {ArrayUtils} from "../utils/Array";
+import {ArrayUtils} from "../utils/ArrayUtils";
 
 export class Speaker {
   constructor(_: Speaker) {
