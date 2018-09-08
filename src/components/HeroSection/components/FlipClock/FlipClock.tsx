@@ -6,6 +6,7 @@ import {Digit} from "./components/Digit/Digit";
 interface FlipClockProps {
   title: string
   value: number
+  maxValue: number
 }
 
 interface FlipClockState {
@@ -13,13 +14,19 @@ interface FlipClockState {
 
 export class FlipClock extends React.Component<FlipClockProps, FlipClockState> {
   render() {
-    const {title, value = 0} = this.props
+    const {title, value = 0, maxValue} = this.props
     const strList = leftPad(value, 2, '0').split('')
     return (
       <div className={css.FlipClock}>
         <div className={css.Title}>{title}</div>
         <div className={css.DigitWrap}>
-          {strList.map((str, idx) => <Digit key={idx} value={Number(str)} />)}
+          {strList.map((str, idx) => (
+            <Digit
+              key={idx}
+              value={Number(str)}
+              maxValue={parseInt(String(maxValue)[idx], 10)}
+            />
+          ))}
         </div>
       </div>
     )

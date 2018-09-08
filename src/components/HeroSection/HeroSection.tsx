@@ -7,14 +7,60 @@ interface HeroSectionProps {
 }
 
 interface HeroSectionState {
+  presentLeft: LeftTime
+  nextLeft: LeftTime
+}
+
+interface LeftTime {
+  days: number
+  hours: number
+  minutes: number
+  seconds: number
 }
 
 export class HeroSection extends React.Component<HeroSectionProps, HeroSectionState> {
   constructor(props: HeroSectionProps) {
     super(props)
+
+    this.state = {
+      presentLeft: this.getLeftTime(Date.now()),
+      nextLeft: this.getLeftTime(Date.now() + 1000),
+    }
+  }
+
+  componentDidMount() {
+    this.timer()
+  }
+
+  timer() {
+    window.setTimeout(() => {
+      this.setState({
+        presentLeft: this.getLeftTime(Date.now()),
+        nextLeft: this.getLeftTime(Date.now() + 1000)
+      })
+      this.timer()
+    }, 1000)
+  }
+
+  getLeftTime(date: number) {
+    const deadline = '2018-11-03'
+    const endDate = Date.parse(deadline)
+    const t = endDate - date
+    const seconds = Math.floor((t / 1000) % 60)
+    const minutes = Math.floor((t / (1000 * 60)) % 60)
+    const hours = Math.floor((t / (1000 * 60 * 60)) % 60)
+    const days = Math.floor(t / (1000 * 60 * 60 * 24))
+
+    return {
+      days,
+      hours,
+      minutes,
+      seconds,
+    }
   }
 
   render() {
+    const {presentLeft} = this.state
     return (
       <div className={css.HeroSection}>
         <div className={css.Content}>
@@ -27,13 +73,15 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
             <div className={css.Day}>
               <FlipClock
                 title={'DAY'}
-                value={50}
+                value={presentLeft.days}
+                maxValue={99}
               />
             </div>
             <div className={css.Time}>
               <FlipClock
                 title={'HOUR'}
-                value={13}
+                value={presentLeft.hours}
+                maxValue={23}
               />
               <div className={css.TimeDivider}>
                 <span className={css.Circle} />
@@ -41,7 +89,8 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
               </div>
               <FlipClock
                 title={'MINUTE'}
-                value={56}
+                value={presentLeft.minutes}
+                maxValue={59}
               />
             </div>
           </div>
