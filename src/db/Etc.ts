@@ -1,3 +1,3 @@
 export class EtcData {
-  static deadline = '2018-11-03'
+  static deadline = 1541138400000
 }
