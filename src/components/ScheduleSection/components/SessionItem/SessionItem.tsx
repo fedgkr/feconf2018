@@ -1,6 +1,6 @@
 import React from 'react'
+import {Speaker} from "db/Speaker";
 import css from './SessionItem.scss'
-import {Speaker} from "../../../../db/Speaker";
 
 interface SessionItemProps {
   time: string

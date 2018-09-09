@@ -1,8 +1,8 @@
 import React from 'react'
-import css from './TrackPair.scss'
-import {getNOrderSpeakers, Speaker} from "../../../../db/Speaker";
+import {getNOrderSpeakers, Speaker} from "db/Speaker";
+import {EtcData} from "db/Etc";
 import {SessionPair} from "../SessionPair/SessionPair";
-import {EtcData} from "../../../../db/Etc";
+import css from './TrackPair.scss'
 
 interface TrackPairProps {
   speakerList: Speaker[]

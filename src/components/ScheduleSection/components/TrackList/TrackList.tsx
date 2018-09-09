@@ -1,8 +1,8 @@
 import React, {Fragment} from 'react'
-import css from './TrackList.scss'
-import {getNOrderSpeakers, Speaker} from "../../../../db/Speaker";
+import {getNOrderSpeakers, Speaker} from "db/Speaker";
+import {EtcData} from "db/Etc";
 import {SessionItem} from "../SessionItem/SessionItem";
-import {EtcData} from "../../../../db/Etc";
+import css from './TrackList.scss'
 
 interface TrackListProps {
   speakerList: Speaker[]

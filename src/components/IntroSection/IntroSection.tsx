@@ -1,6 +1,6 @@
 import React from 'react'
+import {Button} from "components/Button/Button";
 import css from './IntroSection.scss'
-import {Button} from "../Button/Button";
 
 interface IntroSectionProps {
   appWidth: number

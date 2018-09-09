@@ -2,7 +2,7 @@ import React from 'react';
 import {NextContext, NextStatelessComponent} from 'next';
 import App, {Container} from 'next/app';
 import {RouterProps} from 'next/router';
-import '../styles/main.scss';
+import 'styles/main.scss';
 
 interface MyNextContext {
     Component: NextStatelessComponent;

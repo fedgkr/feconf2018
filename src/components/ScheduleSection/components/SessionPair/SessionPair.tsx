@@ -1,7 +1,7 @@
 import React from 'react'
 import cc from 'classcat'
+import {Speaker} from "db/Speaker";
 import css from './SessionPair.scss'
-import {Speaker} from "../../../../db/Speaker";
 
 interface SessionPairProps {
   time: string

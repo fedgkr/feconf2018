@@ -1,7 +1,7 @@
 import React from 'react'
-import css from './HeroSection.scss'
+import {Button} from 'components/Button/Button';
 import {FlipClock} from "./components/FlipClock/FlipClock";
-import {Button} from "../Button/Button";
+import css from './HeroSection.scss'
 
 interface HeroSectionProps {
   appWidth: number
@@ -63,9 +63,9 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
       <div className={css.HeroSection}>
         <div className={css.Content}>
           <div className={css.Logo}>
-              <span>FE</span><br/>
-              <span>CONF</span><br/>
-              <span>2018</span>
+            <span>FE</span><br/>
+            <span>CONF</span><br/>
+            <span>2018</span>
           </div>
           <div className={css.ClockWrap}>
             <div className={css.Day}>

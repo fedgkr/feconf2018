@@ -1,7 +1,7 @@
 import React from 'react'
-import css from './SpeakersRow.scss'
-import {Speaker} from "../../../../db/Speaker";
+import {Speaker} from "db/Speaker";
 import {SpeakerProfile} from "../Speaker/SpeakerProfile";
+import css from './SpeakersRow.scss'
 
 interface SpeakersRowProps {
   speakerList: Speaker[]

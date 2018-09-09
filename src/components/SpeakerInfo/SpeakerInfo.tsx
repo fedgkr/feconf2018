@@ -1,7 +1,7 @@
 import React from 'react'
+import {Speaker} from "db/Speaker";
+import {EtcData} from "db/Etc";
 import css from './SpeakerInfo.scss'
-import {Speaker} from "../../db/Speaker";
-import {EtcData} from "../../db/Etc";
 
 interface SpeakerInfoProps {
   speaker: Speaker

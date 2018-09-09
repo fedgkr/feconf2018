@@ -1,7 +1,7 @@
 import React from 'react'
 import leftPad from 'left-pad'
-import css from './FlipClock.scss'
 import {Digit} from "./components/Digit/Digit";
+import css from './FlipClock.scss';
 
 interface FlipClockProps {
   title: string

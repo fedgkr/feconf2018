@@ -1,9 +1,9 @@
 import React from 'react'
-import css from './ScheduleSection.scss'
-import {Speaker} from "../../db/Speaker";
+import {Speaker} from "db/Speaker";
+import {CONST} from "values/Const";
 import {TrackPair} from "./components/TrackPair/TrackPair";
-import {CONST} from "../../values/Const";
 import {TrackList} from "./components/TrackList/TrackList";
+import css from './ScheduleSection.scss'
 
 interface ScheduleSectionProps {
   appWidth: number

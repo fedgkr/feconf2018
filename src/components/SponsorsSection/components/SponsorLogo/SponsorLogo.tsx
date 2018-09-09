@@ -1,6 +1,6 @@
 import React from 'react'
+import {Company} from "db/Company";
 import css from './SponsorLogo.scss'
-import {Company} from "../../../../db/Company";
 
 interface SponsorLogoProps {
   company: Company

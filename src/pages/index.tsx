@@ -1,18 +1,18 @@
+import 'styles/main.scss';
 import React from 'react';
 import Head from 'next/head';
 import Sidebar from 'react-sidebar';
-import '../styles/main.scss';
-import css from '../styles/index.scss';
-import {HeroSection} from "../components/HeroSection/HeroSection";
-import {IntroSection} from "../components/IntroSection/IntroSection";
-import {SpeakersSection} from "../components/SpeakersSection/SpeakersSection";
-import {Speaker, speakerList} from "../db/Speaker";
-import {ScheduleSection} from "../components/ScheduleSection/ScheduleSection";
-import {EtcData} from "../db/Etc";
-import {WindowUtils} from "../utils/WindowUtils";
-import {SponsorsSection} from "../components/SponsorsSection/SponsorsSection";
-import {FooterSection} from "../components/FooterSection/FooterSection";
-import {SpeakerInfo} from "../components/SpeakerInfo/SpeakerInfo";
+import {HeroSection} from "components/HeroSection/HeroSection";
+import {IntroSection} from "components/IntroSection/IntroSection";
+import {SpeakersSection} from "components/SpeakersSection/SpeakersSection";
+import {Speaker, speakerList} from "db/Speaker";
+import {ScheduleSection} from "components/ScheduleSection/ScheduleSection";
+import {EtcData} from "db/Etc";
+import {WindowUtils} from "utils/WindowUtils";
+import {SponsorsSection} from "components/SponsorsSection/SponsorsSection";
+import {FooterSection} from "components/FooterSection/FooterSection";
+import {SpeakerInfo} from "components/SpeakerInfo/SpeakerInfo";
+import css from 'styles/index.scss';
 
 interface IndexPageProps {
 }

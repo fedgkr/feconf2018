@@ -1,8 +1,8 @@
 import React from 'react'
 import cc from 'classcat'
-import css from './SponsorsSection.scss'
-import {companyList, SupportLevel} from "../../db/Company";
+import {companyList, SupportLevel} from "db/Company";
 import {SponsorLogo} from "./components/SponsorLogo/SponsorLogo";
+import css from './SponsorsSection.scss'
 
 interface SponsorsSectionProps {
   appWidth: number
