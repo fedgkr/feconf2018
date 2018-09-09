@@ -6,6 +6,7 @@ import {SpeakerProfile} from "../Speaker/SpeakerProfile";
 interface SpeakersRowProps {
   speakerList: Speaker[]
   num: number
+  selectSpeaker: (o: boolean, s: Speaker) => void
 }
 
 interface SpeakersRowState {
@@ -26,21 +27,19 @@ export class SpeakersRow extends React.Component<SpeakersRowProps, SpeakersRowSt
   }
 
   render() {
-    const {speakerList, num} = this.props
+    const {speakerList, num, selectSpeaker} = this.props
     const {rendered} = this.state
     return (
       <div className={css.SpeakersRow}>
-        {speakerList.map((speaker, i) => {
-          return (
+        {speakerList.map((speaker, i) => (
             <SpeakerProfile
               key={rendered.toString() + i}
               speaker={speaker}
               isLast={(i + 1) % num === 0}
+              selectSpeaker={selectSpeaker}
             />
-          )
-        })}
+        ))}
         {rendered ? <div className={`clear`} /> : null}
-
       </div>
     )
   }

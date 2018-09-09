@@ -10,6 +10,8 @@ export class Speaker {
   desc: string
   profileImage: string
   presentTitle: string
+  presentDesc: string
+  track: number
   order: number
   company: Company
 }
@@ -21,6 +23,8 @@ export const generateSpeakerList = () => {
       name: '문주영',
       profileImage: 'static/images/speaker/01.jpeg',
       presentTitle: '가즈아앙',
+      presentDesc: '프론트엔드를 개발하며 마주했던 치열한 고민과 깊은 인사이트를 공유하며 여러분과 함께 성장하고 싶습니다. 프론트엔드를 개발하며 마주했던 치열한 고민과 깊은 인사이트를 공유하며 여러분과 함께 성장하고 싶습니다. 프론트엔드를 개발하며 마주했던 치열한 고민과 깊은 인사이트를 공유하며 여러분과 함께 성장하고 싶습니다.',
+      track: Math.floor(Math.random() * 2) + 1,
       order: Math.floor(idx / 2) + 1,
       desc: '파이이이이이이팅',
       company: companyList[ran],

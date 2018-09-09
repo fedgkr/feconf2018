@@ -2,6 +2,7 @@ import React from 'react'
 import css from './TrackPair.scss'
 import {getNOrderSpeakers, Speaker} from "../../../../db/Speaker";
 import {SessionPair} from "../SessionPair/SessionPair";
+import {EtcData} from "../../../../db/Etc";
 
 interface TrackPairProps {
   speakerList: Speaker[]
@@ -25,36 +26,40 @@ export class TrackPair extends React.Component<TrackPairProps, TrackPairState> {
         </div>
         <div className={css.SessionWrap}>
           <SessionPair
-            time="10:30 - 11:00"
+            time={EtcData.sessionOrderMappingTime[1]}
             speakerList={getNOrderSpeakers(1)}
           />
           <SessionPair
-            time="11:00 - 11:30"
+            time={EtcData.sessionOrderMappingTime[2]}
             speakerList={getNOrderSpeakers(2)}
           />
           <SessionPair
-            time="11:30 - 12:00"
-            speakerList={getNOrderSpeakers(3)}
-          />
-          <SessionPair
-            time="12:00 - 13:00"
+            time={EtcData.sessionOrderMappingTime['launch']}
             speakerList={[]}
             noSpeaker={true}
             content="점심"
           />
           <SessionPair
-            time="13:00 - 13:30"
+            time={EtcData.sessionOrderMappingTime[3]}
+            speakerList={getNOrderSpeakers(3)}
+          />
+          <SessionPair
+            time={EtcData.sessionOrderMappingTime[4]}
             speakerList={getNOrderSpeakers(4)}
           />
           <SessionPair
-            time="13:30 - 14:00"
+            time={EtcData.sessionOrderMappingTime['break']}
+            speakerList={[]}
+            noSpeaker={true}
+            content="Break Time"
+          />
+          <SessionPair
+            time={EtcData.sessionOrderMappingTime[5]}
             speakerList={getNOrderSpeakers(5)}
           />
           <SessionPair
-            time="14:00 ~"
-            speakerList={[]}
-            noSpeaker={true}
-            content="네트워킹 및 담소"
+            time={EtcData.sessionOrderMappingTime[6]}
+            speakerList={getNOrderSpeakers(6)}
           />
         </div>
       </div>

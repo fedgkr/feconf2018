@@ -7,6 +7,7 @@ import {SpeakersRow} from "./components/SpeakersRow/SpeakersRow";
 interface SpeakersSectionProps {
   appWidth: number
   speakerList: Speaker[]
+  selectSpeaker: (o: boolean, s: Speaker) => void
 }
 
 interface SpeakersSectionState {
@@ -31,7 +32,7 @@ export class SpeakersSection extends React.Component<SpeakersSectionProps, Speak
   }
 
   render() {
-    const {appWidth, speakerList} = this.props
+    const {appWidth, speakerList, selectSpeaker} = this.props
     const num = appWidth > CONST.TABLET_WIDTH ? 4 : 3
     const rowList = this.getRowList(speakerList, num)
     return (
@@ -44,6 +45,7 @@ export class SpeakersSection extends React.Component<SpeakersSectionProps, Speak
                  key={idx}
                  speakerList={speakerList}
                  num={num}
+                 selectSpeaker={selectSpeaker}
                />
             ))}
           </div>

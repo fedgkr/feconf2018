@@ -2,6 +2,7 @@ import React, {Fragment} from 'react'
 import css from './TrackList.scss'
 import {getNOrderSpeakers, Speaker} from "../../../../db/Speaker";
 import {SessionItem} from "../SessionItem/SessionItem";
+import {EtcData} from "../../../../db/Etc";
 
 interface TrackListProps {
   speakerList: Speaker[]
@@ -22,34 +23,38 @@ export class TrackList extends React.Component<TrackListProps, TrackListState> {
             </div>
             <div className={css.SessionWrap}>
               <SessionItem
-                time="10:30 - 11:00"
+                time={EtcData.sessionOrderMappingTime[1]}
                 speaker={getNOrderSpeakers(1)[track - 1]}
               />
               <SessionItem
-                time="10:30 - 11:00"
+                time={EtcData.sessionOrderMappingTime[2]}
                 speaker={getNOrderSpeakers(2)[track - 1]}
               />
               <SessionItem
-                time="10:30 - 11:00"
-                speaker={getNOrderSpeakers(3)[track - 1]}
-              />
-              <SessionItem
-                time="12:00 - 13:00"
+                time={EtcData.sessionOrderMappingTime['launch']}
                 noSpeaker={true}
                 content="점심"
               />
               <SessionItem
-                time="13:00 - 13:30"
+                time={EtcData.sessionOrderMappingTime[3]}
+                speaker={getNOrderSpeakers(3)[track - 1]}
+              />
+              <SessionItem
+                time={EtcData.sessionOrderMappingTime[4]}
                 speaker={getNOrderSpeakers(4)[track - 1]}
               />
               <SessionItem
-                time="13:30 - 14:00"
+                time={EtcData.sessionOrderMappingTime['break']}
+                noSpeaker={true}
+                content="Break Time"
+              />
+              <SessionItem
+                time={EtcData.sessionOrderMappingTime[5]}
                 speaker={getNOrderSpeakers(5)[track - 1]}
               />
               <SessionItem
-                time="14:00 ~"
-                noSpeaker={true}
-                content="네트워킹 및 담소"
+                time={EtcData.sessionOrderMappingTime[6]}
+                speaker={getNOrderSpeakers(6)[track - 1]}
               />
             </div>
           </Fragment>

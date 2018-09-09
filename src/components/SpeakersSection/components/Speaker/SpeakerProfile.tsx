@@ -6,6 +6,7 @@ import {Speaker} from "../../../../db/Speaker";
 interface SpeakerProps {
   speaker: Speaker
   isLast: boolean
+  selectSpeaker: (o: boolean, s: Speaker) => void
 }
 
 interface SpeakerState {
@@ -17,12 +18,15 @@ export class SpeakerProfile extends React.Component<SpeakerProps, SpeakerState> 
   }
 
   render() {
-    const {speaker, isLast} = this.props
+    const {speaker, isLast, selectSpeaker} = this.props
     return (
-      <div className={cc({
-        [css.SpeakerProfile]: true,
-        [css.isLast]: isLast,
-      })}>
+      <div
+        className={cc({
+          [css.SpeakerProfile]: true,
+          [css.isLast]: isLast,
+        })}
+        onClick={() => selectSpeaker(true, speaker)}
+      >
         <div className={css.ContentWrap}>
           <div className={css.ImageWrap}>
             <img src={speaker.profileImage} alt={`Speaker ${speaker.name} Image`} />
