@@ -14,8 +14,9 @@ module.exports = withPlugins([
   [typescript],
 ], {
   distDir: '../.next',
+  assetPrefix: './',
   webpack(config) {
     config.resolve.modules.push(path.resolve('./src'));
     return config;
-  }
+  },
 });
