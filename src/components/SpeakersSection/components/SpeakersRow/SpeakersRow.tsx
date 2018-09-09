@@ -39,7 +39,8 @@ export class SpeakersRow extends React.Component<SpeakersRowProps, SpeakersRowSt
             />
           )
         })}
-        <div className={`clear`} />
+        {rendered ? <div className={`clear`} /> : null}
+
       </div>
     )
   }

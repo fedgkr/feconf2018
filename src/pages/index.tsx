@@ -9,6 +9,8 @@ import {speakerList} from "../db/Speaker";
 import {ScheduleSection} from "../components/ScheduleSection/ScheduleSection";
 import {EtcData} from "../db/Etc";
 import {WindowUtils} from "../utils/WindowUtils";
+import {SponsorsSection} from "../components/SponsorsSection/SponsorsSection";
+import {FooterSection} from "../components/FooterSection/FooterSection";
 
 interface IndexPageProps {
 }
@@ -83,6 +85,10 @@ class IndexPage extends React.Component<IndexPageProps, IndexPageState> {
             appWidth={appWidth}
             speakerList={speakerList}
           />
+          <SponsorsSection
+            appWidth={appWidth}
+          />
+          <FooterSection />
         </div>
       </>
     );

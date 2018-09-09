@@ -1,3 +1,48 @@
-.SponsorsSection {
+@import '../../styles/variables';
+@import '../../styles/mixins';
 
+.SponsorsSection {
+  position: relative;
+  background: #f6f6f6;
+
+  .Content {
+    max-width: $tablet-basic-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 120px 86px;
+
+    .Title {
+      font-size: 24px;
+      font-weight: 700;
+      color: $main-color;
+      text-align: center;
+    }
+    .Desc {
+      max-width: 460px;
+      margin: 16px auto 0 auto;
+      font-size: 14px;
+      color: #958b98;
+    }
+    .SponsorsWrap {
+      .Diamond, .Platinum, .Gold {
+        position: relative;
+      }
+      .LevelWrap {
+        margin-top: 52px;
+
+        .LevelTitle {
+          font-size: 16px;
+          font-weight: 700;
+          color: #22032b;
+          text-align: center;
+        }
+        .SponsorList {
+          margin-top: 24px;
+          height: 134px;
+          line-height: 134px;
+          text-align: center;
+        }
+      }
+    }
+  }
 }

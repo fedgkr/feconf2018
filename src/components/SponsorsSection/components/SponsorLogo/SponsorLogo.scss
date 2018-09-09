@@ -1,0 +1,7 @@
+.SponsorLogo {
+  max-width: 158px;
+
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}

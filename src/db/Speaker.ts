@@ -15,7 +15,7 @@ export class Speaker {
 }
 
 export const generateSpeakerList = () => {
-  return ArrayUtils.createNArray(16).map((idx) => {
+  return ArrayUtils.createNArray(14).map((idx) => {
     const ran = Math.floor(Math.random() * companyList.length)
     return new Speaker({
       name: '문주영',
