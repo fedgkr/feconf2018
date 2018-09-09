@@ -1,14 +1,15 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .ScheduleSection {
   position: relative;
   background: #fff;
 
   .Content {
-    max-width: 1024px;
+    max-width: $tablet-basic-width;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 120px 173px 0px 173px;
+    padding: 120px 173px 60px 173px;
 
     .Title {
       font-size: 24px;
@@ -47,6 +48,21 @@
     }
     .TrackWrap {
       margin-top: 52px;
+    }
+
+    @include tablet-basic {
+      padding: 40px 24px 0 24px;
+
+      .Title {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      .Intro {
+
+      }
+    }
+    @include mobile-basic {
+
     }
   }
 }

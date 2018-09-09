@@ -1,22 +1,36 @@
 import React from 'react'
 import css from './ScheduleSection.scss'
 import {Speaker} from "../../db/Speaker";
+import {TrackPair} from "./components/TrackPair/TrackPair";
+import {CONST} from "../../values/Const";
 import {TrackList} from "./components/TrackList/TrackList";
 
 interface ScheduleSectionProps {
+  appWidth: number
   speakerList: Speaker[]
 }
 
 interface ScheduleSectionState {
+  rendered: boolean
 }
 
 export class ScheduleSection extends React.Component<ScheduleSectionProps, ScheduleSectionState> {
-  constructor(props: ScheduleSectionProps) {
+  constructor(props) {
     super(props)
+
+    this.state = {
+      rendered: false,
+    }
+  }
+
+  componentDidMount() {
+    this.setState({rendered: true})
   }
 
   render() {
-    const {speakerList} = this.props
+    const {appWidth, speakerList} = this.props
+    const {rendered} = this.state
+    const isTablet = appWidth < CONST.TABLET_WIDTH
     return (
       <div className={css.ScheduleSection} id="schedule">
         <div className={css.Content}>
@@ -40,7 +54,14 @@ export class ScheduleSection extends React.Component<ScheduleSectionProps, Sched
             </div>
           </div>
           <div className={css.TrackWrap}>
-            <TrackList speakerList={speakerList} />
+            {rendered && isTablet ?
+              <TrackList
+                speakerList={speakerList}
+              /> :
+              <TrackPair
+                speakerList={speakerList}
+              />
+            }
           </div>
         </div>
       </div>

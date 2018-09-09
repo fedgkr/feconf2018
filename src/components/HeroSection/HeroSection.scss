@@ -1,10 +1,13 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .HeroSection {
   position: relative;
   box-sizing: border-box;
   background-image: linear-gradient(to bottom, #110a5a, #07042e);
 
   .Content {
-    max-width: 1024px;
+    max-width: $tablet-basic-width;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 72px 86px 136px 86px;
@@ -48,6 +51,37 @@
     }
     .ButtonWrap {
       margin-top: 72px;
+    }
+    @include mobile-basic {
+      padding: 24px 24px 80px 24px;
+
+      .Logo {
+        font-size: 28px;
+      }
+      .ClockWrap {
+        margin-top: 20px;
+
+        .Day {
+          margin-bottom: 8px;
+        }
+        .TimeDivider {
+          padding: 26px 13px;
+          width: 32px;
+          height: 80px;
+
+          .Circle {
+            &:first-child {
+              top: 26px;
+            }
+            &:last-child {
+              bottom: 26px;
+            }
+          }
+        }
+      }
+      .ButtonWrap {
+        margin-top: 32px;
+      }
     }
   }
 }

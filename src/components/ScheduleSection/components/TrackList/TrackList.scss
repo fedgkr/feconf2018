@@ -1,24 +1,19 @@
 @import '../../../../styles/variables';
 
 .TrackList {
-  .LabelWrap {
-    .Label {
-      display: inline-block;
-      padding: 20px 128px;
-      font-size: 18px;
-      font-weight: 700;
-      color: $main-color;
-      border-bottom: 1px solid $main-color;
+  margin-top: 32px;
 
-      &:nth-child(1) {
-        float: left;
-      }
-      &:nth-child(2) {
-        float: right;
-      }
-    }
+  .Label {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $main-color;
+    border-bottom: 1px solid $main-color;
+    text-align: center;
   }
   .SessionWrap {
-    padding-top: 52px;
+    padding: 32px 24px;
+    max-width: 420px;
+    margin: 0 auto;
   }
 }

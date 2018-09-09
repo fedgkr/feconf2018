@@ -1,3 +1,31 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .FooterSection {
   position: relative;
+
+  .Content {
+    max-width: $tablet-basic-width;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 72px 0 172px 0;
+    text-align: center;
+
+    .Title {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.44;
+      color: #1e1e21;
+    }
+    .Button {
+      margin-top: 72px;
+      width: 300px;
+      padding: 20px;
+      background: $main-color;
+      color: #fff;
+      border: 0;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  }
 }

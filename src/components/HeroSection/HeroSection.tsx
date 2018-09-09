@@ -4,7 +4,8 @@ import {FlipClock} from "./components/FlipClock/FlipClock";
 import {Button} from "../Button/Button";
 
 interface HeroSectionProps {
-  deadline: string
+  appWidth: number
+  deadline: number
 }
 
 interface HeroSectionState {
@@ -42,11 +43,10 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
 
   getLeftTime(date: number) {
     const {deadline} = this.props
-    const endDate = Date.parse(deadline)
-    const t = endDate - date
+    const t = deadline - date
     const seconds = Math.floor((t / 1000) % 60)
     const minutes = Math.floor((t / (1000 * 60)) % 60)
-    const hours = Math.floor((t / (1000 * 60 * 60)) % 60)
+    const hours = Math.floor(t / (1000 * 60 * 60) % 24)
     const days = Math.floor(t / (1000 * 60 * 60 * 24))
 
     return {

@@ -1,0 +1,27 @@
+// ------------------------------------- //
+// Style of Mixins
+// ------------------------------------- //
+
+@mixin tablet-basic {
+    @media (max-width: $tablet-basic-width) {
+        @content;
+    }
+}
+
+@mixin tablet-small {
+    @media (max-width: $tablet-small-width) {
+        @content;
+    }
+}
+
+@mixin mobile-basic {
+    @media (max-width: $mobile-basic-width) {
+        @content;
+    }
+}
+
+@mixin mobile-small {
+    @media (max-width: $mobile-small-width) {
+        @content;
+    }
+}
