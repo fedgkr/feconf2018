@@ -21,7 +21,7 @@ export const generateSpeakerList = () => {
     return new Speaker({
       name: '문주영',
       profileImage: 'static/images/speaker/01.jpeg',
-      presentTitle: '가즈아앙',
+      presentTitle: 'Redux-thunk에서 Redux-saga로 이사하기',
       presentDesc:
         '프론트엔드를 개발하며 마주했던 치열한 고민과 깊은 인사이트를 공유하며 여러분과 함께 성장하고 싶습니다. 프론트엔드를 개발하며 마주했던 치열한 고민과 깊은 인사이트를 공유하며 여러분과 함께 성장하고 싶습니다. 프론트엔드를 개발하며 마주했던 치열한 고민과 깊은 인사이트를 공유하며 여러분과 함께 성장하고 싶습니다.',
       track: Math.floor(Math.random() * 2) + 1,
