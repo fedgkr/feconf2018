@@ -1,4 +1,5 @@
 @import '../../../../../../styles/variables';
+@import '../../../../../../styles/mixins';
 
 .Digit {
   position: relative;
@@ -21,7 +22,8 @@
     width: 60px;
     height: 50px;
     color: $clock-color;
-    font-size: 75px;
+    font-size: 70px;
+    font-weight: 700;
     text-align: center;
     backface-visibility: hidden;
   }
@@ -71,5 +73,36 @@
   }
   .Next {
     z-index: 1;
+  }
+
+  @include mobile-basic {
+    width: 48px;
+    height: 80px;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+    .Top, .Bottom {
+      width: 48px;
+      height: 40px;
+    }
+    .Front, .Back, .Next {
+      width: 48px;
+      height: 40px;
+      font-size: 55px;
+    }
+    .Top {
+      line-height: 80px;
+    }
+    .Bottom {
+      top: 40px;
+    }
+    .Front {
+      transform-origin: 0 40px;
+    }
+    .Back {
+      z-index: 3;
+      top: 42px;
+    }
   }
 }

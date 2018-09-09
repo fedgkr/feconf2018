@@ -1,4 +1,5 @@
 @import '../../styles/variables';
+@import '../../styles/mixins';
 
 .HeroSection {
   position: relative;
@@ -51,9 +52,36 @@
     .ButtonWrap {
       margin-top: 72px;
     }
-
-    @media only screen and (max-width: $tablet-basic-width) {
+    @include mobile-basic {
       padding: 24px 24px 80px 24px;
+
+      .Logo {
+        font-size: 28px;
+      }
+      .ClockWrap {
+        margin-top: 20px;
+
+        .Day {
+          margin-bottom: 8px;
+        }
+        .TimeDivider {
+          padding: 26px 13px;
+          width: 32px;
+          height: 80px;
+
+          .Circle {
+            &:first-child {
+              top: 26px;
+            }
+            &:last-child {
+              bottom: 26px;
+            }
+          }
+        }
+      }
+      .ButtonWrap {
+        margin-top: 32px;
+      }
     }
   }
 }
