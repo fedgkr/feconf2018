@@ -1,4 +1,4 @@
 export class CONST {
-  static TABLET_WIDTH = 1024
-  static MOBILE_WIDTH = 640
+  public static TABLET_WIDTH = 1024;
+  public static MOBILE_WIDTH = 640;
 }

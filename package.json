@@ -22,12 +22,16 @@
     "node-sass": "^4.9.3",
     "prettier": "^1.14.2",
     "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
     "tslint-config-airbnb": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-react": "^3.6.0",
     "typescript": "^3.0.3"
   },
   "scripts": {
+    "lint:pt": "prettier --print-width 120 --single-quote --trailing-comma es5 --write \"src/**/*.ts*\"",
+    "lint:ts": "tslint -p tsconfig.json src/**/*.ts{,x}",
+    "lint": "yarn lint:pt && yarn lint:ts --fix",
     "dev": "ts-node -P ./tsconfig.json server.ts",
     "build": "next build src",
     "export": "next export src -o out"

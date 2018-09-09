@@ -1,53 +1,53 @@
-import React from 'react'
-import cc from 'classcat'
-import css from './Digit.scss'
+import cc from 'classcat';
+import React from 'react';
+import css from './Digit.scss';
 
 interface DigitProps {
-  value: number
-  maxValue: number
+  value: number;
+  maxValue: number;
 }
 
 interface DigitState {
-  present: number
-  next: number
-  flip: boolean
+  present: number;
+  next: number;
+  flip: boolean;
 }
 
 export class Digit extends React.Component<DigitProps, DigitState> {
-  topFront: HTMLDivElement
-  topBack: HTMLDivElement
-  bottomFront: HTMLDivElement
+  public topFront: HTMLDivElement;
+  public topBack: HTMLDivElement;
+  public bottomFront: HTMLDivElement;
 
   constructor(props: DigitProps) {
-    super(props)
+    super(props);
 
     this.state = {
       present: 0,
       next: 0,
       flip: false,
-    }
+    };
   }
 
-  componentDidMount() {
-    this.flip(this.props.value)
+  public componentDidMount() {
+    this.flip(this.props.value);
   }
 
-  componentWillReceiveProps(nextProps) {
+  public componentWillReceiveProps(nextProps) {
     if (this.props.value !== nextProps.value) {
-      this.flip(nextProps.value)
+      this.flip(nextProps.value);
     }
   }
 
-  flip(present) {
-    const next = present - 1 < 0 ? this.props.maxValue : present - 1
-    this.setState({flip: true})
+  public flip(present) {
+    const next = present - 1 < 0 ? this.props.maxValue : present - 1;
+    this.setState({ flip: true });
     setTimeout(() => {
-      this.setState({present, next, flip: false})
-    }, 750)
+      this.setState({ present, next, flip: false });
+    }, 750);
   }
 
-  render() {
-    const {present, next, flip} = this.state
+  public render() {
+    const { present, next, flip } = this.state;
     return (
       <div className={css.Digit}>
         <div className={css.Top}>
@@ -72,11 +72,11 @@ export class Digit extends React.Component<DigitProps, DigitState> {
           <div className={css.Next}>{next}</div>
         </div>
         <div className={css.Bottom}>
-          <div ref={el => (this.bottomFront= el)} className={css.Front}>
+          <div ref={el => (this.bottomFront = el)} className={css.Front}>
             {present}
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
