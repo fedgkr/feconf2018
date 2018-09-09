@@ -18,27 +18,27 @@ export class Company {
 const companyListData = [{
   name: 'NAVER',
   level: SupportLevel.GOLD,
-  logo: '/static/images/company/ncsoft/logo.gif',
+  logo: 'static/images/company/ncsoft/logo.gif',
 },{
   name: 'KAKAO',
   level: SupportLevel.PLATINUM,
-  logo: '/static/images/company/kakao/logo.jpg',
+  logo: 'static/images/company/kakao/logo.jpg',
 },{
   name: 'NCSOFT',
   level: SupportLevel.GOLD,
-  logo: '/static/images/company/ncsoft/logo.gif',
+  logo: 'static/images/company/ncsoft/logo.gif',
 },{
   name: 'LINE',
   level: SupportLevel.GOLD,
-  logo: '/static/images/company/ncsoft/logo.gif',
+  logo: 'static/images/company/ncsoft/logo.gif',
 },{
   name: '우아한 형제들',
   level: SupportLevel.DIAMOND,
-  logo: '/static/images/company/woowabros/logo.jpg',
+  logo: 'static/images/company/woowabros/logo.jpg',
 },{
   name: 'Studio XID',
   level: SupportLevel.PLATINUM,
-  logo: '/static/images/company/studio-xid/logo.jpg',
+  logo: 'static/images/company/studio-xid/logo.jpg',
 }]
 
 export const generateCompanyList = () => {

@@ -19,7 +19,7 @@ export class SpeakerInfo extends React.Component<SpeakerInfoProps, SpeakerInfoSt
       <div className={css.SpeakerInfo}>
         <div className={css.CloseBtn}>
           <a href="#" onClick={() => selectSpeaker(false)}>
-            <img src="/static/images/general/close-x.png" alt="close"/>
+            <img src="static/images/general/close-x.png" alt="close"/>
           </a>
         </div>
         <div className={css.SpeakerWrap}>
