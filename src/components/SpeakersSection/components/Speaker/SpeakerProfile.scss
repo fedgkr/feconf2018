@@ -1,5 +1,5 @@
-@import '../../../../styles/variables';
-@import '../../../../styles/mixins';
+@import 'variables';
+@import 'mixins';
 
 .SpeakerProfile {
   position: relative;
@@ -27,11 +27,21 @@
       }
     }
     .Company {
+      position: relative;
       margin-top: 16px;
+      height: 14px;
       font-size: 14px;
       font-weight: 600;
+      line-height: 1;
       color: $main-color;
-      text-align: center;
+      span {
+        position: absolute;
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 0);
+        white-space: nowrap;
+        text-align: center;
+      }
     }
     .Name {
       margin-top: 6px;

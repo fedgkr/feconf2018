@@ -1,22 +1,15 @@
-import React from 'react'
-import cc from 'classcat'
-import css from './SponsorsSection.scss'
-import {companyList, SupportLevel} from "../../db/Company";
-import {SponsorLogo} from "./components/SponsorLogo/SponsorLogo";
+import cc from 'classcat';
+import { companyList, SupportLevel } from 'db/Company';
+import React from 'react';
+import { SponsorLogo } from './components/SponsorLogo/SponsorLogo';
+import css from './SponsorsSection.scss';
 
 interface SponsorsSectionProps {
-  appWidth: number
+  appWidth: number;
 }
 
-interface SponsorsSectionState {
-}
-
-export class SponsorsSection extends React.Component<SponsorsSectionProps, SponsorsSectionState> {
-  constructor(props: SponsorsSectionProps) {
-    super(props)
-  }
-
-  render() {
+export class SponsorsSection extends React.Component<SponsorsSectionProps> {
+  public render() {
     return (
       <div className={css.SponsorsSection} id="sponsors">
         <div className={css.Content}>
@@ -31,9 +24,7 @@ export class SponsorsSection extends React.Component<SponsorsSectionProps, Spons
                 [css.Diamond]: true,
               })}
             >
-              <h2 className={css.LevelTitle}>
-                DIAMOND
-              </h2>
+              <h2 className={css.LevelTitle}>DIAMOND</h2>
               <div className={css.SponsorList}>
                 {companyList.filter(c => c.level === SupportLevel.DIAMOND).map((c, idx) => (
                   <SponsorLogo key={idx} company={c} />
@@ -46,9 +37,7 @@ export class SponsorsSection extends React.Component<SponsorsSectionProps, Spons
                 [css.Platinum]: true,
               })}
             >
-              <h2 className={css.LevelTitle}>
-                PLATINUM
-              </h2>
+              <h2 className={css.LevelTitle}>PLATINUM</h2>
               <div className={css.SponsorList}>
                 {companyList.filter(c => c.level === SupportLevel.PLATINUM).map((c, idx) => (
                   <SponsorLogo key={idx} company={c} />
@@ -61,9 +50,7 @@ export class SponsorsSection extends React.Component<SponsorsSectionProps, Spons
                 [css.Gold]: true,
               })}
             >
-              <h2 className={css.LevelTitle}>
-                GOLD
-              </h2>
+              <h2 className={css.LevelTitle}>GOLD</h2>
               <div className={css.SponsorList}>
                 {companyList.filter(c => c.level === SupportLevel.GOLD).map((c, idx) => (
                   <SponsorLogo key={idx} company={c} />
@@ -73,6 +60,6 @@ export class SponsorsSection extends React.Component<SponsorsSectionProps, Spons
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

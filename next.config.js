@@ -10,6 +10,12 @@ module.exports = withPlugins([
       importLoaders: 1,
       localIdentName: isProd ? '[hash:base64:5]' : '[local]-[hash:base64:5]'
     },
+    sassLoaderOptions: {
+      includePaths: [
+        'node_modules',
+        'src/styles'
+      ]
+    }
   }],
   [typescript],
 ], {

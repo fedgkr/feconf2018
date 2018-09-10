@@ -1,7 +1,7 @@
 export class EtcData {
-  static deadline = 1541138400000
+  public static deadline = 1541138400000;
 
-  static sessionOrderMappingTime = {
+  public static sessionOrderMappingTime = {
     1: '11:00 - 11:40',
     2: '11:50 - 12:30',
     3: '14:20 - 15:00',
@@ -10,5 +10,5 @@ export class EtcData {
     6: '17:00 - 17:40',
     launch: '12:30 - 14:00',
     break: '15:50 - 16:10',
-  }
+  };
 }
