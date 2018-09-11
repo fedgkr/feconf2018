@@ -1,4 +1,3 @@
-import { Button } from 'components/Button/Button';
 import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import css from './HeroSection.scss';
@@ -83,9 +82,9 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
           </div>
           <div className={css.ButtonWrap}>
             <a href="https://festa.io">
-              <Button background="#ffeb3b" color="#000">
+              <button>
                 컨퍼런스 참가하기
-              </Button>
+              </button>
             </a>
           </div>
         </div>

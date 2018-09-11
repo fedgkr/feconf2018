@@ -65,6 +65,11 @@
     }
     .ButtonWrap {
       margin-top: 72px;
+
+      button {
+        background: #ffeb3b;
+        color: #000;
+      }
     }
     @include mobile-basic {
       padding: 24px 24px 80px 24px;
@@ -94,14 +99,18 @@
         }
       }
       .HeroImage {
-        width: 50%;
+        width: 70%;
         left: auto;
         right: -40px;
         bottom: -72px;
         z-index: 2;
       }
       .ButtonWrap {
-        margin-top: 32px;
+        margin-top: 40px;
+
+        button {
+          padding: 17px;
+        }
       }
     }
   }

@@ -51,9 +51,19 @@
         margin-top: 20px;
       }
       .Date, .Location {
-        font-size: 18px;
-        font-weight: 700;
-        color: $font-color;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 700;
+          color: $font-color;
+          margin-left: 16px;
+        }
       }
       .ButtonWrap {
         margin-top: 80px;

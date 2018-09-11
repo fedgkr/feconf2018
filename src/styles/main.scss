@@ -2,6 +2,18 @@
 
 * { font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'Sans-serif'; }
 :global {
+  p {
+    margin: 0;
+  }
+  button {
+    padding: 18px 40px 20px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
   .clear {
     clear: both;
   }
