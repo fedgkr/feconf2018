@@ -7,16 +7,18 @@
   background-image: linear-gradient(to bottom, #110a5a, #07042e);
 
   .Content {
+    position: relative;
     max-width: $tablet-basic-width;
     box-sizing: border-box;
     margin: 0 auto;
     padding: 72px 86px 136px 86px;
 
     .Logo {
-      margin: 0;
-      font-size: 40px;
-      font-weight: 700;
-      color: white;
+      font-size: 0;
+
+      img {
+        width: 120px;
+      }
     }
     .ClockWrap {
       position: relative;
@@ -50,18 +52,34 @@
         }
       }
     }
+    .HeroImage {
+      position: absolute;
+      width: 577px;
+      left: 400px;
+      bottom: -94px;
+      z-index: 2;
+
+      img {
+        width: 100%;
+      }
+    }
     .ButtonWrap {
       margin-top: 72px;
+
+      button {
+        background: #ffeb3b;
+        color: #000;
+      }
     }
     @include mobile-basic {
       padding: 24px 24px 80px 24px;
 
       .Logo {
-        font-size: 28px;
+        img {
+          width: 72px;
+        }
       }
       .ClockWrap {
-        margin-top: 20px;
-
         .Day {
           margin-bottom: 8px;
         }
@@ -80,8 +98,19 @@
           }
         }
       }
+      .HeroImage {
+        width: 70%;
+        left: auto;
+        right: -40px;
+        bottom: -72px;
+        z-index: 2;
+      }
       .ButtonWrap {
-        margin-top: 32px;
+        margin-top: 40px;
+
+        button {
+          padding: 17px;
+        }
       }
     }
   }

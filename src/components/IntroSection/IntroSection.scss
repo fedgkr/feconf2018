@@ -52,17 +52,27 @@
         margin-top: 20px;
       }
       .Date, .Location {
-        font-size: 18px;
-        font-weight: 700;
-        color: $font-color;
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 700;
+          color: $font-color;
+          margin-left: 16px;
+        }
       }
       .ButtonWrap {
         margin-top: 80px;
       }
     }
 
-    @include tablet-basic {
-      padding: 72px 24px 52px 24px;
+    @include mobile-basic {
+      padding: 72px 24px;
 
       .TitleArea {
         float: none;
@@ -94,6 +104,11 @@
         }
         .Date, .Location {
           font-size: 14px;
+
+          img {
+            width: 26px;
+            height: 26px;
+          }
         }
         .ButtonWrap {
           margin-top: 20px;

@@ -40,8 +40,14 @@ export class IntroSection extends React.Component<IntroSectionProps> {
                 프론트엔드 개발자의 축제 FEConf! 여러분과 함께 즐기겠습니다!
               </p>
             </div>
-            <div className={css.Date}>2018년 11월 03일 토요일 10:00 - 17:00</div>
-            <div className={css.Location}>Lotte Tower 31F | 서울시 송파구 올림픽로 300</div>
+            <div className={css.Date}>
+              <img src="static/images/pages/intro/calendar@2x.png" alt="Calendar"/>
+              <p>2018년 11월 03일 토요일 10:00 - 17:00</p>
+            </div>
+            <div className={css.Location}>
+              <img src="static/images/pages/intro/map@2x.png" alt="Map"/>
+              <p>Lotte Tower 31F | 서울시 송파구 올림픽로 300</p>
+            </div>
             <div className={css.ButtonWrap}>
               <Button background="#a821d2" color="#fff">
                 사전 등록하기

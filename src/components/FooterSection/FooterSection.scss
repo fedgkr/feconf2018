@@ -5,6 +5,7 @@
   position: relative;
 
   .Content {
+    position: relative;
     max-width: $tablet-basic-width;
     box-sizing: border-box;
     margin: 0 auto;
@@ -12,10 +13,12 @@
     text-align: center;
 
     .Title {
+      position: relative;
       font-size: 18px;
       font-weight: 700;
       line-height: 1.44;
       color: #1e1e21;
+      z-index: 3;
     }
     .Button {
       margin-top: 72px;
@@ -26,6 +29,64 @@
       border: 0;
       cursor: pointer;
       border-radius: 4px;
+    }
+    .LeftImage, .RightImage {
+      position: absolute;
+      bottom: 0;
+      z-index: 2;
+
+      img {
+        width: 100%;
+      }
+      .PC {
+        display: block;
+      }
+      .Mobile {
+        display: none;
+      }
+    }
+    .LeftImage {
+      left: 18px;
+      width: 252px;
+    }
+    .RightImage {
+      right: 0;
+      width: 280px;
+    }
+
+    @include mobile-basic {
+      padding: 132px 32px 220px 32px;
+
+      .LeftImage, .RightImage {
+        position: absolute;
+        bottom: auto;
+
+        .PC {
+          display: none;
+        }
+        .Mobile {
+          display: block;
+        }
+      }
+      .LeftImage {
+        top: 29px;
+        left: 0;
+        width: 133px;
+      }
+      .RightImage {
+        top: -19px;
+        width: 100px;
+      }
+      .Button {
+        position: absolute;
+        background: #7f00a6;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding: 20px;
+        border-radius: 0;
+      }
     }
   }
 

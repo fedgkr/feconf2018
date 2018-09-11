@@ -1,4 +1,3 @@
-import { Button } from 'components/Button/Button';
 import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import css from './HeroSection.scss';
@@ -62,13 +61,9 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
     return (
       <section className={css.HeroSection}>
         <div className={css.Content}>
-          <h1 className={css.Logo}>
-            <span>FE</span>
-            <br />
-            <span>CONF</span>
-            <br />
-            <span>2018</span>
-          </h1>
+          <h2 className={css.Logo}>
+            <img src="static/images/logo/img-logo@2x.png" alt="Logo"/>
+          </h2>
           <div className={css.ClockWrap}>
             <div className={css.Day}>
               <FlipClock title={'DAY'} value={presentLeft.days} maxValue={99} />
@@ -82,11 +77,14 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
               <FlipClock title={'MINUTE'} value={presentLeft.minutes} maxValue={59} />
             </div>
           </div>
+          <div className={css.HeroImage}>
+            <img src="static/images/pages/hero/spaceshuttle@2x.png" alt="Hero Image"/>
+          </div>
           <div className={css.ButtonWrap}>
             <a href="https://festa.io">
-              <Button background="#ffeb3b" color="#000">
+              <button>
                 컨퍼런스 참가하기
-              </Button>
+              </button>
             </a>
           </div>
         </div>
