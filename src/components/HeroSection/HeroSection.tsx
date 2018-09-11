@@ -62,13 +62,9 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
     return (
       <div className={css.HeroSection}>
         <div className={css.Content}>
-          <div className={css.Logo}>
-            <span>FE</span>
-            <br />
-            <span>CONF</span>
-            <br />
-            <span>2018</span>
-          </div>
+          <h2 className={css.Logo}>
+            <img src="static/images/logo/img-logo@2x.png" alt="Logo"/>
+          </h2>
           <div className={css.ClockWrap}>
             <div className={css.Day}>
               <FlipClock title={'DAY'} value={presentLeft.days} maxValue={99} />
@@ -81,6 +77,9 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
               </div>
               <FlipClock title={'MINUTE'} value={presentLeft.minutes} maxValue={59} />
             </div>
+          </div>
+          <div className={css.HeroImage}>
+            <img src="static/images/pages/hero/spaceshuttle@2x.png" alt="Hero Image"/>
           </div>
           <div className={css.ButtonWrap}>
             <a href="https://festa.io">
