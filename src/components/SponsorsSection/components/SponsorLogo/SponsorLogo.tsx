@@ -2,13 +2,17 @@ import { Company } from 'db/Company';
 import React from 'react';
 import css from './SponsorLogo.scss';
 
-interface SponsorLogoProps {
+interface Props {
   company: Company;
 }
 
-export class SponsorLogo extends React.Component<SponsorLogoProps> {
-  public render() {
-    const { company } = this.props;
-    return <img className={css.SponsorLogo} src={company.logo} alt={`${company.name} Image`} />;
-  }
-}
+const SponsorLogo: React.SFC<Props> = ({ company }) => (
+  <li className={css.SponsorLogo}>
+    <a className={css.Anchor} href={company.link} target="_blank">
+      <span className="blind">{company.name}</span>
+      <img className={css.Image} src={company.logo} alt={`${company.name}의 로고`} />
+    </a>
+  </li>
+);
+
+export { SponsorLogo };
