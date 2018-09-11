@@ -11,11 +11,12 @@ interface SponsorsSectionProps {
 export class SponsorsSection extends React.Component<SponsorsSectionProps> {
   public render() {
     return (
-      <div className={css.SponsorsSection} id="sponsors">
+      <section className={css.SponsorsSection} id="sponsors">
         <div className={css.Content}>
-          <div className={css.Title}>SPONSORS</div>
+          <h2 className={css.Title}>SPONSORS</h2>
           <div className={css.Desc}>
-            2018 FE 컨퍼런스 코리아는 스폰서들의 후원과 여러분의 참여로 개최될 수 있었습니다. 감사합니다.
+            스폰서의 소중한 후원과 여러분의 참여가 FEConf 2018를 만듭니다.<br />
+            고맙습니다.
           </div>
           <div className={css.SponsorsWrap}>
             <div
@@ -59,7 +60,7 @@ export class SponsorsSection extends React.Component<SponsorsSectionProps> {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

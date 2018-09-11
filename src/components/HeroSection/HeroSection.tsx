@@ -60,15 +60,15 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
   public render() {
     const { presentLeft } = this.state;
     return (
-      <div className={css.HeroSection}>
+      <section className={css.HeroSection}>
         <div className={css.Content}>
-          <div className={css.Logo}>
+          <h1 className={css.Logo}>
             <span>FE</span>
             <br />
             <span>CONF</span>
             <br />
             <span>2018</span>
-          </div>
+          </h1>
           <div className={css.ClockWrap}>
             <div className={css.Day}>
               <FlipClock title={'DAY'} value={presentLeft.days} maxValue={99} />
@@ -90,7 +90,7 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
             </a>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
