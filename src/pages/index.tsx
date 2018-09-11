@@ -1,3 +1,4 @@
+import Sidebar from 'react-sidebar';
 import { FooterSection } from 'components/FooterSection/FooterSection';
 import { HeroSection } from 'components/HeroSection/HeroSection';
 import { IntroSection } from 'components/IntroSection/IntroSection';
@@ -11,6 +12,7 @@ import React from 'react';
 import css from 'styles/index.scss';
 import 'styles/main.scss';
 import { WindowUtils } from 'utils/WindowUtils';
+import {SpeakerInfo} from "../components/SpeakerInfo/SpeakerInfo";
 
 interface IndexPageState {
   appWidth: number;
@@ -40,7 +42,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
   }
 
   public render() {
-    const { appWidth } = this.state;
+    const { appWidth, selectedSpeaker } = this.state;
     return (
       <>
         <Head>
