@@ -19,11 +19,16 @@
       text-align: center;
     }
     .Desc {
-      max-width: 460px;
+      max-width: 430px;
       margin: 16px auto 0 auto;
       font-size: 14px;
+      line-height: 21px;
       color: #958b98;
-      text-align: center;
+      text-align: left;
+      word-break: keep-all;
+      br {
+        display: none;
+      }
     }
     .SponsorsWrap {
       .Diamond, .Platinum, .Gold {
@@ -33,14 +38,43 @@
         margin-top: 52px;
 
         .LevelTitle {
+          margin: 0;
           font-size: 16px;
           font-weight: 700;
           color: #22032b;
           text-align: center;
         }
         .SponsorList {
-          margin-top: 24px;
+          margin: 0 -15px 0 0;
+          padding: 0;
           text-align: center;
+          list-style: none;
+          font-size: 0;
+        }
+      }
+    }
+  }
+
+  @include mobile-basic {
+    .Content {
+      padding: 51px 24px 71px 24px;
+
+      .Title {
+        font-size: 16px;
+      }
+      .Desc {
+        font-size: 12px;
+        text-align: center;
+        br {
+          display: block;
+        }
+      }
+      .SponsorsWrap .LevelWrap {
+        .LevelTitle {
+          font-size: 14px;
+        }
+        .SponsorList {
+          margin-right: -24px;
         }
       }
     }
