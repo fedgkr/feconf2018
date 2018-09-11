@@ -54,12 +54,13 @@
     }
     .HeroImage {
       position: absolute;
+      width: 577px;
       left: 400px;
       bottom: -94px;
       z-index: 2;
 
       img {
-        width: 577px;
+        width: 100%;
       }
     }
     .ButtonWrap {
@@ -93,14 +94,11 @@
         }
       }
       .HeroImage {
+        width: 50%;
         left: auto;
-        right: 40px;
+        right: -40px;
         bottom: -72px;
         z-index: 2;
-
-        img {
-          width: 261px;
-        }
       }
       .ButtonWrap {
         margin-top: 32px;
