@@ -12,7 +12,7 @@ export class SpeakerInfo extends React.Component<SpeakerInfoProps> {
   public render() {
     const { speaker } = this.props;
     return !speaker ? null : (
-      <div className={css.SpeakerInfo}>
+      <section className={css.SpeakerInfo}>
         <div className={css.CloseBtn}>
           <a href="#" onClick={this.handleClickClose}>
             <img src="static/images/general/close-x.png" alt="close" />
@@ -37,7 +37,7 @@ export class SpeakerInfo extends React.Component<SpeakerInfoProps> {
             <div className={css.Desc}>{speaker.presentDesc}</div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 

@@ -89,4 +89,10 @@
       }
     }
   }
+
+  @include mobile-basic {
+    br {
+      display: none;
+    }
+  }
 }

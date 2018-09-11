@@ -90,14 +90,21 @@ class IndexPage extends React.Component<{}, IndexPageState> {
             }}
           />
         </Head>
-        <div className={css.Content}>
-          <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
-          <IntroSection appWidth={appWidth} />
-          <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
-          <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
-          <SponsorsSection appWidth={appWidth} />
-          <FooterSection />
-        </div>
+        <Sidebar
+          sidebar={<SpeakerInfo speaker={selectedSpeaker} selectSpeaker={this.onSetSidebarOpen} />}
+          open={!!selectedSpeaker}
+          onSetOpen={this.onSetSidebarOpen}
+          pullRight={true}
+        >
+          <article className={css.Content}>
+            <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
+            <IntroSection appWidth={appWidth} />
+            <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
+            <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
+            <SponsorsSection appWidth={appWidth} />
+            <FooterSection />
+          </article>
+        </Sidebar>
       </>
     );
   }

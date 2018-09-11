@@ -4,10 +4,11 @@ import css from './FooterSection.scss';
 export class FooterSection extends React.Component {
   public render() {
     return (
-      <div className={css.FooterSection}>
+      <footer className={css.FooterSection}>
         <div className={css.Content}>
           <div className={css.Title}>
-            Enjoy Experience Everywhere!<br />
+            Enjoy Experience Everywhere!
+            <br />
             FEConf 2018은 여러분의 참여를 기다립니다.
           </div>
 
@@ -23,7 +24,7 @@ export class FooterSection extends React.Component {
             <img className={css.Mobile} src="static/images/pages/footer/mobile-bottomright-illust@2x.png" alt="People"/>
           </div>
         </div>
-      </div>
+      </footer>
     );
   }
 }

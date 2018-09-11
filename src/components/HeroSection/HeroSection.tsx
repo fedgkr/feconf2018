@@ -59,7 +59,7 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
   public render() {
     const { presentLeft } = this.state;
     return (
-      <div className={css.HeroSection}>
+      <section className={css.HeroSection}>
         <div className={css.Content}>
           <h2 className={css.Logo}>
             <img src="static/images/logo/img-logo@2x.png" alt="Logo"/>
@@ -88,7 +88,7 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
             </a>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }
