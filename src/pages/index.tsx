@@ -103,7 +103,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
             <IntroSection appWidth={appWidth} />
             <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
             <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
-            <SponsorsSection appWidth={appWidth} />
+            <SponsorsSection />
             <FooterSection />
           </article>
         </Sidebar>
