@@ -2,14 +2,12 @@ import { FooterSection } from 'components/FooterSection/FooterSection';
 import { HeroSection } from 'components/HeroSection/HeroSection';
 import { IntroSection } from 'components/IntroSection/IntroSection';
 import { ScheduleSection } from 'components/ScheduleSection/ScheduleSection';
-import { SpeakerInfo } from 'components/SpeakerInfo/SpeakerInfo';
 import { SpeakersSection } from 'components/SpeakersSection/SpeakersSection';
 import { SponsorsSection } from 'components/SponsorsSection/SponsorsSection';
 import { EtcData } from 'db/Etc';
 import { Speaker, speakerList } from 'db/Speaker';
 import Head from 'next/head';
 import React from 'react';
-import Sidebar from 'react-sidebar';
 import css from 'styles/index.scss';
 import 'styles/main.scss';
 import { WindowUtils } from 'utils/WindowUtils';
@@ -42,7 +40,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
   }
 
   public render() {
-    const { appWidth, selectedSpeaker } = this.state;
+    const { appWidth } = this.state;
     return (
       <>
         <Head>
@@ -92,21 +90,14 @@ class IndexPage extends React.Component<{}, IndexPageState> {
             }}
           />
         </Head>
-        <Sidebar
-          sidebar={<SpeakerInfo speaker={selectedSpeaker} selectSpeaker={this.onSetSidebarOpen} />}
-          open={!!selectedSpeaker}
-          onSetOpen={this.onSetSidebarOpen}
-          pullRight={true}
-        >
-          <div className={css.Content}>
-            <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
-            <IntroSection appWidth={appWidth} />
-            <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
-            <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
-            <SponsorsSection appWidth={appWidth} />
-            <FooterSection />
-          </div>
-        </Sidebar>
+        <div className={css.Content}>
+          <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
+          <IntroSection appWidth={appWidth} />
+          <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
+          <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
+          <SponsorsSection appWidth={appWidth} />
+          <FooterSection />
+        </div>
       </>
     );
   }
