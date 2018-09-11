@@ -98,14 +98,14 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           onSetOpen={this.onSetSidebarOpen}
           pullRight={true}
         >
-          <div className={css.Content}>
+          <article className={css.Content}>
             <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
             <IntroSection appWidth={appWidth} />
             <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
             <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
             <SponsorsSection appWidth={appWidth} />
             <FooterSection />
-          </div>
+          </article>
         </Sidebar>
       </>
     );

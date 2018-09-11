@@ -29,16 +29,16 @@ export class SpeakersSection extends React.Component<SpeakersSectionProps> {
     const num = appWidth > CONST.TABLET_WIDTH ? 4 : 3;
     const rowList = this.getRowList(speakerList, num);
     return (
-      <div className={css.SpeakersSection} id="speakers">
+      <section className={css.SpeakersSection} id="speakers">
         <div className={css.Content}>
-          <div className={css.Title}>SPEAKERS</div>
+          <h2 className={css.Title}>SPEAKERS</h2>
           <div className={css.SpeakersWrap}>
             {rowList.map((list, idx) => (
               <SpeakersRow key={idx} speakerList={list} num={num} selectSpeaker={selectSpeaker} />
             ))}
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

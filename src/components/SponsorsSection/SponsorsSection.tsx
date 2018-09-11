@@ -11,9 +11,9 @@ interface SponsorsSectionProps {
 export class SponsorsSection extends React.Component<SponsorsSectionProps> {
   public render() {
     return (
-      <div className={css.SponsorsSection} id="sponsors">
+      <section className={css.SponsorsSection} id="sponsors">
         <div className={css.Content}>
-          <div className={css.Title}>SPONSORS</div>
+          <h2 className={css.Title}>SPONSORS</h2>
           <div className={css.Desc}>
             스폰서의 소중한 후원과 여러분의 참여가 FEConf 2018를 만듭니다.<br />
             고맙습니다.
@@ -60,7 +60,7 @@ export class SponsorsSection extends React.Component<SponsorsSectionProps> {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     );
   }
 }

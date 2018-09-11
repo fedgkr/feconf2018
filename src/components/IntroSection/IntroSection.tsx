@@ -9,7 +9,7 @@ interface IntroSectionProps {
 export class IntroSection extends React.Component<IntroSectionProps> {
   public render() {
     return (
-      <div className={css.IntroSection}>
+      <section className={css.IntroSection}>
         <div className={css.Content}>
           <div className={css.TitleArea}>
             <span>2018</span>
@@ -21,7 +21,7 @@ export class IntroSection extends React.Component<IntroSectionProps> {
             <span>코리아</span>
           </div>
           <div className={css.DescArea}>
-            <div className={css.Title}>INTRO</div>
+            <h3 className={css.Title}>INTRO</h3>
             <div className={css.SubTitle}>
               <span>Enjoy Experience Everywhere</span>
               <br />
@@ -46,7 +46,7 @@ export class IntroSection extends React.Component<IntroSectionProps> {
           </div>
           <div className="clear" />
         </div>
-      </div>
+      </section>
     );
   }
 }

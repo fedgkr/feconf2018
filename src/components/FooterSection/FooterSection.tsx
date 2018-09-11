@@ -4,7 +4,7 @@ import css from './FooterSection.scss';
 export class FooterSection extends React.Component {
   public render() {
     return (
-      <div className={css.FooterSection}>
+      <footer className={css.FooterSection}>
         <div className={css.Content}>
           <div className={css.Title}>
             Enjoy Experience Everywhere!<br />
@@ -15,7 +15,7 @@ export class FooterSection extends React.Component {
             <button className={css.Button}>지금 등록하러 가기</button>
           </a>
         </div>
-      </div>
+      </footer>
     );
   }
 }
