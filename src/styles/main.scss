@@ -21,4 +21,7 @@ button {
   .clear {
     clear: both;
   }
+  body.fixed {
+    overflow: hidden;
+  }
 }

@@ -1,4 +1,3 @@
-import Sidebar from 'react-sidebar';
 import { FooterSection } from 'components/FooterSection/FooterSection';
 import { HeroSection } from 'components/HeroSection/HeroSection';
 import { IntroSection } from 'components/IntroSection/IntroSection';
@@ -12,10 +11,12 @@ import React from 'react';
 import css from 'styles/index.scss';
 import 'styles/main.scss';
 import { WindowUtils } from 'utils/WindowUtils';
-import {SpeakerInfo} from "../components/SpeakerInfo/SpeakerInfo";
+import { SpeakerInfo } from '../components/SpeakerInfo/SpeakerInfo';
+import {Sidebar} from "../components/Sidebar/Sidebar";
 
 interface IndexPageState {
   appWidth: number;
+  sidebarOpened: boolean;
   selectedSpeaker?: Speaker;
 }
 
@@ -23,26 +24,14 @@ class IndexPage extends React.Component<{}, IndexPageState> {
   constructor(props) {
     super(props);
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
-    this.state = { appWidth: WindowUtils.getWidth() };
-  }
-
-  public componentDidMount() {
-    window.addEventListener('resize', () => {
-      this.setState({ appWidth: WindowUtils.getWidth() });
-    });
-  }
-
-  public onSetSidebarOpen(open, speaker?: Speaker) {
-    if (!open) {
-      this.setState({ selectedSpeaker: void 0 });
-    }
-    if (open && speaker) {
-      this.setState({ selectedSpeaker: speaker });
-    }
+    this.state = {
+      appWidth: WindowUtils.getWidth(),
+      sidebarOpened: false,
+    };
   }
 
   public render() {
-    const { appWidth, selectedSpeaker } = this.state;
+    const { appWidth, sidebarOpened, selectedSpeaker } = this.state;
     return (
       <>
         <Head>
@@ -92,23 +81,47 @@ class IndexPage extends React.Component<{}, IndexPageState> {
             }}
           />
         </Head>
+        <article className={css.Content}>
+          <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
+          <IntroSection appWidth={appWidth} />
+          <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
+          <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
+          <SponsorsSection />
+          <FooterSection />
+        </article>
         <Sidebar
-          sidebar={<SpeakerInfo speaker={selectedSpeaker} selectSpeaker={this.onSetSidebarOpen} />}
-          open={!!selectedSpeaker}
-          onSetOpen={this.onSetSidebarOpen}
-          pullRight={true}
+          open={sidebarOpened}
+          closeSidebar={this.onSetSidebarOpen}
         >
-          <article className={css.Content}>
-            <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
-            <IntroSection appWidth={appWidth} />
-            <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
-            <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
-            <SponsorsSection />
-            <FooterSection />
-          </article>
+          <SpeakerInfo
+            speaker={selectedSpeaker}
+            selectSpeaker={this.onSetSidebarOpen}
+          />
         </Sidebar>
       </>
     );
+  }
+
+  public componentDidMount() {
+    window.addEventListener('resize', () => {
+      this.setState({ appWidth: WindowUtils.getWidth() });
+    });
+  }
+
+  public onSetSidebarOpen(open, speaker?: Speaker) {
+    if (!open) {
+      document.body.classList.remove('fixed')
+      this.setState({
+        sidebarOpened: false,
+      });
+    }
+    if (open && speaker) {
+      document.body.classList.add('fixed')
+      this.setState({
+        selectedSpeaker: speaker,
+        sidebarOpened: true,
+      });
+    }
   }
 }
 

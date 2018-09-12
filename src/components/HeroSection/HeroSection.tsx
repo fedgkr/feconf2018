@@ -62,7 +62,7 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
       <section className={css.HeroSection}>
         <div className={css.Content}>
           <h2 className={css.Logo}>
-            <img src="static/images/logo/img-logo@2x.png" alt="Logo"/>
+            <img src="static/images/logo/img-logo@2x.png" alt="Logo" />
           </h2>
           <div className={css.ClockWrap}>
             <div className={css.Day}>
@@ -78,13 +78,11 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
             </div>
           </div>
           <div className={css.HeroImage}>
-            <img src="static/images/pages/hero/spaceshuttle@2x.png" alt="Hero Image"/>
+            <img src="static/images/pages/hero/spaceshuttle@2x.png" alt="Hero Image" />
           </div>
           <div className={css.ButtonWrap}>
             <a href="https://festa.io">
-              <button>
-                컨퍼런스 참가하기
-              </button>
+              <button>컨퍼런스 참가하기</button>
             </a>
           </div>
         </div>
