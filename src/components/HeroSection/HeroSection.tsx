@@ -62,7 +62,7 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
       <section className={css.HeroSection}>
         <div className={css.Content}>
           <h2 className={css.Logo}>
-            <img src="static/images/logo/img-logo@2x.png" alt="Logo" />
+            <img src="static/images/logo/img-logo@2x.png" alt="FEConf 2018" />
           </h2>
           <div className={css.ClockWrap}>
             <div className={css.Day}>
