@@ -52,18 +52,26 @@
     }
 
     @include tablet-basic {
-      padding: 40px 24px 0 24px;
-
       .Title {
         font-size: 16px;
         font-weight: 700;
       }
-      .Intro {
-
-      }
     }
     @include mobile-basic {
+      padding: 40px 24px 0 24px;
 
+      .Intro {
+        width: 280px;
+
+        .Schedule {
+          .Time {
+            width: 85px;
+          }
+          .Desc {
+            width: 195px;
+          }
+        }
+      }
     }
   }
 }

@@ -30,7 +30,7 @@ export class ScheduleSection extends React.Component<ScheduleSectionProps, Sched
   public render() {
     const { appWidth, speakerList } = this.props;
     const { rendered } = this.state;
-    const isTablet = appWidth < CONST.TABLET_WIDTH;
+    const isMobile = appWidth < CONST.TABLET_WIDTH;
     return (
       <section className={css.ScheduleSection} id="schedule">
         <div className={css.Content}>
@@ -46,7 +46,7 @@ export class ScheduleSection extends React.Component<ScheduleSectionProps, Sched
             </div>
           </div>
           <div className={css.TrackWrap}>
-            {rendered && isTablet ? <TrackList speakerList={speakerList} /> : <TrackPair speakerList={speakerList} />}
+            {rendered && isMobile ? <TrackList speakerList={speakerList} /> : <TrackPair speakerList={speakerList} />}
           </div>
         </div>
       </section>
