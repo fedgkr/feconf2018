@@ -9,7 +9,7 @@
     max-width: $tablet-basic-width;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 120px 192px 140px 192px;
+    padding: 120px 192px 140px;
 
     .Title {
       margin: 0;
@@ -23,18 +23,18 @@
     }
 
     @include tablet-basic {
-      padding: 40px 200px 40px 200px;
+      padding: 120px 200px 140px;
+    }
 
+    @include mobile-basic {
+      max-width: 360px;
+      padding: 52px 32px 72px;
       .Title {
         font-size: 16px;
       }
       .SpeakersWrap {
         margin-top: 32px;
       }
-    }
-    @include mobile-basic {
-      max-width: 360px;
-      padding: 40px 32px;
     }
   }
 }

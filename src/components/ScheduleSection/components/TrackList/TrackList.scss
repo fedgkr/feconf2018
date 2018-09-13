@@ -1,10 +1,9 @@
 @import 'variables';
 
 .TrackList {
-  margin-top: 32px;
-
   .Label {
     padding: 20px;
+    margin-top: 52px;
     font-size: 18px;
     font-weight: 700;
     color: $main-color;
@@ -12,7 +11,7 @@
     text-align: center;
   }
   .SessionWrap {
-    padding: 32px 24px;
+    padding: 32px 24px 0;
     max-width: 420px;
     margin: 0 auto;
   }

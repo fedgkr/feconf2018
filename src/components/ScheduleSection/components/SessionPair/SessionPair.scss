@@ -3,6 +3,9 @@
 .SessionPair {
   position: relative;
   padding-bottom: 60px;
+  &:last-child {
+    padding-bottom: 0;
+  }
 
   &:not(:first-child) {
     margin-top: 16px;

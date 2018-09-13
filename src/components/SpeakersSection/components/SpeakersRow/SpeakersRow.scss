@@ -1,4 +1,7 @@
 .SpeakersRow {
   position: relative;
   margin-bottom: 52px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }

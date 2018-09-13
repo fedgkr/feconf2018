@@ -11,7 +11,7 @@
     max-width: $tablet-basic-width;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 72px 86px 136px 86px;
+    padding: 72px 86px 136px;
 
     .Logo {
       font-size: 0;
@@ -72,7 +72,7 @@
       }
     }
     @include mobile-basic {
-      padding: 24px 24px 80px 24px;
+      padding: 32px 32px 90px;
 
       .Logo {
         img {

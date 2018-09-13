@@ -31,9 +31,9 @@
       margin-top: 16px;
       height: 14px;
       font-size: 14px;
-      font-weight: 600;
       line-height: 1;
       color: $main-color;
+      font-weight: normal;
       span {
         position: absolute;
         display: block;
@@ -69,5 +69,13 @@
   }
   @include mobile-basic {
     width: 60px;
+    .ContentWrap {
+      .Company {
+        font-size: 11px;
+      }
+      .Name {
+        font-size: 14px;
+      }
+    }
   }
 }
