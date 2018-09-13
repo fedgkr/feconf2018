@@ -30,6 +30,12 @@ class IndexPage extends React.Component<{}, IndexPageState> {
     };
   }
 
+  public componentDidMount() {
+    window.addEventListener('resize', () => {
+      this.setState({ appWidth: WindowUtils.getWidth() });
+    });
+  }
+
   public render() {
     const { appWidth, sidebarOpened, selectedSpeaker } = this.state;
     return (
@@ -83,7 +89,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
         </Head>
         <article className={css.Content}>
           <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
-          <IntroSection appWidth={appWidth} />
+          <IntroSection />
           <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
           <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
           <SponsorsSection />
@@ -96,13 +102,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
     );
   }
 
-  public componentDidMount() {
-    window.addEventListener('resize', () => {
-      this.setState({ appWidth: WindowUtils.getWidth() });
-    });
-  }
-
-  public onSetSidebarOpen(open, speaker?: Speaker) {
+  private onSetSidebarOpen(open, speaker?: Speaker) {
     if (!open) {
       document.body.classList.remove('fixed');
       this.setState({

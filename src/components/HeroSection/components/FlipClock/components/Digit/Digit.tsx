@@ -38,14 +38,6 @@ export class Digit extends React.Component<DigitProps, DigitState> {
     }
   }
 
-  public flip(present) {
-    const next = present - 1 < 0 ? this.props.maxValue : present - 1;
-    this.setState({ flip: true });
-    setTimeout(() => {
-      this.setState({ present, next, flip: false });
-    }, 750);
-  }
-
   public render() {
     const { present, next, flip } = this.state;
     return (
@@ -78,5 +70,13 @@ export class Digit extends React.Component<DigitProps, DigitState> {
         </div>
       </div>
     );
+  }
+
+  private flip(present) {
+    const next = present - 1 < 0 ? this.props.maxValue : present - 1;
+    this.setState({ flip: true });
+    setTimeout(() => {
+      this.setState({ present, next, flip: false });
+    }, 750);
   }
 }

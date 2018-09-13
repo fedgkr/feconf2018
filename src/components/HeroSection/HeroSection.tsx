@@ -31,31 +31,6 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
     this.timer();
   }
 
-  public timer() {
-    window.setTimeout(() => {
-      this.setState({
-        presentLeft: this.getLeftTime(Date.now()),
-      });
-      this.timer();
-    }, 1000);
-  }
-
-  public getLeftTime(date: number) {
-    const { deadline } = this.props;
-    const t = deadline - date;
-    const seconds = Math.floor((t / 1000) % 60);
-    const minutes = Math.floor((t / (1000 * 60)) % 60);
-    const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    const days = Math.floor(t / (1000 * 60 * 60 * 24));
-
-    return {
-      days,
-      hours,
-      minutes,
-      seconds,
-    };
-  }
-
   public render() {
     const { presentLeft } = this.state;
     return (
@@ -88,5 +63,30 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
         </div>
       </section>
     );
+  }
+
+  private timer() {
+    window.setTimeout(() => {
+      this.setState({
+        presentLeft: this.getLeftTime(Date.now()),
+      });
+      this.timer();
+    }, 1000);
+  }
+
+  private getLeftTime(date: number) {
+    const { deadline } = this.props;
+    const t = deadline - date;
+    const seconds = Math.floor((t / 1000) % 60);
+    const minutes = Math.floor((t / (1000 * 60)) % 60);
+    const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(t / (1000 * 60 * 60 * 24));
+
+    return {
+      days,
+      hours,
+      minutes,
+      seconds,
+    };
   }
 }
