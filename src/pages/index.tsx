@@ -25,6 +25,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
   public state = {
     appWidth: WindowUtils.getWidth(),
     sidebarOpened: false,
+    selectedSpeaker: void 0,
   };
 
   public componentDidMount() {
