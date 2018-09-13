@@ -32,59 +32,101 @@
       z-index: 3;
       font-size: 18px;
     }
-    .LeftImage, .RightImage {
-      position: absolute;
-      bottom: 0;
-      z-index: 2;
-      pointer-events: none;
-
-      img {
-        width: 100%;
-      }
-      .PC {
-        display: block;
-      }
-      .Mobile {
-        display: none;
-      }
-    }
-    .LeftImage {
+    .ImageCut1 {
+      width: 175px;
+      top: 65px;
       left: 18px;
-      width: 252px;
+      transform: translate3d(-60px, 0, 0);
     }
-    .RightImage {
+    .ImageCut2 {
+      width: 110px;
+      left: 162px;
+      bottom: 0;
+      transform: translate3d(80px, 0, 0);
+    }
+    .ImageCut3 {
+      width: 76px;
+      top: -36px;
+      right: 168px;
+      transform: translate3d(-20px, 0, 0);
+    }
+    .ImageCut4 {
+      width: 148px;
+      right: 146px;
+      bottom: 0;
+      transform: translate3d(60px, 0, 0);
+    }
+    .ImageCut5 {
+      width: 126px;
       right: 0;
-      width: 280px;
+      bottom: 104px;
+      transform: translate3d(20px, 0, 0);
     }
+    .ImageCut6,
+    .ImageCut7 {
+      display: none;
+    }
+    img {
+      position: absolute;
+      opacity: .3;
+      transition: transform .5s ease-out, opacity .3s;
+    }
+  }
 
-    @include mobile-basic {
+  &.appear {
+    .Content .ImageCut1,
+    .Content .ImageCut2,
+    .Content .ImageCut3,
+    .Content .ImageCut4,
+    .Content .ImageCut5,
+    .Content .ImageCut6,
+    .Content .ImageCut7 {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  @include mobile-basic {
+    .Content {
       padding: 132px 32px 172px;
 
       .Title {
         font-size: 16px;
         word-break: keep-all;
-      }
-      .LeftImage, .RightImage {
-        position: absolute;
-        bottom: auto;
-
-        .PC {
-          display: none;
-        }
-        .Mobile {
-          display: block;
-        }
-      }
-      .LeftImage {
-        top: 29px;
-        left: 0;
-        width: 133px;
-      }
-      .RightImage {
-        top: -19px;
-        width: 100px;
+        line-height: 1.63;
       }
       .Button {
+        display: none;
+      }
+      .ImageCut1 {
+        width: 82px;
+        top: 29px;
+        left: 0;
+        transform: translate3d(-30px, 0, 0);
+      }
+      .ImageCut3 {
+        width: 46px;
+        top: -18px;
+        right: 28px;
+        transform: translate3d(-20px, 0, 0);
+      }
+      .ImageCut6 {
+        width: 80px;
+        left: 54px;
+        bottom: 12px;
+        transform: translate3d(40px, 0, 0);
+        display: block;
+      }
+      .ImageCut7 {
+        width: 96px;
+        right: 0;
+        bottom: 54px;
+        transform: translate3d(20px, 0, 0);
+        display: block;
+      }
+      .ImageCut2,
+      .ImageCut4,
+      .ImageCut5 {
         display: none;
       }
     }

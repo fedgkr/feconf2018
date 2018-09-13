@@ -33,7 +33,10 @@ export class IntroSection extends React.Component {
                   <br />
                   <span>올해는 더 많은 발표자를 모시고 더 많은 자리를 마련했습니다. </span>
                   <br />
-                  <span>프론트엔드를 개발하며 마주했던 치열한 고민과 깊은 인사이트를 공유하며 여러분과 함께 성장하고 싶습니다. </span>
+                  <span>
+                    프론트엔드를 개발하며 마주했던 치열한 고민과 깊은 인사이트를 공유하며 여러분과 함께 성장하고
+                    싶습니다.{' '}
+                  </span>
                   <br />
                   <span>프론트엔드 개발자의 축제 FEConf! 여러분과 함께 즐기겠습니다! </span>
                 </p>
