@@ -1,9 +1,12 @@
-import 'intersection-observer';
 import { NextContext, NextStatelessComponent } from 'next';
 import App, { Container } from 'next/app';
 import { RouterProps } from 'next/router';
 import React from 'react';
 import 'styles/main.scss';
+
+if (typeof window !== 'undefined') {
+  require('intersection-observer');
+}
 
 interface MyNextContext {
   Component: NextStatelessComponent;
