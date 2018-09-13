@@ -95,6 +95,9 @@
         }
         .Desc {
           margin-top: 24px;
+          br {
+            display: none;
+          }
         }
         .Date {
           margin-top: 32px;
