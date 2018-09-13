@@ -26,8 +26,9 @@
       color: #958b98;
       text-align: left;
       word-break: keep-all;
+
       br {
-        display: none;
+        display: block;
       }
     }
     .SponsorsWrap {
@@ -65,8 +66,9 @@
       .Desc {
         font-size: 12px;
         text-align: center;
+
         br {
-          display: block;
+          display: none;
         }
       }
       .SponsorsWrap .LevelWrap {

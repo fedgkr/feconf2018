@@ -6,11 +6,11 @@ export class FooterSection extends React.Component {
     return (
       <footer className={css.FooterSection}>
         <div className={css.Content}>
-          <div className={css.Title}>
-            Enjoy Experience Everywhere!
+          <p className={css.Title}>
+            <span>Enjoy Experience Everywhere!</span>
             <br />
-            FEConf 2018은 여러분의 참여를 기다립니다.
-          </div>
+            <span>FEConf 2018은 여러분의 참여를 기다립니다.</span>
+          </p>
 
           <a href="https://festa.io">
             <button className={css.Button}>지금 등록하러 가기</button>

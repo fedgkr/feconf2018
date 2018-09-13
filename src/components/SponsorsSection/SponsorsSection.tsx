@@ -14,11 +14,11 @@ const SponsorsSection: React.SFC = () => (
     <ApparentSection>
       <div className={css.Content}>
         <h2 className={css.Title}>SPONSORS</h2>
-        <div className={css.Desc}>
-          스폰서의 소중한 후원과 여러분의 참여가 FEConf 2018를 만듭니다.
+        <p className={css.Desc}>
+          <span>스폰서의 소중한 후원과 여러분의 참여가 FEConf 2018를 만듭니다.</span>
           <br />
-          고맙습니다.
-        </div>
+          <span> 고맙습니다.</span>
+        </p>
         <div className={css.SponsorsWrap}>
           <div className={cc({ [css.LevelWrap]: true, [css.Diamond]: true })}>
             <h3 className={css.LevelTitle}>DIAMOND</h3>
