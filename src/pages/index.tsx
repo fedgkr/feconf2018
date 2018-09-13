@@ -11,8 +11,8 @@ import React from 'react';
 import css from 'styles/index.scss';
 import 'styles/main.scss';
 import { WindowUtils } from 'utils/WindowUtils';
+import { Sidebar } from '../components/Sidebar/Sidebar';
 import { SpeakerInfo } from '../components/SpeakerInfo/SpeakerInfo';
-import {Sidebar} from "../components/Sidebar/Sidebar";
 
 interface IndexPageState {
   appWidth: number;
@@ -89,14 +89,8 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           <SponsorsSection />
           <FooterSection />
         </article>
-        <Sidebar
-          open={sidebarOpened}
-          closeSidebar={this.onSetSidebarOpen}
-        >
-          <SpeakerInfo
-            speaker={selectedSpeaker}
-            selectSpeaker={this.onSetSidebarOpen}
-          />
+        <Sidebar open={sidebarOpened} closeSidebar={this.onSetSidebarOpen}>
+          <SpeakerInfo speaker={selectedSpeaker} selectSpeaker={this.onSetSidebarOpen} />
         </Sidebar>
       </>
     );
@@ -110,13 +104,13 @@ class IndexPage extends React.Component<{}, IndexPageState> {
 
   public onSetSidebarOpen(open, speaker?: Speaker) {
     if (!open) {
-      document.body.classList.remove('fixed')
+      document.body.classList.remove('fixed');
       this.setState({
         sidebarOpened: false,
       });
     }
     if (open && speaker) {
-      document.body.classList.add('fixed')
+      document.body.classList.add('fixed');
       this.setState({
         selectedSpeaker: speaker,
         sidebarOpened: true,

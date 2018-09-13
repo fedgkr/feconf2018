@@ -1,3 +1,4 @@
+import 'intersection-observer';
 import { NextContext, NextStatelessComponent } from 'next';
 import App, { Container } from 'next/app';
 import { RouterProps } from 'next/router';

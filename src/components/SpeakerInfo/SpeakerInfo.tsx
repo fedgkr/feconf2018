@@ -1,6 +1,6 @@
 import { EtcData } from 'db/Etc';
 import { Speaker } from 'db/Speaker';
-import React, {MouseEvent} from 'react';
+import React, { MouseEvent } from 'react';
 import css from './SpeakerInfo.scss';
 
 interface SpeakerInfoProps {
@@ -42,7 +42,7 @@ export class SpeakerInfo extends React.Component<SpeakerInfoProps> {
   }
 
   private handleClickClose = (e: MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault()
+    e.preventDefault();
     this.props.selectSpeaker(false);
   };
 }
