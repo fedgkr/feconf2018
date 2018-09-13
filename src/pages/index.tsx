@@ -1,7 +1,10 @@
+import { FixedButton } from 'components/FixedButton/FixedButton';
 import { FooterSection } from 'components/FooterSection/FooterSection';
 import { HeroSection } from 'components/HeroSection/HeroSection';
 import { IntroSection } from 'components/IntroSection/IntroSection';
 import { ScheduleSection } from 'components/ScheduleSection/ScheduleSection';
+import { Sidebar } from 'components/Sidebar/Sidebar';
+import { SpeakerInfo } from 'components/SpeakerInfo/SpeakerInfo';
 import { SpeakersSection } from 'components/SpeakersSection/SpeakersSection';
 import { SponsorsSection } from 'components/SponsorsSection/SponsorsSection';
 import { EtcData } from 'db/Etc';
@@ -11,8 +14,6 @@ import React from 'react';
 import css from 'styles/index.scss';
 import 'styles/main.scss';
 import { WindowUtils } from 'utils/WindowUtils';
-import { Sidebar } from '../components/Sidebar/Sidebar';
-import { SpeakerInfo } from '../components/SpeakerInfo/SpeakerInfo';
 
 interface IndexPageState {
   appWidth: number;
@@ -21,14 +22,10 @@ interface IndexPageState {
 }
 
 class IndexPage extends React.Component<{}, IndexPageState> {
-  constructor(props) {
-    super(props);
-    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
-    this.state = {
-      appWidth: WindowUtils.getWidth(),
-      sidebarOpened: false,
-    };
-  }
+  public state = {
+    appWidth: WindowUtils.getWidth(),
+    sidebarOpened: false,
+  };
 
   public componentDidMount() {
     window.addEventListener('resize', () => {
@@ -77,13 +74,13 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           <script
             dangerouslySetInnerHTML={{
               __html: `
-                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                        ga('create', 'UA-68676515-5', 'auto');
-                        ga('send', 'pageview');
-                    `,
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                ga('create', 'UA-68676515-5', 'auto');
+                ga('send', 'pageview');
+              `,
             }}
           />
         </Head>
@@ -94,6 +91,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
           <SponsorsSection />
           <FooterSection />
+          <FixedButton />
         </article>
         <Sidebar open={sidebarOpened} closeSidebar={this.onSetSidebarOpen}>
           <SpeakerInfo speaker={selectedSpeaker} selectSpeaker={this.onSetSidebarOpen} />
@@ -102,7 +100,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
     );
   }
 
-  private onSetSidebarOpen(open, speaker?: Speaker) {
+  private onSetSidebarOpen = (open, speaker?: Speaker) => {
     if (!open) {
       document.body.classList.remove('fixed');
       this.setState({
@@ -116,7 +114,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
         sidebarOpened: true,
       });
     }
-  }
+  };
 }
 
 export default IndexPage;
