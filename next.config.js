@@ -23,6 +23,7 @@ module.exports = withPlugins([
   assetPrefix: './',
   webpack(config) {
     config.resolve.modules.push(path.resolve('./src'));
+    config.node = {fs: "empty"};
     return config;
   },
 });

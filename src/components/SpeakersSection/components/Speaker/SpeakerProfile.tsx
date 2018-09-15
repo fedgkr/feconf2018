@@ -1,6 +1,6 @@
 import cc from 'classcat';
 import { Speaker } from 'db/Speaker';
-import React, {MouseEvent} from 'react';
+import React, { MouseEvent } from 'react';
 import css from './SpeakerProfile.scss';
 
 interface SpeakerProps {
@@ -37,7 +37,7 @@ export class SpeakerProfile extends React.Component<SpeakerProps> {
   }
 
   private handleClickSpeaker = (e: MouseEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     this.props.selectSpeaker(true, this.props.speaker);
   };
 }
