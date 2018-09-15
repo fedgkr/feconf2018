@@ -1,6 +1,6 @@
 import cc from 'classcat';
 import { Speaker } from 'db/Speaker';
-import React from 'react';
+import React, {MouseEvent} from 'react';
 import css from './SpeakerProfile.scss';
 
 interface SpeakerProps {
@@ -13,12 +13,13 @@ export class SpeakerProfile extends React.Component<SpeakerProps> {
   public render() {
     const { speaker, isLast } = this.props;
     return (
-      <div
+      <a
         className={cc({
           [css.SpeakerProfile]: true,
           [css.isLast]: isLast,
         })}
         onClick={this.handleClickSpeaker}
+        href="#"
       >
         <div className={css.ContentWrap}>
           <div className={css.ImageWrap}>
@@ -27,13 +28,16 @@ export class SpeakerProfile extends React.Component<SpeakerProps> {
           <div className={css.Company}>
             <span>{speaker.company.name}</span>
           </div>
-          <div className={css.Name}>{speaker.name}</div>
+          <div className={css.Name}>
+            <span>{speaker.name}</span>
+          </div>
         </div>
-      </div>
+      </a>
     );
   }
 
-  private handleClickSpeaker = () => {
+  private handleClickSpeaker = (e: MouseEvent) => {
+    e.preventDefault()
     this.props.selectSpeaker(true, this.props.speaker);
   };
 }

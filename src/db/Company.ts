@@ -65,6 +65,12 @@ const companyListData = [
     link: 'https://www.protopie.io',
     logo: 'static/images/company/studio-xid/logo.png',
   },
+  {
+    name: 'Toss',
+    level: SupportLevel.PLATINUM,
+    link: 'https://toss.im/',
+    logo: 'static/images/company/toss/logo.png',
+  },
 ];
 
 export const generateCompanyList = () => {
