@@ -139,4 +139,12 @@
       left: 0;
     }
   }
+
+  @include mobile-basic {
+    .Background {
+      & > img {
+        max-width: 60%;
+      }
+    }
+  }
 }
