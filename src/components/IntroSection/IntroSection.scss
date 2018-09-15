@@ -26,6 +26,9 @@
       float: right;
       width: 57.7%;
 
+      & > a {
+        text-decoration: none;
+      }
       .Title {
         margin: 0;
         font-size: 24px;
