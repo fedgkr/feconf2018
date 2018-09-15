@@ -12,6 +12,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 72px 86px 136px;
+    z-index: 2;
 
     .Logo {
       font-size: 0;
@@ -115,6 +116,27 @@
           padding: 17px;
         }
       }
+    }
+  }
+  .Background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    & > img {
+      max-width: 100%;
+    }
+    .TopRight {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    .BottomLeft {
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
 }

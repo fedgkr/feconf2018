@@ -61,6 +61,10 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
             </a>
           </div>
         </div>
+        <div className={css.Background}>
+          <img className={css.TopRight} src="static/images/pages/hero/topright-shade.png" alt="Shade" />
+          <img className={css.BottomLeft} src="static/images/pages/hero/bottomleft-shade.png" alt="Shade" />
+        </div>
       </section>
     );
   }
