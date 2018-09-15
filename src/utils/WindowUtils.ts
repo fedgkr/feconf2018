@@ -1,6 +1,9 @@
 export class WindowUtils {
   public static getWidth() {
-    return typeof window === 'object' ? window.innerWidth : 0;
+    return WindowUtils.isClient() ? window.innerWidth : 0;
+  }
+  public static isClient() {
+    return typeof window === 'object'
   }
   public static preventDefault(e) {
     e.preventDefault();

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import css from './HeroSection.scss';
+import {CanvasStar} from "./components/CanvasStar/CanvasStar";
 
 interface HeroSectionProps {
   appWidth: number;
@@ -61,6 +62,7 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
             </a>
           </div>
         </div>
+        <CanvasStar />
       </section>
     );
   }
