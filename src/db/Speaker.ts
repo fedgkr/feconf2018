@@ -1,5 +1,5 @@
 import { ArrayUtils } from '../utils/ArrayUtils';
-import {Company, companyList, getCompanyByName} from './Company';
+import { Company, companyList, getCompanyByName } from './Company';
 
 export class Speaker {
   public name: string;

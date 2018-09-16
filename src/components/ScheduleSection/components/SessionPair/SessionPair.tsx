@@ -38,20 +38,28 @@ export class SessionPair extends React.Component<SessionPairProps> {
         })}
       >
         <div>
-          {speakerList.map((speaker, idx) => {
-            return (
-              <div key={idx} className={css.SessionItem}>
-                <div className={css.Title}>{speaker.presentTitle}</div>
-                <div className={css.Name}>{speaker.name}</div>
+          {speakerList.map((speaker, idx) => (
+            <div key={idx} className={css.SessionItem}>
+              <div className={css.Title}>
+                <span>{speaker.presentTitle}</span>
               </div>
-            );
-          })}
+              <div className={css.Name}>
+                <span>{speaker.name}</span>
+              </div>
+            </div>
+          ))}
           <div className="clear" />
         </div>
         <div className={css.TimeIndicator}>
           <div className={css.Indicator} />
-          <div className={css.Time}>{time}</div>
-          {noSpeaker ? <div className={css.LaunchTitle}>{content}</div> : null}
+          <div className={css.Time}>
+            <span>{time}</span>
+          </div>
+          {noSpeaker ? (
+            <div className={css.LaunchTitle}>
+              <span>{content}</span>
+            </div>
+          ) : null}
         </div>
         <div className={css.Line} />
       </div>

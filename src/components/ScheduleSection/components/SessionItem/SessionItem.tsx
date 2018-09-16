@@ -16,16 +16,26 @@ export class SessionItem extends React.Component<SessionItemProps> {
       <div className={css.SessionItem}>
         <div className={css.TimeIndicator}>
           <div className={css.Indicator} />
-          <div className={css.Time}>{time}</div>
+          <div className={css.Time}>
+            <span>{time}</span>
+          </div>
           <div className={css.Line} />
         </div>
         {speaker && (
           <div className={css.Speaker}>
-            <div className={css.Title}>{speaker.presentTitle}</div>
-            <div className={css.Name}>{speaker.name}</div>
+            <div className={css.Title}>
+              <span>{speaker.presentTitle}</span>
+            </div>
+            <div className={css.Name}>
+              <span>{speaker.name}</span>
+            </div>
           </div>
         )}
-        {noSpeaker ? <div className={css.LaunchTitle}>{content}</div> : null}
+        {noSpeaker ? (
+          <div className={css.LaunchTitle}>
+            <span>{content}</span>
+          </div>
+        ) : null}
         <div className="clear" />
       </div>
     );
