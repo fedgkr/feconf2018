@@ -24,17 +24,29 @@ export class SpeakerInfo extends React.Component<SpeakerInfoProps> {
               <img src={speaker.profileImage} alt="profile image" />
             </div>
             <div className={css.Text}>
-              {speaker.company ? <div className={css.Company}>{speaker.company.name}</div> : null}
-              <div className={css.Name}>{speaker.name}</div>
+              {speaker.company ? (
+                <div className={css.Company}>
+                  <a target="_blank" href={speaker.company.link}>
+                    {speaker.company.name}
+                  </a>
+                </div>
+              ) : null}
+              <div className={css.Name}>
+                <span>{speaker.name}</span>
+              </div>
             </div>
             <div className="clear" />
           </div>
           <div className={css.Present}>
-            <div className={css.Title}>{speaker.presentTitle}</div>
-            <div className={css.Track}>
-              Track {speaker.track} | {EtcData.sessionOrderMappingTime[speaker.order]}
+            <div className={css.Title}>
+              <span>{speaker.presentTitle}</span>
             </div>
-            <div className={css.Desc}>{speaker.presentDesc}</div>
+            <div className={css.Track}>
+              <span>Track {speaker.track} | {EtcData.sessionOrderMappingTime[speaker.order]}</span>
+            </div>
+            <div className={css.Desc}>
+              <span>{speaker.presentDesc}</span>
+            </div>
           </div>
         </div>
       </section>
