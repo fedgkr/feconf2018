@@ -1,17 +1,12 @@
 import React from 'react';
 import css from './ApparentSection.scss';
 
-interface Props {
-  rootMargin?: string;
-}
-
-export class ApparentSection extends React.Component<Props> {
+export class ApparentSection extends React.Component {
   private wrapper: HTMLElement;
   private target: HTMLElement;
 
   public componentDidMount() {
-    const { rootMargin } = this.props;
-    const options = { threshold: 0, rootMargin: rootMargin || '-70px' };
+    const options = { threshold: 0, rootMargin: '-70px' };
     const io = new IntersectionObserver(this.onIntersecting, options);
     io.observe(this.wrapper);
   }

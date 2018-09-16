@@ -7,7 +7,7 @@ export class IntroSection extends React.Component {
   public render() {
     return (
       <section className={css.IntroSection}>
-        <ApparentSection rootMargin="-130px">
+        <ApparentSection>
           <div className={css.Content}>
             <div className={css.TitleArea}>
               <span>2018</span>
