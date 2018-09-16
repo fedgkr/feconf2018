@@ -24,6 +24,7 @@
     .ImageWrap {
       & > img {
         width: 100%;
+        height: 120px;
         border-radius: 50%;
       }
     }
@@ -56,6 +57,13 @@
   @include tablet-basic {
     width: 90px;
 
+    .ContentWrap {
+      .ImageWrap {
+        & > img {
+          height: 90px;
+        }
+      }
+    }
     &:nth-child(2) {
       position: absolute;
       left: 50%;
@@ -68,9 +76,16 @@
   }
   @include tablet-small {
     width: 60px;
+
+    .ContentWrap {
+      .ImageWrap {
+        & > img {
+          height: 60px;
+        }
+      }
+    }
   }
   @include mobile-basic {
-    width: 60px;
     .ContentWrap {
       .Company {
         font-size: 11px;

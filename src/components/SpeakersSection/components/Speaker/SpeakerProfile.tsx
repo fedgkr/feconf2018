@@ -25,9 +25,10 @@ export class SpeakerProfile extends React.Component<SpeakerProps> {
           <div className={css.ImageWrap}>
             <img src={speaker.profileImage} alt={`Speaker ${speaker.name} Image`} />
           </div>
-          <div className={css.Company}>
-            <span>{speaker.company.name}</span>
-          </div>
+          {speaker.company ?
+            <div className={css.Company}>
+              <span>{speaker.company.name}</span>
+            </div> : null}
           <div className={css.Name}>
             <span>{speaker.name}</span>
           </div>
