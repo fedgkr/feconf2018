@@ -33,7 +33,7 @@
     "lint:ts": "tslint -p tsconfig.json src/**/*.ts{,x}",
     "lint": "yarn lint:pt && yarn lint:ts --fix",
     "dev": "ts-node -P ./tsconfig.json server.ts",
-    "build": "next build src",
+    "build": "NODE_ENV=production next build src",
     "export": "next export src -o out"
   }
 }
