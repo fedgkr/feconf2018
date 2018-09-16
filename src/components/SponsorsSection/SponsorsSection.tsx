@@ -8,6 +8,7 @@ import css from './SponsorsSection.scss';
 const diamondSponsors = companyList.filter(c => c.isLevelDiamond());
 const platinumSponsors = companyList.filter(c => c.isLevelPlatinum());
 const goldSponsors = companyList.filter(c => c.isLevelGold());
+const etcSponsors = companyList.filter(c => c.isLevelEtc());
 
 const SponsorsSection: React.SFC = () => (
   <section className={css.SponsorsSection} id="sponsors">
@@ -40,6 +41,14 @@ const SponsorsSection: React.SFC = () => (
             <h3 className={css.LevelTitle}>GOLD</h3>
             <ul className={css.SponsorList}>
               {goldSponsors.map((c, idx) => (
+                <SponsorLogo key={idx} company={c} />
+              ))}
+            </ul>
+          </div>
+          <div className={cc({ [css.LevelWrap]: true, [css.Gold]: true })}>
+            <h3 className={css.LevelTitle}>ETC</h3>
+            <ul className={css.SponsorList}>
+              {etcSponsors.map((c, idx) => (
                 <SponsorLogo key={idx} company={c} />
               ))}
             </ul>

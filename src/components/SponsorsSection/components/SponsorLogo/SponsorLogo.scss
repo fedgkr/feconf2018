@@ -3,10 +3,21 @@
 
 .SponsorLogo {
   display: inline-block;
-  max-width: 158px;
   margin: 24px 15px 0 0;
   vertical-align: middle;
 
+  &.DIAMOND {
+    max-width: 220px;
+  }
+  &.PLATINUM {
+    max-width: 158px;
+  }
+  &.GOLD {
+    max-width: 120px;
+  }
+  &.ETC {
+    max-width: 90px;
+  }
   .Anchor {
     display: block;
     width: 100%;
@@ -20,5 +31,18 @@
   @include mobile-basic {
     max-width: 120px;
     margin-right: 20px;
+
+    &.DIAMOND {
+      max-width: 150px;
+    }
+    &.PLATINUM {
+      max-width: 120px;
+    }
+    &.GOLD {
+      max-width: 90px;
+    }
+    &.ETC {
+      max-width: 60px;
+    }
   }
 }

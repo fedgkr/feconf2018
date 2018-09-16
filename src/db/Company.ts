@@ -2,6 +2,7 @@ export enum SupportLevel {
   DIAMOND = 'DIAMOND',
   PLATINUM = 'PLATINUM',
   GOLD = 'GOLD',
+  ETC = 'ETC',
   NONE = 'NONE',
 }
 
@@ -25,6 +26,10 @@ export class Company {
 
   public isLevelGold?() {
     return this.level === SupportLevel.GOLD;
+  }
+
+  public isLevelEtc?() {
+    return this.level === SupportLevel.ETC;
   }
 }
 
@@ -70,6 +75,18 @@ export const companyList = [
     level: SupportLevel.PLATINUM,
     link: 'https://toss.im/',
     logo: 'static/images/company/toss/logo.png',
+  }),
+  new Company({
+    name: 'Jet Brains',
+    level: SupportLevel.ETC,
+    link: 'https://www.jetbrains.com/',
+    logo: 'static/images/company/jetbrains/logo.png',
+  }),
+  new Company({
+    name: '인사이트',
+    level: SupportLevel.ETC,
+    link: 'http://www.insightbook.co.kr/',
+    logo: 'static/images/company/insight/logo.png',
   }),
   new Company({
     name: 'Lezhin Entertainment',
