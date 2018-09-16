@@ -35,7 +35,7 @@ export class Company {
 
 export const companyList = [
   new Company({
-    name: 'NAVER',
+    name: '네이버',
     level: SupportLevel.GOLD,
     link: 'https://www.navercorp.com/ko/index.nhn',
     logo: 'static/images/company/naver/logo.png',
@@ -71,7 +71,7 @@ export const companyList = [
     logo: 'static/images/company/studio-xid/logo.png',
   }),
   new Company({
-    name: 'Toss',
+    name: '토스',
     level: SupportLevel.PLATINUM,
     link: 'https://toss.im/',
     logo: 'static/images/company/toss/logo.png',
@@ -89,12 +89,12 @@ export const companyList = [
     logo: 'static/images/company/insight/logo.png',
   }),
   new Company({
-    name: 'Lezhin Entertainment',
+    name: '레진엔터테인먼트',
     level: SupportLevel.NONE,
     link: 'https://www.lezhin.com/',
   }),
   new Company({
-    name: 'NTS',
+    name: '엔테크서비스',
     level: SupportLevel.NONE,
     link: 'https://www.nts-corp.com/',
   }),
@@ -119,7 +119,7 @@ export const companyList = [
     link: 'https://joongang.joins.com',
   }),
   new Company({
-    name: 'ANGELSWING',
+    name: '엔젤스윙',
     level: SupportLevel.NONE,
     link: 'https://angelswing.io',
   }),
