@@ -30,13 +30,14 @@ export const generateSpeakerList = () => {
   });
 };
 
-export const speakerList = [
+export const speakerList: Speaker[] = [
   new Speaker({
     name: 'Ken Huh',
     profileImage: 'static/images/speaker/hea_guenhang.jpg',
     presentTitle: '미국개발자vs한국개발자',
     presentDesc:
       'Currently teaching at Vanilla Coding. Former Frontend Team Lead at Nike World Headquarters in Oregon, United States.',
+    company: getCompanyByName('바닐라코딩'),
     track: 1,
     order: 1,
   }),
@@ -46,6 +47,7 @@ export const speakerList = [
     presentTitle: '주관적 참견시점',
     presentDesc:
       '실용적인 기술보다 학문적인 기술을 좋아하는 동네 아저씨입니다. 자바스크립트 표준에 대한 이야기와 며몇 프로포절에 참견을 한 경험을 들려드립니다.',
+    company: getCompanyByName('ANGELSWING'),
     track: 2,
     order: 1,
   }),

@@ -36,9 +36,9 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
     return (
       <section className={css.HeroSection}>
         <div className={css.Content}>
-          <h2 className={css.Logo}>
+          <h1 className={css.Logo}>
             <img src="static/images/logo/img-logo@2x.png" alt="FEConf 2018" />
-          </h2>
+          </h1>
           <div className={css.ClockWrap}>
             <div className={css.Day}>
               <FlipClock title={'DAY'} value={presentLeft.days} maxValue={99} />
