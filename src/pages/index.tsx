@@ -103,15 +103,12 @@ class IndexPage extends React.Component<{}, IndexPageState> {
   private onSetSidebarOpen = (open, speaker?: Speaker) => {
     if (!open) {
       document.body.classList.remove('fixed');
-      this.setState({
-        sidebarOpened: false,
-      });
+      this.setState({ sidebarOpened: false });
     }
     if (open && speaker) {
       document.body.classList.add('fixed');
-      this.setState({
-        selectedSpeaker: speaker,
-        sidebarOpened: true,
+      requestAnimationFrame(() => {
+        this.setState({ selectedSpeaker: speaker, sidebarOpened: true });
       });
     }
   };

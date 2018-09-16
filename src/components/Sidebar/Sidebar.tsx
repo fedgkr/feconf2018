@@ -3,30 +3,23 @@ import cc from 'classcat';
 import css from './Sidebar.scss';
 import { WindowUtils } from '../../utils/WindowUtils';
 
-interface SidebarProps {
+interface Props {
   open: boolean;
   closeSidebar: (open: boolean) => void;
 }
 
-interface SidebarState {}
-
-export class Sidebar extends React.Component<SidebarProps, SidebarState> {
-  constructor(props) {
-    super(props);
-    this.onDimClick = this.onDimClick.bind(this);
-  }
-
+export class Sidebar extends React.PureComponent<Props> {
   public render() {
     const { children, open } = this.props;
     return (
-      <div className={cc({ [css.Sidebar]: true, [css.Open]: open })}>
-        <div className={css.Dim} onClick={this.onDimClick} onTouchStart={WindowUtils.preventDefault} />
+      <div className={cc({ [css.Sidebar]: true, [css.Open]: open })} onTouchMove={WindowUtils.preventDefault}>
+        <div className={css.Dim} onClick={this.onClickDimmed} />
         <div className={css.Content}>{children}</div>
       </div>
     );
   }
 
-  private onDimClick() {
+  private onClickDimmed = () => {
     this.props.closeSidebar(false);
-  }
+  };
 }
