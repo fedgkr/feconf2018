@@ -7,6 +7,7 @@ interface Props {
 
 export class ApparentSection extends React.Component<Props> {
   private wrapper: HTMLElement;
+  private target: HTMLElement;
 
   public componentDidMount() {
     const { rootMargin } = this.props;
@@ -18,17 +19,19 @@ export class ApparentSection extends React.Component<Props> {
   public render() {
     return (
       <div className={css.ApparentSection} ref={el => (this.wrapper = el)}>
-        {this.props.children}
+        <div className={css.Target} ref={el => (this.target = el)}>
+          {this.props.children}
+        </div>
       </div>
     );
   }
 
   private onIntersecting = (entries: IntersectionObserverEntry[]) => {
-    entries.forEach(({ target, isIntersecting }) => {
+    entries.forEach(({ isIntersecting }) => {
       if (isIntersecting) {
-        target.classList.add(css.appear);
+        this.target.classList.add(css.appear);
       } else {
-        target.classList.remove(css.appear);
+        this.target.classList.remove(css.appear);
       }
     });
   };
