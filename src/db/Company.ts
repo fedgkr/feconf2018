@@ -28,55 +28,81 @@ export class Company {
   }
 }
 
-const companyListData = [
-  {
+export const companyList = [
+  new Company({
     name: 'NAVER',
     level: SupportLevel.GOLD,
     link: 'https://www.navercorp.com/ko/index.nhn',
     logo: 'static/images/company/naver/logo.png',
-  },
-  {
+  }),
+  new Company({
     name: 'KAKAO',
     level: SupportLevel.PLATINUM,
     link: 'https://www.kakaocorp.com',
     logo: 'static/images/company/kakao/logo.png',
-  },
-  {
+  }),
+  new Company({
     name: 'NCSOFT',
     level: SupportLevel.GOLD,
     link: 'http://kr.ncsoft.com/korean',
     logo: 'static/images/company/ncsoft/logo.png',
-  },
-  {
+  }),
+  new Company({
     name: 'LINE',
     level: SupportLevel.GOLD,
     link: 'https://linepluscorp.com',
     logo: 'static/images/company/line/logo.png',
-  },
-  {
+  }),
+  new Company({
     name: '우아한 형제들',
     level: SupportLevel.DIAMOND,
     link: 'https://www.woowahan.com',
     logo: 'static/images/company/woowabros/logo.png',
-  },
-  {
+  }),
+  new Company({
     name: 'Studio XID',
     level: SupportLevel.PLATINUM,
     link: 'https://www.protopie.io',
     logo: 'static/images/company/studio-xid/logo.png',
-  },
-  {
+  }),
+  new Company({
     name: 'Toss',
     level: SupportLevel.PLATINUM,
     link: 'https://toss.im/',
     logo: 'static/images/company/toss/logo.png',
-  },
+  }),
+  new Company({
+    name: 'Lezhin Entertainment',
+    level: SupportLevel.NONE,
+    link: 'https://www.lezhin.com/',
+  }),
+  new Company({
+    name: 'NTS',
+    level: SupportLevel.NONE,
+    link: 'https://www.nts-corp.com/',
+  }),
+  new Company({
+    name: '코드스쿼드',
+    level: SupportLevel.NONE,
+    link: 'https://codesquad.kr/',
+  }),
+  new Company({
+    name: '카카오뱅크',
+    level: SupportLevel.NONE,
+    link: 'https://www.kakaobank.com/',
+  }),
+  new Company({
+    name: '미미박스',
+    level: SupportLevel.NONE,
+    link: 'https://www.memebox.com/',
+  }),
+  new Company({
+    name: '중앙일보',
+    level: SupportLevel.NONE,
+    link: 'https://joongang.joins.com/',
+  }),
 ];
 
-export const generateCompanyList = () => {
-  return companyListData.map(company => {
-    return new Company(company);
-  });
+export const getCompanyByName = (name = '') => {
+  return companyList.filter(c => c.name === name)[0];
 };
-
-export const companyList = generateCompanyList();

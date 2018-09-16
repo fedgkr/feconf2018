@@ -1,6 +1,6 @@
-import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
 import { readFileSync } from 'fs';
+import Document, { Head, Main, NextScript } from 'next/document';
+import React from 'react';
 
 let version = '';
 
