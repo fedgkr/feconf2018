@@ -37,9 +37,9 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
     return (
       <section className={css.HeroSection}>
         <div className={css.Content}>
-          <h2 className={css.Logo}>
+          <h1 className={css.Logo}>
             <img src="static/images/logo/img-logo@2x.png" alt="FEConf 2018" />
-          </h2>
+          </h1>
           <div className={css.ClockWrap}>
             <div className={css.Day}>
               <FlipClock title={'DAY'} value={presentLeft.days} maxValue={99} />
@@ -63,6 +63,10 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
           </div>
         </div>
         <CanvasStar />
+        <div className={css.Background}>
+          <img className={css.TopRight} src="static/images/pages/hero/topright-shade.png" alt="Shade" />
+          <img className={css.BottomLeft} src="static/images/pages/hero/bottomleft-shade.png" alt="Shade" />
+        </div>
       </section>
     );
   }

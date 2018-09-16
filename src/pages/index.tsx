@@ -70,7 +70,6 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           />
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           <link rel="icon" href="static/favicon.ico" />
-          <link rel="stylesheet" href="_next/static/style.css" />
           <link rel="stylesheet" href="static/styles/normalize.css" />
           <script
             dangerouslySetInnerHTML={{
