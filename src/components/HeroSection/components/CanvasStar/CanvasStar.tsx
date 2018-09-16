@@ -30,5 +30,6 @@ export class CanvasStar extends React.Component<Props, State> {
 
   private renderStar() {
     this.ctx = this.canvasEl.getContext('2d')
+    this.ctx.beginPath()
   }
 }

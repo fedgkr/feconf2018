@@ -2,6 +2,7 @@ import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import css from './HeroSection.scss';
 import {CanvasStar} from "./components/CanvasStar/CanvasStar";
+import {Firework} from "./components/Firework/Firework";
 
 interface HeroSectionProps {
   appWidth: number;
@@ -63,6 +64,7 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
           </div>
         </div>
         <CanvasStar />
+        <Firework />
         <div className={css.Background}>
           <img className={css.TopRight} src="static/images/pages/hero/topright-shade.png" alt="Shade" />
           <img className={css.BottomLeft} src="static/images/pages/hero/bottomleft-shade.png" alt="Shade" />
