@@ -1,13 +1,14 @@
 import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import css from './HeroSection.scss';
+import { SpaceShuttle } from './components/SpaceShuttle/SpaceShuttle';
 
-interface HeroSectionProps {
+interface Props {
   appWidth: number;
   deadline: number;
 }
 
-interface HeroSectionState {
+interface State {
   presentLeft: LeftTime;
 }
 
@@ -18,8 +19,8 @@ interface LeftTime {
   seconds: number;
 }
 
-export class HeroSection extends React.Component<HeroSectionProps, HeroSectionState> {
-  constructor(props: HeroSectionProps) {
+export class HeroSection extends React.Component<Props, State> {
+  constructor(props: Props) {
     super(props);
 
     this.state = {
@@ -52,9 +53,7 @@ export class HeroSection extends React.Component<HeroSectionProps, HeroSectionSt
               <FlipClock title={'MINUTE'} value={presentLeft.minutes} maxValue={59} />
             </div>
           </div>
-          <div className={css.HeroImage}>
-            <img src="static/images/pages/hero/spaceshuttle@2x.png" alt="Hero Image" />
-          </div>
+          <SpaceShuttle />
           <div className={css.ButtonWrap}>
             <a href="https://festa.io">
               <button>컨퍼런스 참가하기</button>

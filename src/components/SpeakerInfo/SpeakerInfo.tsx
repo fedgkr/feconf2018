@@ -42,7 +42,9 @@ export class SpeakerInfo extends React.Component<SpeakerInfoProps> {
               <span>{speaker.presentTitle}</span>
             </div>
             <div className={css.Track}>
-              <span>Track {speaker.track} | {EtcData.sessionOrderMappingTime[speaker.order]}</span>
+              <span>
+                Track {speaker.track} | {EtcData.sessionOrderMappingTime[speaker.order]}
+              </span>
             </div>
             <div className={css.Desc}>
               <span>{speaker.presentDesc}</span>
