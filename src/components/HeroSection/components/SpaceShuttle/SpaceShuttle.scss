@@ -16,9 +16,13 @@
   // 1154 x 1196
   .Star {
     position: absolute;
-    animation-name: shiny;
-    animation-iteration-count: infinite;
+    z-index: -1;
 
+    &.Shiny {
+      animation-name: shiny;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
     & > img { width: 100%; }
   }
   // 138 x 179, 49
@@ -65,8 +69,8 @@
     z-index: 2;
   }
   @keyframes shiny {
-    0% {opacity: 1;}
-    50% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {opacity: 1; transform: scale(1);}
+    50% {opacity: 0; transform: scale(0.4);}
+    100% {opacity: 1; transform: scale(1);}
   }
 }
