@@ -22,7 +22,6 @@ export class SpaceShuttle extends React.Component<{}> {
               className={cc({ [css.Star]: true, [css[`Star${order}`]]: true })}
             >
               <div className={css.Sprite} />
-              {/*<img src={`static/images/pages/hero/star-${order}.png`} alt={`Star Image ${order}`} />*/}
             </div>
           );
         })}

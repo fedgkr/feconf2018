@@ -28,60 +28,60 @@
       background-image: url('/static/images/pages/hero/star-sprite.png');
       background-size: 34px 153px;
     }
-    &.Shiny {
-      animation-name: shiny;
-      animation-iteration-count: infinite;
-      animation-timing-function: ease-in-out;
-    }
-    & > img { width: 100%; }
   }
   .Star1 {
+    animation-name: star1;
+
     & > .Sprite {
       width: 23px;
       height: 19px;
       background-position: 0 -0px;
     }
-    animation-name: star1;
   }
   .Star2 {
+    animation-name: star2;
+
     & > .Sprite {
       width: 34px;
       height: 37px;
       background-position: 0 -19px;
     }
-    animation-name: star2;
   }
   .Star3 {
+    animation-name: star3;
+
     & > .Sprite {
       width: 23px;
       height: 27px;
       background-position: 0 -56px;
     }
-    animation-name: star3;
   }
   .Star4 {
+    animation-name: star4;
+
     & > .Sprite {
       width: 17px;
       height: 19px;
       background-position: 0 -101px;
     }
-    animation-name: star4;
   }
   .Star5 {
+    animation-name: star5;
+
     & > .Sprite {
       width: 30px;
       height: 33px;
       background-position: 0 -120px;
     }
-    animation-name: star5;
   }
   .Star6 {
+    animation-name: star6;
+
     & > .Sprite {
       width: 18px;
       height: 18px;
       background-position: 0 -83px;
     }
-    animation-name: star6;
   }
   @include mobile-basic {
     width: 70%;
@@ -89,6 +89,10 @@
     right: -40px;
     bottom: -72px;
     z-index: 2;
+
+    .Star > .Sprite {
+      transform: scale(0.7);
+    }
   }
   @keyframes shiny {
     0% {opacity: 1; transform: scale(1);}
