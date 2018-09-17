@@ -88,7 +88,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
           <IntroSection />
           <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
-          <ScheduleSection appWidth={appWidth} speakerList={speakerList} />
+          <ScheduleSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />
           <SponsorsSection />
           <FooterSection />
           <FixedButton />

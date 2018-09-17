@@ -1,5 +1,5 @@
-import { Company } from 'db/Company';
 import cc from 'classcat';
+import { Company } from 'db/Company';
 import React from 'react';
 import css from './SponsorLogo.scss';
 

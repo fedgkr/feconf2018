@@ -1,5 +1,5 @@
 import { Speaker } from 'db/Speaker';
-import React from 'react';
+import React, { MouseEvent } from 'react';
 import css from './SessionItem.scss';
 
 interface SessionItemProps {
@@ -7,6 +7,7 @@ interface SessionItemProps {
   speaker?: Speaker;
   noSpeaker?: boolean;
   content?: string;
+  selectSpeaker: (o: boolean, s: Speaker) => void;
 }
 
 export class SessionItem extends React.Component<SessionItemProps> {
@@ -27,7 +28,9 @@ export class SessionItem extends React.Component<SessionItemProps> {
               <span>{speaker.presentTitle}</span>
             </div>
             <div className={css.Name}>
-              <span>{speaker.name}</span>
+              <a href="#" onClick={e => this.handleClickSelect(e, speaker)}>
+                {speaker.name}
+              </a>
             </div>
           </div>
         )}
@@ -39,5 +42,10 @@ export class SessionItem extends React.Component<SessionItemProps> {
         <div className="clear" />
       </div>
     );
+  }
+
+  private handleClickSelect(e: MouseEvent<HTMLAnchorElement>, s: Speaker) {
+    e.preventDefault();
+    this.props.selectSpeaker(true, s);
   }
 }

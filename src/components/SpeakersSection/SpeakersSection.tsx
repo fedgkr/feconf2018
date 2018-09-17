@@ -1,8 +1,8 @@
 import { Speaker } from 'db/Speaker';
 import React from 'react';
 import { CONST } from 'values/Const';
-import { SpeakersRow } from './components/SpeakersRow/SpeakersRow';
 import { ApparentSection } from '../ApparentSection/ApparentSection';
+import { SpeakersRow } from './components/SpeakersRow/SpeakersRow';
 import css from './SpeakersSection.scss';
 
 interface SpeakersSectionProps {

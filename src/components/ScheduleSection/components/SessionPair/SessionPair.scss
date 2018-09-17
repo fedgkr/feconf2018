@@ -36,7 +36,11 @@
     }
     .Name {
       margin-top: 5px;
-      color: $main-color;
+
+      a {
+        text-decoration: none;
+        color: $main-color;
+      }
     }
   }
   .TimeIndicator {

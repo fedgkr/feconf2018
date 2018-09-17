@@ -1,6 +1,8 @@
+import 'core-js/es6/object';
 import { NextContext, NextStatelessComponent } from 'next';
 import App, { Container } from 'next/app';
 import { RouterProps } from 'next/router';
+import 'raf/polyfill';
 import React from 'react';
 import 'styles/main.scss';
 
