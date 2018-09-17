@@ -1,7 +1,7 @@
-import React from 'react';
 import cc from 'classcat';
-import css from './Sidebar.scss';
+import React from 'react';
 import { WindowUtils } from '../../utils/WindowUtils';
+import css from './Sidebar.scss';
 
 interface Props {
   open: boolean;

@@ -1,8 +1,8 @@
 import cc from 'classcat';
 import { companyList } from 'db/Company';
 import React from 'react';
-import { SponsorLogo } from './components/SponsorLogo/SponsorLogo';
 import { ApparentSection } from '../ApparentSection/ApparentSection';
+import { SponsorLogo } from './components/SponsorLogo/SponsorLogo';
 import css from './SponsorsSection.scss';
 
 const diamondSponsors = companyList.filter(c => c.isLevelDiamond());
