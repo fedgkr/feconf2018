@@ -1,6 +1,6 @@
 import cc from 'classcat';
 import { Speaker } from 'db/Speaker';
-import React from 'react';
+import React, {MouseEvent} from 'react';
 import css from './SessionPair.scss';
 
 interface SessionPairProps {
@@ -8,6 +8,7 @@ interface SessionPairProps {
   speakerList: Speaker[];
   noSpeaker?: boolean;
   content?: string;
+  selectSpeaker: (o: boolean, s: Speaker) => void;
 }
 
 /**
@@ -44,7 +45,7 @@ export class SessionPair extends React.Component<SessionPairProps> {
                 <span>{speaker.presentTitle}</span>
               </div>
               <div className={css.Name}>
-                <span>{speaker.name}</span>
+                <a href="#" onClick={e => this.handleClickSelect(e, speaker)}>{speaker.name}</a>
               </div>
             </div>
           ))}
@@ -64,5 +65,10 @@ export class SessionPair extends React.Component<SessionPairProps> {
         <div className={css.Line} />
       </div>
     );
+  }
+
+  private handleClickSelect(e: MouseEvent<HTMLAnchorElement>, s: Speaker) {
+    e.preventDefault();
+    this.props.selectSpeaker(true, s);
   }
 }

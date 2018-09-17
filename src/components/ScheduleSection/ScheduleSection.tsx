@@ -9,6 +9,7 @@ import css from './ScheduleSection.scss';
 interface ScheduleSectionProps {
   appWidth: number;
   speakerList: Speaker[];
+  selectSpeaker: (o: boolean, s: Speaker) => void;
 }
 
 interface ScheduleSectionState {
@@ -29,7 +30,7 @@ export class ScheduleSection extends React.Component<ScheduleSectionProps, Sched
   }
 
   public render() {
-    const { appWidth, speakerList } = this.props;
+    const { appWidth, speakerList, selectSpeaker } = this.props;
     const { rendered } = this.state;
     const isMobile = appWidth < CONST.TABLET_WIDTH;
     return (
@@ -48,7 +49,11 @@ export class ScheduleSection extends React.Component<ScheduleSectionProps, Sched
               </div>
             </div>
             <div className={css.TrackWrap}>
-              {rendered && isMobile ? <TrackList speakerList={speakerList} /> : <TrackPair speakerList={speakerList} />}
+              {rendered && isMobile ? (
+                <TrackList speakerList={speakerList} selectSpeaker={selectSpeaker} />
+              ) : (
+                <TrackPair speakerList={speakerList} selectSpeaker={selectSpeaker} />
+              )}
             </div>
           </div>
         </ApparentSection>
