@@ -13,11 +13,21 @@
   .Shuttle {
     width: 100%;
   }
-  // 1154 x 1196
   .Star {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: -1;
+    transform: translate3d(50%, 70%, 0);
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
+    .Sprite {
+      background-image: url('/static/images/pages/hero/star-sprite.png');
+      background-size: 34px 153px;
+    }
     &.Shiny {
       animation-name: shiny;
       animation-iteration-count: infinite;
@@ -25,41 +35,53 @@
     }
     & > img { width: 100%; }
   }
-  // 138 x 179, 49
   .Star1 {
-    left: 12%;
-    top: 15%;
-    width: 3.8%;
+    & > .Sprite {
+      width: 23px;
+      height: 19px;
+      background-position: 0 -0px;
+    }
+    animation-name: star1;
   }
-  // 336 x 274, 58
   .Star2 {
-    left: 29%;
-    top: 23%;
-    width: 5%;
+    & > .Sprite {
+      width: 34px;
+      height: 37px;
+      background-position: 0 -19px;
+    }
+    animation-name: star2;
   }
-  // 215 x 511, 38
   .Star3 {
-    left: 18.6%;
-    top: 42.7%;
-    width: 3.2%;
+    & > .Sprite {
+      width: 23px;
+      height: 27px;
+      background-position: 0 -56px;
+    }
+    animation-name: star3;
   }
-  // 869 x 252, 26
   .Star4 {
-    left: 75.3%;
-    top: 21%;
-    width: 2.2%;
+    & > .Sprite {
+      width: 17px;
+      height: 19px;
+      background-position: 0 -101px;
+    }
+    animation-name: star4;
   }
-  // 935 x 423, 54
   .Star5 {
-    left: 81%;
-    top: 35.3%;
-    width: 4.6%
+    & > .Sprite {
+      width: 30px;
+      height: 33px;
+      background-position: 0 -120px;
+    }
+    animation-name: star5;
   }
-  // 1050 x 243, 27
   .Star6 {
-    left: 91%;
-    top: 20%;
-    width: 2.3%
+    & > .Sprite {
+      width: 18px;
+      height: 18px;
+      background-position: 0 -83px;
+    }
+    animation-name: star6;
   }
   @include mobile-basic {
     width: 70%;
@@ -72,5 +94,29 @@
     0% {opacity: 1; transform: scale(1);}
     50% {opacity: 0; transform: scale(0.4);}
     100% {opacity: 1; transform: scale(1);}
+  }
+  @keyframes star1 {
+    0% {transform: translate3d(50%, 70%, 0);}
+    100% {transform: translate3d(12%, 15%, 0);}
+  }
+  @keyframes star2 {
+    0% {transform: translate3d(50%, 70%, 0);}
+    100% {transform: translate3d(29%, 23%, 0);}
+  }
+  @keyframes star3 {
+    0% {transform: translate3d(50%, 70%, 0);}
+    100% {transform: translate3d(18.6%, 42.7%, 0);}
+  }
+  @keyframes star4 {
+    0% {transform: translate3d(50%, 70%, 0);}
+    100% {transform: translate3d(75.3%, 21%, 0);}
+  }
+  @keyframes star5 {
+    0% {transform: translate3d(50%, 70%, 0);}
+    100% {transform: translate3d(81%, 35.3%, 0);}
+  }
+  @keyframes star6 {
+    0% {transform: translate3d(50%, 70%, 0);}
+    100% {transform: translate3d(91%, 20%, 0);}
   }
 }
