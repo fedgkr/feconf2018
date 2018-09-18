@@ -21,8 +21,7 @@
     height: 100%;
     z-index: -1;
     transform: translate3d(50%, 70%, 0);
-    animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     .Sprite {
       background-image: url('/static/images/pages/hero/star-sprite.png');
@@ -30,8 +29,9 @@
     }
   }
   .Star1 {
-    animation-name: star1;
-
+    &.active {
+     transform: translate3d(12%, 15%, 0);
+    }
     & > .Sprite {
       width: 23px;
       height: 19px;
@@ -39,8 +39,9 @@
     }
   }
   .Star2 {
-    animation-name: star2;
-
+    &.active {
+     transform: translate3d(29%, 23%, 0);
+    }
     & > .Sprite {
       width: 34px;
       height: 37px;
@@ -48,8 +49,9 @@
     }
   }
   .Star3 {
-    animation-name: star3;
-
+    &.active {
+     transform: translate3d(18.6%, 42.7%, 0);
+    }
     & > .Sprite {
       width: 23px;
       height: 27px;
@@ -57,8 +59,9 @@
     }
   }
   .Star4 {
-    animation-name: star4;
-
+    &.active {
+     transform: translate3d(75.3%, 21%, 0);
+    }
     & > .Sprite {
       width: 17px;
       height: 19px;
@@ -66,8 +69,9 @@
     }
   }
   .Star5 {
-    animation-name: star5;
-
+    &.active {
+     transform: translate3d(81%, 35.3%, 0);
+    }
     & > .Sprite {
       width: 30px;
       height: 33px;
@@ -75,8 +79,9 @@
     }
   }
   .Star6 {
-    animation-name: star6;
-
+    &.active {
+     transform: translate3d(91%, 20%, 0);
+    }
     & > .Sprite {
       width: 18px;
       height: 18px;
@@ -93,34 +98,5 @@
     .Star > .Sprite {
       transform: scale(0.7);
     }
-  }
-  @keyframes shiny {
-    0% {opacity: 1; transform: scale(1);}
-    50% {opacity: 0; transform: scale(0.4);}
-    100% {opacity: 1; transform: scale(1);}
-  }
-  @keyframes star1 {
-    0% {transform: translate3d(50%, 70%, 0);}
-    100% {transform: translate3d(12%, 15%, 0);}
-  }
-  @keyframes star2 {
-    0% {transform: translate3d(50%, 70%, 0);}
-    100% {transform: translate3d(29%, 23%, 0);}
-  }
-  @keyframes star3 {
-    0% {transform: translate3d(50%, 70%, 0);}
-    100% {transform: translate3d(18.6%, 42.7%, 0);}
-  }
-  @keyframes star4 {
-    0% {transform: translate3d(50%, 70%, 0);}
-    100% {transform: translate3d(75.3%, 21%, 0);}
-  }
-  @keyframes star5 {
-    0% {transform: translate3d(50%, 70%, 0);}
-    100% {transform: translate3d(81%, 35.3%, 0);}
-  }
-  @keyframes star6 {
-    0% {transform: translate3d(50%, 70%, 0);}
-    100% {transform: translate3d(91%, 20%, 0);}
   }
 }
