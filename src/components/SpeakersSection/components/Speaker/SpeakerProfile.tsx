@@ -24,6 +24,18 @@ export class SpeakerProfile extends React.Component<SpeakerProps> {
         <div className={css.ContentWrap}>
           <div className={css.ImageWrap}>
             <img src={speaker.profileImage} alt={`Speaker ${speaker.name} Image`} />
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 100 100"
+              overflow="visible"
+              id="progress"
+            >
+              <circle fill="none" stroke="#a821d2" strokeWidth="2" strokeDasharray="341" cx="50" cy="50" r="51" />
+            </svg>
           </div>
           {speaker.company ? (
             <div className={css.Company}>

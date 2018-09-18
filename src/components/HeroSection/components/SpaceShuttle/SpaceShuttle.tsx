@@ -4,13 +4,13 @@ import css from './SpaceShuttle.scss';
 import { ArrayUtils } from '../../../../utils/ArrayUtils';
 
 interface State {
-  active: boolean
+  active: boolean;
 }
 
 export class SpaceShuttle extends React.Component<{}, State> {
   public state = {
     active: false,
-  }
+  };
   private wrapper: HTMLElement;
 
   public componentDidMount() {
@@ -24,7 +24,7 @@ export class SpaceShuttle extends React.Component<{}, State> {
   }
 
   public render() {
-    const {active} = this.state
+    const { active } = this.state;
     return (
       <div className={css.SpaceShuttle} ref={el => (this.wrapper = el)}>
         <img className={css.Shuttle} src="static/images/pages/hero/shuttle.png" alt="Hero Image" />
@@ -32,12 +32,15 @@ export class SpaceShuttle extends React.Component<{}, State> {
           const order = i + 1;
           const style = this.getRandomAnimationProp();
           return (
-            <div key={order} style={style}
-                 className={cc({
-                   [css.Star]: true,
-                   [css[`Star${order}`]]: true,
-                   [css.active]: active,
-                 })}>
+            <div
+              key={order}
+              style={style}
+              className={cc({
+                [css.Star]: true,
+                [css[`Star${order}`]]: true,
+                [css.active]: active,
+              })}
+            >
               <div className={css.Sprite} />
             </div>
           );
@@ -47,16 +50,16 @@ export class SpaceShuttle extends React.Component<{}, State> {
   }
 
   private getRandomAnimationProp() {
-    const {active} = this.state
+    const { active } = this.state;
     return {
-      transitionDelay: active ? `${Math.random()}s` : '0s',
+      transitionDelay: active ? `${Math.random() / 3}s` : '0s',
       transitionDuration: active ? `${1.5}s` : '0s',
     };
   }
 
   private onIntersecting = (entries: IntersectionObserverEntry[]) => {
     entries.forEach(({ isIntersecting }) => {
-      this.setState({active: isIntersecting});
+      this.setState({ active: isIntersecting });
     });
   };
 }
