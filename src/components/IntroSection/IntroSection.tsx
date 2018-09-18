@@ -43,7 +43,7 @@ export class IntroSection extends React.Component {
               </div>
               <div className={css.Date}>
                 <img src="static/images/pages/intro/calendar@2x.png" alt="Calendar" />
-                <p>2018년 11월 03일 토요일 10:00 - 17:00</p>
+                <p>2018년 11월 03일 토요일 10:00 - 17:20</p>
               </div>
               <a target="_blank" href="http://naver.me/GF26VviE">
                 <div className={css.Location}>
