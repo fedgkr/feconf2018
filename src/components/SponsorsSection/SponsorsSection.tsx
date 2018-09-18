@@ -45,7 +45,7 @@ const SponsorsSection: React.SFC = () => (
               ))}
             </ul>
           </div>
-          <div className={cc({ [css.LevelWrap]: true, [css.Gold]: true })}>
+          <div className={cc({ [css.LevelWrap]: true, [css.Etc]: true })}>
             <h3 className={css.LevelTitle}>ETC</h3>
             <ul className={css.SponsorList}>
               {etcSponsors.map((c, idx) => (
