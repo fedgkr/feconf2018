@@ -63,7 +63,7 @@ export const speakerList: Speaker[] = [
   new Speaker({
     name: '고재도',
     profileImage: 'static/images/speaker/ko_jaedo.png',
-    presentTitle: '봇붙없이 우리팀에 딱 맞는 엥귤러 프로젝트 만들기',
+    presentTitle: '복붙없이 우리팀에 딱 맞는 엥귤러 프로젝트 만들기',
     presentDesc:
       '카카오뱅크에서 빅데이터 소프트웨어 엔지니어로 일하고 있고 Google Developer Expert로써 Angular와 웹 기술 전파를 하고 있습니다. 웹 기술, 빅데이터, 실시간 처리 분야에 관심이 많고 많은 개발자들을 만나 지식 공유와 개발자 커뮤니티 발전에 힘쓰고 싶습니다.',
     company: getCompanyByName('카카오뱅크'),
@@ -121,9 +121,9 @@ export const speakerList: Speaker[] = [
   }),
   new Speaker({
     name: '임형주',
-    profileImage: 'static/images/speaker/blank.png',
+    profileImage: 'static/images/speaker/im_hyeongju.jpg',
     presentTitle: '자체 polyfill.io 서버 구축하여 프런트엔드 최적화하기',
-    presentDesc: '',
+    presentDesc: '레진코믹스에서 소프트웨어 엔지니어로 일하고 있고 웹기술, 클라우드 아키텍처에 관심이 많은 일인입니다.',
     company: getCompanyByName('레진엔터테인먼트'),
     track: 2,
     order: 5,
