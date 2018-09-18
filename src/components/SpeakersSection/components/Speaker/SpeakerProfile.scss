@@ -91,6 +91,11 @@
           height: 90px;
         }
       }
+      .Name {
+        span {
+          padding: 0;
+        }
+      }
     }
     &:nth-child(2) {
       position: absolute;
