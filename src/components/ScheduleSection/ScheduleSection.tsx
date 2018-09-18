@@ -44,7 +44,7 @@ export class ScheduleSection extends React.Component<ScheduleSectionProps, Sched
                 <div className={css.Desc}>입장 및 등록</div>
               </div>
               <div className={css.Schedule}>
-                <div className={css.Time}>10:40 ~ 10:50</div>
+                <div className={css.Time}>10:40 ~ 11:00</div>
                 <div className={css.Desc}>오프닝 키노트</div>
               </div>
             </div>
