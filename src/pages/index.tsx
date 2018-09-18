@@ -71,7 +71,9 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
           <link rel="icon" href="static/favicon.ico" />
           <link rel="stylesheet" href="static/styles/normalize.css" />
-          <style dangerouslySetInnerHTML={{__html: `
+          <style
+            dangerouslySetInnerHTML={{
+              __html: `
             @font-face {
                 font-family: 'Spoqa Han Sans';
                 font-weight: 700;
@@ -88,7 +90,9 @@ class IndexPage extends React.Component<{}, IndexPageState> {
                 url('static/fonts/SpoqaHanSans/SpoqaHanSansRegular.woff') format('woff'),
                 url('static/fonts/SpoqaHanSans/SpoqaHanSansRegular.ttf') format('truetype');
             }
-          `}} />
+          `,
+            }}
+          />
           <script
             dangerouslySetInnerHTML={{
               __html: `

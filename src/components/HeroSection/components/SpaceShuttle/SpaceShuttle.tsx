@@ -14,13 +14,9 @@ export class SpaceShuttle extends React.Component<{}> {
         <img className={css.Shuttle} src="static/images/pages/hero/shuttle.png" alt="Hero Image" />
         {ArrayUtils.createNArray(6).map(i => {
           const order = i + 1;
-          const style = this.getRandomAnimationProp()
+          const style = this.getRandomAnimationProp();
           return (
-            <div
-              key={order}
-              style={style}
-              className={cc({ [css.Star]: true, [css[`Star${order}`]]: true })}
-            >
+            <div key={order} style={style} className={cc({ [css.Star]: true, [css[`Star${order}`]]: true })}>
               <div className={css.Sprite} />
             </div>
           );
@@ -35,5 +31,4 @@ export class SpaceShuttle extends React.Component<{}> {
       animationDuration: `${1.5}s`,
     };
   }
-
 }

@@ -1,6 +1,6 @@
 import cc from 'classcat';
 import { Speaker } from 'db/Speaker';
-import React, {MouseEvent} from 'react';
+import React, { MouseEvent } from 'react';
 import css from './SessionPair.scss';
 
 interface SessionPairProps {
@@ -45,7 +45,9 @@ export class SessionPair extends React.Component<SessionPairProps> {
                 <span>{speaker.presentTitle}</span>
               </div>
               <div className={css.Name}>
-                <a href="#" onClick={e => this.handleClickSelect(e, speaker)}>{speaker.name}</a>
+                <a href="#" onClick={e => this.handleClickSelect(e, speaker)}>
+                  {speaker.name}
+                </a>
               </div>
             </div>
           ))}
