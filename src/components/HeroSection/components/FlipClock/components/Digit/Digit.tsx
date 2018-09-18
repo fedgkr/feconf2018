@@ -23,7 +23,7 @@ export class Digit extends React.Component<DigitProps, DigitState> {
 
     this.state = {
       present: 0,
-      next: 0,
+      next: props.value,
       flip: false,
     };
   }
