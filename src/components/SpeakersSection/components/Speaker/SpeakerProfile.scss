@@ -50,26 +50,8 @@
         border-radius: 50%;
       }
     }
-    .Company {
-      position: relative;
-      margin-top: 16px;
-      height: 14px;
-      font-size: 14px;
-      line-height: 1;
-      color: $main-color;
-      font-weight: normal;
-
-      span {
-        position: absolute;
-        display: block;
-        left: 50%;
-        transform: translate(-50%, 0);
-        white-space: nowrap;
-        text-align: center;
-      }
-    }
     .Name {
-      margin-top: 6px;
+      margin-top: 16px;
       font-size: 18px;
       font-weight: 700;
       text-align: center;
@@ -79,6 +61,25 @@
         padding: 0 12px;
         background-color: transparent;
         transition: background-color 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+    }
+    .Company {
+      position: relative;
+      margin-top: 42px;
+      height: 14px;
+      font-size: 14px;
+      line-height: 1;
+      color: $main-color;
+      font-weight: normal;
+    }
+    .Company, .Name {
+      span {
+        position: absolute;
+        display: block;
+        left: 50%;
+        transform: translate(-50%, 0);
+        white-space: nowrap;
+        text-align: center;
       }
     }
   }

@@ -37,14 +37,14 @@ export class SpeakerProfile extends React.Component<SpeakerProps> {
               <circle fill="none" stroke="#a821d2" strokeWidth="2" strokeDasharray="341" cx="50" cy="50" r="51" />
             </svg>
           </div>
+          <div className={css.Name}>
+            <span>{speaker.name}</span>
+          </div>
           {speaker.company ? (
             <div className={css.Company}>
               <span>{speaker.company.name}</span>
             </div>
           ) : null}
-          <div className={css.Name}>
-            <span>{speaker.name}</span>
-          </div>
         </div>
       </a>
     );
