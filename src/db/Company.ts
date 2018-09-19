@@ -89,6 +89,12 @@ export const companyList = [
     logo: 'static/images/company/insight/logo.png',
   }),
   new Company({
+    name: '클로바',
+    level: SupportLevel.ETC,
+    link: 'https://clova.ai',
+    logo: 'static/images/company/clova/logo.png',
+  }),
+  new Company({
     name: '레진엔터테인먼트',
     level: SupportLevel.NONE,
     link: 'https://www.lezhin.com/',

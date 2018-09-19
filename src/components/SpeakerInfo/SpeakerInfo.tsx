@@ -24,6 +24,9 @@ export class SpeakerInfo extends React.Component<SpeakerInfoProps> {
               <img src={speaker.profileImage} alt="profile image" />
             </div>
             <div className={css.Text}>
+              <div className={css.Name}>
+                <span>{speaker.name}</span>
+              </div>
               {speaker.company ? (
                 <div className={css.Company}>
                   <a target="_blank" href={speaker.company.link}>
@@ -31,9 +34,6 @@ export class SpeakerInfo extends React.Component<SpeakerInfoProps> {
                   </a>
                 </div>
               ) : null}
-              <div className={css.Name}>
-                <span>{speaker.name}</span>
-              </div>
             </div>
             <div className="clear" />
           </div>

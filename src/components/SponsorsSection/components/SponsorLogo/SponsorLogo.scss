@@ -3,10 +3,13 @@
 
 .SponsorLogo {
   display: inline-block;
-  max-width: 158px;
-  margin: 24px 15px 0 0;
+  max-width: 100px;
+  margin: 40px 30px 0 0;
   vertical-align: middle;
 
+  &:last-child {
+    margin-right: 0;
+  }
   .Anchor {
     display: block;
     width: 100%;
@@ -15,10 +18,5 @@
 
   .Image {
     width: 100%;
-  }
-
-  @include mobile-basic {
-    max-width: 120px;
-    margin-right: 20px;
   }
 }
