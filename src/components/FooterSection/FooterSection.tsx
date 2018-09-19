@@ -1,5 +1,6 @@
 import React from 'react';
 import css from './FooterSection.scss';
+import {WindowUtils} from "../../utils/WindowUtils";
 
 export class FooterSection extends React.Component {
   private wrapper: HTMLElement;
@@ -20,7 +21,7 @@ export class FooterSection extends React.Component {
             <span>FEConf 2018은 여러분의 참여를 기다립니다.</span>
           </p>
 
-          <a href="https://festa.io">
+          <a href="https://festa.io" onClick={WindowUtils.alertApplicationDate}>
             <button className={css.Button}>지금 등록하러 가기</button>
           </a>
           <img className={css.ImageCut1} src="static/images/pages/footer/cut1.png" aria-hidden="true" />

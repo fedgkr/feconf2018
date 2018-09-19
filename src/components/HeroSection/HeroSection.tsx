@@ -2,6 +2,7 @@ import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import { SpaceShuttle } from './components/SpaceShuttle/SpaceShuttle';
 import css from './HeroSection.scss';
+import {WindowUtils} from "../../utils/WindowUtils";
 
 interface Props {
   appWidth: number;
@@ -55,7 +56,7 @@ export class HeroSection extends React.Component<Props, State> {
           </div>
           <SpaceShuttle />
           <div className={css.ButtonWrap}>
-            <a href="" onClick={this.alert}>
+            <a href="" onClick={WindowUtils.alertApplicationDate}>
               <button>컨퍼런스 참가하기</button>
             </a>
           </div>
@@ -65,12 +66,6 @@ export class HeroSection extends React.Component<Props, State> {
           <img className={css.BottomLeft} src="static/images/pages/hero/bottomleft-shade.png" alt="Shade" />
         </div>
       </section>
-    );
-  }
-
-  private alert() {
-    alert(
-      "참가신청은 10월 4일 오후 3시부터 진행될 예정입니다. 주최 측 사정에 의하여 변경될 수 있습니다. 참고 부탁드립니다."
     );
   }
 

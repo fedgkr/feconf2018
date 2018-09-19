@@ -2,6 +2,7 @@ import { Button } from 'components/Button/Button';
 import React from 'react';
 import { ApparentSection } from '../ApparentSection/ApparentSection';
 import css from './IntroSection.scss';
+import {WindowUtils} from "../../utils/WindowUtils";
 
 export class IntroSection extends React.Component {
   public render() {
@@ -52,9 +53,11 @@ export class IntroSection extends React.Component {
                 </div>
               </a>
               <div className={css.ButtonWrap}>
-                <Button background="#a821d2" color="#fff">
-                  사전 등록하기
-                </Button>
+                <a href="" onClick={WindowUtils.alertApplicationDate}>
+                  <Button background="#a821d2" color="#fff">
+                    사전 등록하기
+                  </Button>
+                </a>
               </div>
             </div>
             <div className="clear" />
