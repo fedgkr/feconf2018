@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
-import css from './HeroSection.scss';
 import { SpaceShuttle } from './components/SpaceShuttle/SpaceShuttle';
+import css from './HeroSection.scss';
 
 interface Props {
   appWidth: number;
@@ -55,7 +55,7 @@ export class HeroSection extends React.Component<Props, State> {
           </div>
           <SpaceShuttle />
           <div className={css.ButtonWrap}>
-            <a href="https://festa.io">
+            <a href="" onClick={this.alert}>
               <button>컨퍼런스 참가하기</button>
             </a>
           </div>
@@ -65,6 +65,12 @@ export class HeroSection extends React.Component<Props, State> {
           <img className={css.BottomLeft} src="static/images/pages/hero/bottomleft-shade.png" alt="Shade" />
         </div>
       </section>
+    );
+  }
+
+  private alert() {
+    alert(
+      "참가 신청은 10월 4일 15시부터 진행될 예정입니다. 주최측 사정에 의하여 변경될 수 있습니다."
     );
   }
 
