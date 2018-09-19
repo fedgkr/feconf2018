@@ -122,7 +122,7 @@ export const speakerList: Speaker[] = [
   new Speaker({
     name: '임형주',
     profileImage: 'static/images/speaker/im_hyeongju.jpg',
-    presentTitle: '자체 polyfill.io 서버 구축하여 프런트엔드 최적화하기',
+    presentTitle: '자체 polyfill.io 서버 구축하여 프론트엔드 최적화하기',
     presentDesc: '레진코믹스에서 소프트웨어 엔지니어로 일하고 있고 웹기술, 클라우드 아키텍처에 관심이 많은 일인입니다.',
     company: getCompanyByName('레진엔터테인먼트'),
     track: 2,
