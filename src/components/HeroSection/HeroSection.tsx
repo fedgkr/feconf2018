@@ -2,7 +2,7 @@ import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import { SpaceShuttle } from './components/SpaceShuttle/SpaceShuttle';
 import css from './HeroSection.scss';
-import {WindowUtils} from "../../utils/WindowUtils";
+import {CONST} from "../../values/Const";
 
 interface Props {
   appWidth: number;
@@ -56,7 +56,7 @@ export class HeroSection extends React.Component<Props, State> {
           </div>
           <SpaceShuttle />
           <div className={css.ButtonWrap}>
-            <a href="" onClick={WindowUtils.alertApplicationDate}>
+            <a href={CONST.FESTA_LINK}>
               <button>컨퍼런스 참가하기</button>
             </a>
           </div>

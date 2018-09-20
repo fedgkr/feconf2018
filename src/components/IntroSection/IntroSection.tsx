@@ -2,7 +2,7 @@ import { Button } from 'components/Button/Button';
 import React from 'react';
 import { ApparentSection } from '../ApparentSection/ApparentSection';
 import css from './IntroSection.scss';
-import {WindowUtils} from "../../utils/WindowUtils";
+import {CONST} from "../../values/Const";
 
 export class IntroSection extends React.Component {
   public render() {
@@ -53,7 +53,7 @@ export class IntroSection extends React.Component {
                 </div>
               </a>
               <div className={css.ButtonWrap}>
-                <a href="" onClick={WindowUtils.alertApplicationDate}>
+                <a href={CONST.FESTA_LINK}>
                   <Button background="#a821d2" color="#fff">
                     사전 등록하기
                   </Button>
