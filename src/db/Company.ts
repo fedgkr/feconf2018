@@ -35,34 +35,16 @@ export class Company {
 
 export const companyList = [
   new Company({
-    name: '네이버',
-    level: SupportLevel.GOLD,
-    link: 'https://www.navercorp.com/ko/index.nhn',
-    logo: 'static/images/company/naver/logo.png',
+    name: '우아한 형제들',
+    level: SupportLevel.DIAMOND,
+    link: 'https://www.woowahan.com',
+    logo: 'static/images/company/woowabros/logo.png',
   }),
   new Company({
     name: 'KAKAO',
     level: SupportLevel.PLATINUM,
     link: 'https://www.kakaocorp.com',
     logo: 'static/images/company/kakao/logo.png',
-  }),
-  new Company({
-    name: 'NCSOFT',
-    level: SupportLevel.GOLD,
-    link: 'http://kr.ncsoft.com/korean',
-    logo: 'static/images/company/ncsoft/logo.png',
-  }),
-  new Company({
-    name: 'LINE',
-    level: SupportLevel.GOLD,
-    link: 'https://linepluscorp.com',
-    logo: 'static/images/company/line/logo.png',
-  }),
-  new Company({
-    name: '우아한 형제들',
-    level: SupportLevel.DIAMOND,
-    link: 'https://www.woowahan.com',
-    logo: 'static/images/company/woowabros/logo.png',
   }),
   new Company({
     name: 'Studio XID',
@@ -75,6 +57,24 @@ export const companyList = [
     level: SupportLevel.PLATINUM,
     link: 'https://toss.im/',
     logo: 'static/images/company/toss/logo.png',
+  }),
+  new Company({
+    name: '네이버',
+    level: SupportLevel.GOLD,
+    link: 'https://www.navercorp.com/ko/index.nhn',
+    logo: 'static/images/company/naver/logo.png',
+  }),
+  new Company({
+    name: 'NCSOFT',
+    level: SupportLevel.GOLD,
+    link: 'http://kr.ncsoft.com/korean',
+    logo: 'static/images/company/ncsoft/logo.png',
+  }),
+  new Company({
+    name: '엔테크서비스',
+    level: SupportLevel.GOLD,
+    link: 'https://www.nts-corp.com/',
+    logo: 'static/images/company/nts/logo.png',
   }),
   new Company({
     name: 'Jet Brains',
@@ -98,11 +98,6 @@ export const companyList = [
     name: '레진엔터테인먼트',
     level: SupportLevel.NONE,
     link: 'https://www.lezhin.com/',
-  }),
-  new Company({
-    name: '엔테크서비스',
-    level: SupportLevel.NONE,
-    link: 'https://www.nts-corp.com/',
   }),
   new Company({
     name: '코드스쿼드',
