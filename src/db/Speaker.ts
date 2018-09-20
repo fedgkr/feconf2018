@@ -44,7 +44,7 @@ export const speakerList: Speaker[] = [
   new Speaker({
     name: '서재원',
     profileImage: 'static/images/speaker/seo_jaewon.jpg',
-    presentTitle: '주관적 참견시점',
+    presentTitle: 'TC39 스펙에 대한 주관적 참견 시점',
     presentDesc:
       '실용적인 기술보다 학문적인 기술을 좋아하는 동네 아저씨입니다. 자바스크립트 표준에 대한 이야기와 며몇 프로포절에 참견을 한 경험을 들려드립니다.',
     company: getCompanyByName('엔젤스윙'),
@@ -73,9 +73,9 @@ export const speakerList: Speaker[] = [
   new Speaker({
     name: '전기환',
     profileImage: 'static/images/speaker/jeon_kihwan.jpg',
-    presentTitle: '실무에서 WebGL, three.js 사용하기',
+    presentTitle: '생각보다 쉬운 webGL (feat. three.js)',
     presentDesc:
-      "중앙일보 디지털 콘텐트 랩에서 프론트 개발을 맡고 있습니다. 기존 언론사에서는 볼 수 없는 재밌고 신선한 콘텐트를 만들기 위해 기획 및 다자인도 하고 있습니다. 최근에는 three.js를 많이 사용하며 최근에는 '그 곳 판문점'이라는 콘텐트를 만들었습니다.",
+      "중앙일보 디지털 콘텐트 랩에서 프론트 개발을 맡고 있습니다. 재밌고 신선한 콘텐트를 만들기 위해 기획 및 디자인도 종종하는 디발자입니다. 최근에는 three.js 를 사용하여 '그 곳 판문점'이라는 콘텐트를 만들었습니다.",
     company: getCompanyByName('중앙일보'),
     track: 1,
     order: 3,
