@@ -1,6 +1,9 @@
 .SpeakersRow {
   position: relative;
   margin-bottom: 52px;
+  display: flex;
+  justify-content: space-between;
+
   &:last-child {
     margin-bottom: 0;
   }
