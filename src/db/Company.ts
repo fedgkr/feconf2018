@@ -41,6 +41,12 @@ export const companyList = [
     logo: 'static/images/company/woowabros/logo.png',
   }),
   new Company({
+    name: '네이버',
+    level: SupportLevel.PLATINUM,
+    link: 'https://www.navercorp.com/ko/index.nhn',
+    logo: 'static/images/company/naver/logo.png',
+  }),
+  new Company({
     name: 'KAKAO',
     level: SupportLevel.PLATINUM,
     link: 'https://www.kakaocorp.com',
@@ -57,12 +63,6 @@ export const companyList = [
     level: SupportLevel.PLATINUM,
     link: 'https://toss.im/',
     logo: 'static/images/company/toss/logo.png',
-  }),
-  new Company({
-    name: '네이버',
-    level: SupportLevel.GOLD,
-    link: 'https://www.navercorp.com/ko/index.nhn',
-    logo: 'static/images/company/naver/logo.png',
   }),
   new Company({
     name: 'NCSOFT',
