@@ -141,7 +141,7 @@ export const speakerList: Speaker[] = [
     name: '강동욱',
     profileImage: 'static/images/speaker/blank.png',
     presentTitle: '은밀하게 신속하게 React 포팅 성공기',
-    presentDesc: '(TBD)',
+    presentDesc: '회사 내에 React 또는 자바스크립트 프레임워크 도입을 고민하고 계신 분들에게 도움이 되었으면 좋겠습니다. 원티드가 jQuery 기반의 초기 구조에서 어떻게 React 기반으로 재작성할 수 있었고 더 나아가 서버렌더링까지 적용할 수 있었는지 과정을 공유합니다.',
     company: getCompanyByName('원티드'),
     track: 2,
     order: 6,
