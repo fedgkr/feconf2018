@@ -33,34 +33,34 @@
       font-size: 18px;
     }
     .ImageCut1 {
-      width: 175px;
+      width: 16.6992%;
       top: 65px;
-      left: 18px;
+      left: 1.75781%;
       transform: translate3d(-60px, 0, 0);
     }
     .ImageCut2 {
-      width: 110px;
-      left: 162px;
-      bottom: 0;
+      width: 15.42968%;
+      left: 19.04296%;
+      bottom: 10px;
       transform: translate3d(80px, 0, 0);
     }
     .ImageCut3 {
-      width: 76px;
-      top: -36px;
-      right: 168px;
+      width: 7.03125%;
+      top: -8%;
+      right: 16.40625%;
       transform: translate3d(-20px, 0, 0);
     }
     .ImageCut4 {
-      width: 148px;
-      right: 146px;
-      bottom: 0;
+      width: 16.6015625%;
+      right: 14.45312%;
+      bottom: 0.58593%;
       transform: translate3d(60px, 0, 0);
     }
     .ImageCut5 {
-      width: 126px;
-      right: 0;
-      bottom: 104px;
-      transform: translate3d(20px, 0, 0);
+      width: 15.33203%;
+      right: 0.58593%;
+      top: 50%;
+      transform: translate3d(20px, -40%, 0);
     }
     .ImageCut6,
     .ImageCut7 {
@@ -70,6 +70,7 @@
       position: absolute;
       opacity: .3;
       transition: transform .5s ease-out, opacity .3s;
+      pointer-events: none;
     }
   }
 
@@ -78,10 +79,13 @@
     .Content .ImageCut2,
     .Content .ImageCut3,
     .Content .ImageCut4,
-    .Content .ImageCut5,
     .Content .ImageCut6,
     .Content .ImageCut7 {
       transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    .Content .ImageCut5 {
+      transform: translate3d(0, -40%, 0);
       opacity: 1;
     }
   }
