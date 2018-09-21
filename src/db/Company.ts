@@ -53,22 +53,28 @@ export const companyList = [
     logo: 'static/images/company/kakao/logo.png',
   }),
   new Company({
+    name: '토스',
+    level: SupportLevel.PLATINUM,
+    link: 'https://toss.im/',
+    logo: 'static/images/company/toss/logo-v2.png',
+  }),
+  new Company({
     name: 'Studio XID',
     level: SupportLevel.PLATINUM,
     link: 'https://www.protopie.io',
     logo: 'static/images/company/studio-xid/logo.png',
   }),
   new Company({
-    name: '토스',
+    name: '네이버 웹툰',
     level: SupportLevel.PLATINUM,
-    link: 'https://toss.im/',
-    logo: 'static/images/company/toss/logo.png',
+    link: 'https://www.webtoons.com/',
+    logo: 'static/images/company/webtoons/logo.png',
   }),
   new Company({
     name: 'NCSOFT',
     level: SupportLevel.GOLD,
     link: 'http://kr.ncsoft.com/korean',
-    logo: 'static/images/company/ncsoft/logo.png',
+    logo: 'static/images/company/ncsoft/logo-v2.png',
   }),
   new Company({
     name: '엔테크서비스',
@@ -128,6 +134,12 @@ export const companyList = [
     name: '바닐라코딩',
     level: SupportLevel.NONE,
     link: 'https://www.vanillacoding.co',
+  }),
+  new Company({
+    name: '원티드',
+    level: SupportLevel.NONE,
+    link: 'https://www.wanted.co.kr/',
+    logo: 'static/images/company/wanted/logo.png',
   }),
 ];
 

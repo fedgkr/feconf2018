@@ -138,10 +138,11 @@ export const speakerList: Speaker[] = [
     order: 6,
   }),
   new Speaker({
-    name: '(TBD)',
+    name: '강동욱',
     profileImage: 'static/images/speaker/blank.png',
-    presentTitle: '',
+    presentTitle: '은밀하게 신속하게 React 포팅 성공기',
     presentDesc: '(TBD)',
+    company: getCompanyByName('원티드'),
     track: 2,
     order: 6,
   }),
