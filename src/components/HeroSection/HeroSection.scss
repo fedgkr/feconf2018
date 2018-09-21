@@ -54,10 +54,12 @@
       }
     }
     .ButtonWrap {
-      position: relative;
       margin-top: 72px;
-      font-size: 18px;
+      font-size: 0;
 
+      a {
+        display: block;
+      }
       button {
         width: 218px;
         padding: 18px 0 20px 0;
@@ -66,9 +68,9 @@
       }
     }
     .RegisterNotice {
-      position: absolute;
-      bottom: -17px;
-      width: 218px;
+      display: inline-block;
+      min-width: 218px;
+      margin-top: 6px;
       text-align: center;
       font-size: 11px;
       line-height: 11px;
@@ -114,15 +116,14 @@
       }
       .ButtonWrap {
         margin-top: 40px;
-        font-size: 14px;
-
         button {
           width: 172px;
           padding: 17px 0;
         }
       }
       .RegisterNotice {
-        width: 172px;
+        min-width: 172px;
+        margin-top: 4px;
         span:first-child {
           display: none;
         }
