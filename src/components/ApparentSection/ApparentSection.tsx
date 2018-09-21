@@ -6,7 +6,7 @@ export class ApparentSection extends React.Component {
   private target: HTMLElement;
 
   public componentDidMount() {
-    const options = { threshold: 0, rootMargin: '-70px' };
+    const options = { threshold: 0, rootMargin: '0px 0px -70px 0px' };
     const io = new IntersectionObserver(this.onIntersecting, options);
     io.observe(this.wrapper);
   }
