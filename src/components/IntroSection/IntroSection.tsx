@@ -2,8 +2,8 @@ import { Button } from 'components/Button/Button';
 import React from 'react';
 import { ApparentSection } from '../ApparentSection/ApparentSection';
 import css from './IntroSection.scss';
-import {CONST} from "../../values/Const";
-import {FESTA_LINK_TYPE, GAService} from "../service/ga.service";
+import { CONST } from '../../values/Const';
+import { FESTA_LINK_TYPE, GAService } from '../service/ga.service';
 
 export class IntroSection extends React.Component {
   public render() {

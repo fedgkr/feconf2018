@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './FooterSection.scss';
-import {CONST} from "../../values/Const";
-import {FESTA_LINK_TYPE, GAService} from "../service/ga.service";
+import { CONST } from '../../values/Const';
+import { FESTA_LINK_TYPE, GAService } from '../service/ga.service';
 
 export class FooterSection extends React.Component {
   private wrapper: HTMLElement;

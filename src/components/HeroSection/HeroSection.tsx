@@ -2,8 +2,8 @@ import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import { SpaceShuttle } from './components/SpaceShuttle/SpaceShuttle';
 import css from './HeroSection.scss';
-import {CONST} from "../../values/Const";
-import {FESTA_LINK_TYPE, GAService} from "../service/ga.service";
+import { CONST } from '../../values/Const';
+import { FESTA_LINK_TYPE, GAService } from '../service/ga.service';
 
 interface Props {
   appWidth: number;
