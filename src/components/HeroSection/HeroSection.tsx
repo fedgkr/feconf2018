@@ -60,6 +60,10 @@ export class HeroSection extends React.Component<Props, State> {
             <a href={CONST.FESTA_LINK} onClick={() => GAService.festaClick(FESTA_LINK_TYPE.TOP)}>
               <button>컨퍼런스 참가하기</button>
             </a>
+            <p className={css.RegisterNotice}>
+              <span>2018년 10월 4일(목) 오후 3시부터 신청 가능</span>
+              <span>2018.10.04(목) 오후 3시부터 가능</span>
+            </p>
           </div>
         </div>
         <div className={css.Background}>
