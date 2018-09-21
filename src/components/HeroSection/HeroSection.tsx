@@ -3,6 +3,7 @@ import { FlipClock } from './components/FlipClock/FlipClock';
 import { SpaceShuttle } from './components/SpaceShuttle/SpaceShuttle';
 import css from './HeroSection.scss';
 import {CONST} from "../../values/Const";
+import {FESTA_LINK_TYPE, GAService} from "../service/ga.service";
 
 interface Props {
   appWidth: number;
@@ -56,7 +57,7 @@ export class HeroSection extends React.Component<Props, State> {
           </div>
           <SpaceShuttle />
           <div className={css.ButtonWrap}>
-            <a href={CONST.FESTA_LINK}>
+            <a href={CONST.FESTA_LINK} onClick={() => GAService.festaClick(FESTA_LINK_TYPE.TOP)}>
               <button>컨퍼런스 참가하기</button>
             </a>
           </div>
