@@ -123,7 +123,7 @@ export const companyList = [
   new Company({
     name: '중앙일보',
     level: SupportLevel.NONE,
-    link: 'https://joongang.joins.com',
+    link: 'https://news.joins.com/digitalspecial/list',
   }),
   new Company({
     name: '엔젤스윙',
