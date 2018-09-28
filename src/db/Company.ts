@@ -96,7 +96,7 @@ export const companyList = [
   }),
   new Company({
     name: '클로바',
-    level: SupportLevel.ETC,
+    level: SupportLevel.NONE,
     link: 'https://clova.ai',
     logo: 'static/images/company/clova/logo.png',
   }),
