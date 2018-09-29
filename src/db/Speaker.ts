@@ -34,7 +34,7 @@ export const speakerList: Speaker[] = [
   new Speaker({
     name: 'Ken Huh',
     profileImage: 'static/images/speaker/hea_guenhang.jpg',
-    presentTitle: '미국개발자vs한국개발자',
+    presentTitle: '미국개발자 vs 한국개발자',
     presentDesc:
       'Currently teaching at Vanilla Coding. Former Frontend Team Lead at Nike World Headquarters in Oregon, United States.',
     company: getCompanyByName('바닐라코딩'),
