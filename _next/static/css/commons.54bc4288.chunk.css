@@ -1,0 +1,55 @@
+.blind {
+  font-size: 0;
+  height: 0;
+  left: 0;
+  line-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 0; }
+
+.clear {
+  clear: both; }
+  .clear::after {
+    content: ' ';
+    clear: both;
+    display: table; }
+
+.transparent {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  border: 0 none;
+  cursor: pointer; }
+
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: normal; }
+
+* {
+  font-family: 'Spoqa Han Sans', 'Apple SD Gothic Neo', 'Sans-serif'; }
+
+body {
+  overflow-x: hidden; }
+
+p {
+  margin: 0; }
+
+button {
+  padding: 18px 40px 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer; }
+
+.clear {
+  clear: both; }
+
+body.fixed {
+  overflow: hidden; }
+
