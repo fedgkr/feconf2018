@@ -1073,6 +1073,9 @@
         .SponsorsSection-1Y9Ax .Content-cXrr_ .Desc-3v3Ix span:nth-child(1) {
           display: inline-block;
           text-overflow: ellipsis; }
+        .SponsorsSection-1Y9Ax .Content-cXrr_ .Desc-3v3Ix span:nth-child(3) {
+          display: inline;
+          text-overflow: unset; }
         .SponsorsSection-1Y9Ax .Content-cXrr_ .Desc-3v3Ix br:nth-child(2) {
           display: block; }
         .SponsorsSection-1Y9Ax .Content-cXrr_ .Desc-3v3Ix br:nth-child(4) {
