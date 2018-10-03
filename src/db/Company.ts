@@ -65,12 +65,6 @@ export const companyList = [
     logo: 'static/images/company/studio-xid/logo.png',
   }),
   new Company({
-    name: '네이버 웹툰',
-    level: SupportLevel.PLATINUM,
-    link: 'https://www.webtoons.com/',
-    logo: 'static/images/company/webtoons/logo.png',
-  }),
-  new Company({
     name: 'NCSOFT',
     level: SupportLevel.GOLD,
     link: 'http://kr.ncsoft.com/korean',
