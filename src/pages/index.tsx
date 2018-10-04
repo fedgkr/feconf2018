@@ -1,5 +1,6 @@
 import { FixedButton } from 'components/FixedButton/FixedButton';
 import { FooterSection } from 'components/FooterSection/FooterSection';
+import { GlobalNotice } from 'components/GlobalNotice/GlobalNotice';
 import { HeroSection } from 'components/HeroSection/HeroSection';
 import { IntroSection } from 'components/IntroSection/IntroSection';
 import { ScheduleSection } from 'components/ScheduleSection/ScheduleSection';
@@ -107,6 +108,7 @@ class IndexPage extends React.Component<{}, IndexPageState> {
           />
         </Head>
         <article className={css.Content}>
+          <GlobalNotice />
           <HeroSection deadline={EtcData.deadline} appWidth={appWidth} />
           <IntroSection />
           <SpeakersSection appWidth={appWidth} speakerList={speakerList} selectSpeaker={this.onSetSidebarOpen} />

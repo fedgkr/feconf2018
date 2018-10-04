@@ -1,0 +1,16 @@
+@import "variables";
+
+.wrapper {
+  margin: 0;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 19px;
+  background: yellow;
+  border-bottom: 1px solid white;
+  color: $font-color;
+  text-align: center;
+  word-break: keep-all;
+  a {
+    color: $font-color;
+  }
+}
