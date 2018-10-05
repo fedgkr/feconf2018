@@ -1,10 +1,11 @@
 import css from './GlobalNotice.scss';
+import React from "react";
 
 const GlobalNotice: React.SFC = () => (
   <p className={css.wrapper}>
-    <span>참가 신청 문제로 불편을 드려 대단히 죄송합니다. </span>
+    <span>2018년 10월 6일(토) 오후 3시부터 </span>
     <br />
-    <span>빠른 시일 내에 참가 신청 재공지 하겠습니다.</span>
+    <span>밋고(Meetgo)를 통해 예약이 시작됩니다.</span>
   </p>
 );
 

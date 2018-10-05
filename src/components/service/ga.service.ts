@@ -9,7 +9,7 @@ export enum GA_ACTION {
   CLICK_SPONSOR = 'CLICK_SPONSOR',
 }
 
-export enum FESTA_LINK_TYPE {
+export enum JOIN_LINK_TYPE {
   TOP = 'TOP',
   INTRO = 'INTRO',
   BOTTOM = 'BOTTOM',
@@ -17,7 +17,7 @@ export enum FESTA_LINK_TYPE {
 }
 
 export class GAService {
-  public static festaClick(position: FESTA_LINK_TYPE) {
+  public static joinClick(position: JOIN_LINK_TYPE) {
     window.ga('send', 'event', GA_CATEGORY.LINK, GA_ACTION.CLICK_LINK, position);
   }
 

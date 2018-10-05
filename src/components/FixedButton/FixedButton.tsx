@@ -1,4 +1,6 @@
 import React from 'react';
+import { CONST } from '../../values/Const';
+import { JOIN_LINK_TYPE, GAService } from '../service/ga.service';
 import css from './FixedButton.scss';
 
 export class FixedButton extends React.Component {
@@ -18,15 +20,15 @@ export class FixedButton extends React.Component {
   public render() {
     return (
       <div className={css.FixedButton}>
-        <a className={css.Anchor} href="#" ref={el => (this.anchor = el)} onClick={this.onClickJoin}>
+        <a
+          className={css.Anchor}
+          href={CONST.JOIN_LINK}
+          ref={el => (this.anchor = el)}
+          onClick={() => GAService.joinClick(JOIN_LINK_TYPE.INTRO)}
+        >
           등록하기
         </a>
       </div>
     );
   }
-
-  private onClickJoin = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    event.preventDefault();
-    alert('아직 신청 기간이 아닙니다.');
-  };
 }
