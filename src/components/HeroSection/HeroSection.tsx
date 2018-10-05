@@ -42,6 +42,25 @@ export class HeroSection extends React.Component<Props, State> {
           <h1 className={css.Logo}>
             <img src="static/images/logo/img-logo@2x.png" alt="FEConf 2018" />
           </h1>
+          <div className={css.SocialWrap}>
+            <ul className={css.SocialList}>
+              <li className={css.SocialItem}>
+                <a href="https://www.facebook.com/groups/webfrontend" target="_blank">
+                  <span className="blind">프론트엔드개발그룹</span>
+                </a>
+              </li>
+              <li className={css.SocialItem}>
+                <a href="https://www.facebook.com/feconf.kr" target="_blank">
+                  <span className="blind">FEConf 페이지</span>
+                </a>
+              </li>
+              <li className={css.SocialItem}>
+                <a href="mailto:feconf@googlegroups.com" target="_blank">
+                  <span className="blind">이메일</span>
+                </a>
+              </li>
+            </ul>
+          </div>
           <div className={css.ClockWrap}>
             <div className={css.Day}>
               <FlipClock title={'DAY'} value={presentLeft.days} maxValue={99} />
