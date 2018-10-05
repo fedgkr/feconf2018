@@ -2,8 +2,6 @@ import { Button } from 'components/Button/Button';
 import React from 'react';
 import { ApparentSection } from '../ApparentSection/ApparentSection';
 import css from './IntroSection.scss';
-import { CONST } from '../../values/Const';
-import { FESTA_LINK_TYPE, GAService } from '../service/ga.service';
 
 export class IntroSection extends React.Component {
   public render() {
@@ -54,7 +52,7 @@ export class IntroSection extends React.Component {
                 </div>
               </a>
               <div className={css.ButtonWrap}>
-                <a href={CONST.FESTA_LINK} onClick={() => GAService.festaClick(FESTA_LINK_TYPE.INTRO)}>
+                <a href="#" onClick={this.onClickJoin}>
                   <Button background="#a821d2" color="#fff">
                     사전 등록하기
                   </Button>
@@ -67,4 +65,9 @@ export class IntroSection extends React.Component {
       </section>
     );
   }
+
+  private onClickJoin = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    alert('아직 신청 기간이 아닙니다.');
+  };
 }

@@ -1,7 +1,5 @@
 import React from 'react';
 import css from './FooterSection.scss';
-import { CONST } from '../../values/Const';
-import { FESTA_LINK_TYPE, GAService } from '../service/ga.service';
 
 export class FooterSection extends React.Component {
   private wrapper: HTMLElement;
@@ -22,7 +20,7 @@ export class FooterSection extends React.Component {
             <span>FEConf 2018은 여러분의 참여를 기다립니다.</span>
           </p>
 
-          <a href={CONST.FESTA_LINK} onClick={() => GAService.festaClick(FESTA_LINK_TYPE.BOTTOM)}>
+          <a href="#" onClick={this.onClickJoin}>
             <button className={css.Button}>지금 등록하러 가기</button>
           </a>
           <img className={css.ImageCut1} src="static/images/pages/footer/cut1.png" aria-hidden="true" />
@@ -45,5 +43,10 @@ export class FooterSection extends React.Component {
         target.classList.remove(css.appear);
       }
     });
+  };
+
+  private onClickJoin = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    alert('아직 신청 기간이 아닙니다.');
   };
 }

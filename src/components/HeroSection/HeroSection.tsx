@@ -2,8 +2,6 @@ import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import { SpaceShuttle } from './components/SpaceShuttle/SpaceShuttle';
 import css from './HeroSection.scss';
-import { CONST } from '../../values/Const';
-import { FESTA_LINK_TYPE, GAService } from '../service/ga.service';
 
 interface Props {
   appWidth: number;
@@ -76,13 +74,15 @@ export class HeroSection extends React.Component<Props, State> {
           </div>
           <SpaceShuttle />
           <div className={css.ButtonWrap}>
-            <a href={CONST.FESTA_LINK} onClick={() => GAService.festaClick(FESTA_LINK_TYPE.TOP)}>
+            <a href="#" onClick={this.onClickJoin}>
               <button>컨퍼런스 참가하기</button>
             </a>
+            {/*
             <p className={css.RegisterNotice}>
               <span>2018년 10월 5일(금) 오후 3시부터 신청 가능</span>
               <span>2018.10.05(금) 오후 3시부터 가능</span>
             </p>
+            */}
           </div>
         </div>
         <div className={css.Background}>
@@ -117,4 +117,9 @@ export class HeroSection extends React.Component<Props, State> {
       seconds,
     };
   }
+
+  private onClickJoin = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    alert('아직 신청 기간이 아닙니다.');
+  };
 }
