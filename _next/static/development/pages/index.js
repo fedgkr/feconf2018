@@ -6414,7 +6414,7 @@ __webpack_require__.r(__webpack_exports__);
 var GlobalNotice = function GlobalNotice() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
     className: _GlobalNotice_scss__WEBPACK_IMPORTED_MODULE_0___default.a.wrapper
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "2018\uB144 10\uC6D4 6\uC77C(\uD1A0) \uC624\uD6C4 3\uC2DC\uBD80\uD130 "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\uBC0B\uACE0(Meetgo)\uB97C \uD1B5\uD574 \uC608\uC57D\uC774 \uC2DC\uC791\uB429\uB2C8\uB2E4."));
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "\uC9C0\uAE08, \uBC0B\uACE0(Meetgo)\uC5D0\uC11C \uC608\uC57D\uC774 \uC9C4\uD589 \uC911\uC785\uB2C8\uB2E4."));
 };
 
 
@@ -6554,9 +6554,7 @@ function (_React$Component) {
         onClick: function onClick() {
           return _service_ga_service__WEBPACK_IMPORTED_MODULE_4__["GAService"].joinClick(_service_ga_service__WEBPACK_IMPORTED_MODULE_4__["JOIN_LINK_TYPE"].TOP);
         }
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "\uCEE8\uD37C\uB7F0\uC2A4 \uCC38\uAC00\uD558\uAE30")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        className: _HeroSection_scss__WEBPACK_IMPORTED_MODULE_5___default.a.RegisterNotice
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2018\uB144 10\uC6D4 6\uC77C(\uD1A0) \uC624\uD6C4 3\uC2DC\uBD80\uD130 \uC2E0\uCCAD \uAC00\uB2A5"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "2018.10.06(\uD1A0) \uC624\uD6C4 3\uC2DC\uBD80\uD130 \uAC00\uB2A5")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, "\uCEE8\uD37C\uB7F0\uC2A4 \uCC38\uAC00\uD558\uAE30")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: _HeroSection_scss__WEBPACK_IMPORTED_MODULE_5___default.a.Background
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         className: _HeroSection_scss__WEBPACK_IMPORTED_MODULE_5___default.a.TopRight,
