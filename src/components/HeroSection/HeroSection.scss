@@ -93,19 +93,6 @@
         color: #000;
       }
     }
-    .RegisterNotice {
-      display: inline-block;
-      min-width: 218px;
-      margin-top: 6px;
-      text-align: center;
-      font-size: 11px;
-      line-height: 11px;
-      color: #fff;
-      opacity: .9;
-      span:last-child {
-        display: none;
-      }
-    }
     @include mobile-basic {
       padding: 32px 24px 90px;
       .Logo {
@@ -154,16 +141,6 @@
         button {
           width: 172px;
           padding: 17px 0;
-        }
-      }
-      .RegisterNotice {
-        min-width: 172px;
-        margin-top: 4px;
-        span:first-child {
-          display: none;
-        }
-        span:last-child {
-          display: block;
         }
       }
     }

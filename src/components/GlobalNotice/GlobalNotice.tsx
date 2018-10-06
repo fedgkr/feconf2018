@@ -3,9 +3,7 @@ import React from "react";
 
 const GlobalNotice: React.SFC = () => (
   <p className={css.wrapper}>
-    <span>2018년 10월 6일(토) 오후 3시부터 </span>
-    <br />
-    <span>밋고(Meetgo)를 통해 예약이 시작됩니다.</span>
+    <span>지금, 밋고(Meetgo)에서 예약이 진행 중입니다.</span>
   </p>
 );
 

@@ -13,13 +13,7 @@
   a {
     color: $font-color;
   }
-  br {
-    display: none;
-  }
   @include mobile-basic {
     font-size: 14px;
-    br {
-      display: block;
-    }
   }
 }
