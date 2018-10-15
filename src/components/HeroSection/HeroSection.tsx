@@ -2,7 +2,6 @@ import React from 'react';
 import { FlipClock } from './components/FlipClock/FlipClock';
 import { SpaceShuttle } from './components/SpaceShuttle/SpaceShuttle';
 import { CONST } from '../../values/Const';
-import { JOIN_LINK_TYPE, GAService } from '../service/ga.service';
 import css from './HeroSection.scss';
 
 interface Props {
@@ -76,7 +75,7 @@ export class HeroSection extends React.Component<Props, State> {
           </div>
           <SpaceShuttle />
           <div className={css.ButtonWrap}>
-            <a href={CONST.JOIN_LINK} onClick={() => GAService.joinClick(JOIN_LINK_TYPE.TOP)}>
+            <a href={CONST.JOIN_LINK} onClick={this.onClickJoin}>
               <button>컨퍼런스 참가하기</button>
             </a>
           </div>
@@ -112,5 +111,10 @@ export class HeroSection extends React.Component<Props, State> {
       minutes,
       seconds,
     };
+  }
+
+  private onClickJoin(event: React.MouseEvent<HTMLAnchorElement>) {
+    event.preventDefault();
+    alert('참가 신청을 마감했습니다.');
   }
 }

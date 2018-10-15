@@ -1,6 +1,5 @@
 import React from 'react';
 import { CONST } from '../../values/Const';
-import { JOIN_LINK_TYPE, GAService } from '../service/ga.service';
 import css from './FixedButton.scss';
 
 export class FixedButton extends React.Component {
@@ -24,11 +23,16 @@ export class FixedButton extends React.Component {
           className={css.Anchor}
           href={CONST.JOIN_LINK}
           ref={el => (this.anchor = el)}
-          onClick={() => GAService.joinClick(JOIN_LINK_TYPE.INTRO)}
+          onClick={this.onClickJoin}
         >
           등록하기
         </a>
       </div>
     );
+  }
+
+  private onClickJoin(event: React.MouseEvent<HTMLAnchorElement>) {
+    event.preventDefault();
+    alert('참가 신청을 마감했습니다.');
   }
 }
