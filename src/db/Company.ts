@@ -141,6 +141,12 @@ export const companyList = [
     link: 'https://banksalad.com/',
     logo: 'static/images/company/rainist/logo.png',
   }),
+  new Company({
+    name: '매닝',
+    level: SupportLevel.ETC,
+    link: 'https://www.manning.com/',
+    logo: 'static/images/company/manning/logo.png',
+  }),
 ];
 
 export const getCompanyByName = (name = '') => {
