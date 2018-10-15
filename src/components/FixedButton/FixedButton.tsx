@@ -19,12 +19,7 @@ export class FixedButton extends React.Component {
   public render() {
     return (
       <div className={css.FixedButton}>
-        <a
-          className={css.Anchor}
-          href={CONST.JOIN_LINK}
-          ref={el => (this.anchor = el)}
-          onClick={this.onClickJoin}
-        >
+        <a className={css.Anchor} href={CONST.JOIN_LINK} ref={el => (this.anchor = el)} onClick={this.onClickJoin}>
           등록하기
         </a>
       </div>

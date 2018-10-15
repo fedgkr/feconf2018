@@ -45,8 +45,7 @@ export const speakerList: Speaker[] = [
     name: '서재원',
     profileImage: 'static/images/speaker/seo_jaewon.jpg',
     presentTitle: 'TC39 스펙에 대한 주관적 참견 시점',
-    presentDesc:
-      '저와 애증의 관계인 자바스크립트의 미래를 만들어 본 경험을 여러분들과 나누기 위해 온 중학생입니다.',
+    presentDesc: '저와 애증의 관계인 자바스크립트의 미래를 만들어 본 경험을 여러분들과 나누기 위해 온 중학생입니다.',
     company: getCompanyByName('엔젤스윙'),
     track: 2,
     order: 1,
