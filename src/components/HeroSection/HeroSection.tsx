@@ -44,17 +44,17 @@ export class HeroSection extends React.Component<Props, State> {
           <div className={css.SocialWrap}>
             <ul className={css.SocialList}>
               <li className={css.SocialItem}>
-                <a href="https://www.facebook.com/groups/webfrontend" target="_blank">
+                <a href="https://www.facebook.com/groups/webfrontend" title="프론트엔드개발그룹" target="_blank">
                   <span className="blind">프론트엔드개발그룹</span>
                 </a>
               </li>
               <li className={css.SocialItem}>
-                <a href="https://www.facebook.com/feconf.kr" target="_blank">
+                <a href="https://www.facebook.com/feconf.kr" title="FEConf 페이스북 페이지" target="_blank">
                   <span className="blind">FEConf 페이지</span>
                 </a>
               </li>
               <li className={css.SocialItem}>
-                <a href="mailto:feconf@googlegroups.com" target="_blank">
+                <a href="mailto:feconf@googlegroups.com" title="FEConf 이메일" target="_blank">
                   <span className="blind">이메일</span>
                 </a>
               </li>
