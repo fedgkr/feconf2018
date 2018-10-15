@@ -30,7 +30,7 @@ module.exports = {"ApparentSection":"ApparentSection-EI8oI","Target":"Target-1mn
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571856");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684227");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"Button":"Button-3Tk67"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572268");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684815");
           });
       }
     }
@@ -106,7 +106,7 @@ module.exports = {"FixedButton":"FixedButton-1x2gl","Anchor":"Anchor-1U4yy","Sho
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571171");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586683816");
           });
       }
     }
@@ -144,7 +144,7 @@ module.exports = {"FooterSection":"FooterSection-2maID","Content":"Content-1BwXe
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571538");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586683794");
           });
       }
     }
@@ -182,7 +182,7 @@ module.exports = {"HeroSection":"HeroSection-327bZ","Content":"Content-vWUa3","L
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571708");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586683839");
           });
       }
     }
@@ -220,7 +220,7 @@ module.exports = {"FlipClock":"FlipClock-2N6rL","Title":"Title-2q8Ec","DigitWrap
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572141");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684448");
           });
       }
     }
@@ -258,7 +258,7 @@ module.exports = {"Digit":"Digit-y2lSy","Top":"Top-19T8M","Bottom":"Bottom-lN3Jl
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572410");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684994");
           });
       }
     }
@@ -296,7 +296,7 @@ module.exports = {"SpaceShuttle":"SpaceShuttle-2bLaS","Shuttle":"Shuttle-1bXUz",
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572020");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684638");
           });
       }
     }
@@ -334,7 +334,7 @@ module.exports = {"IntroSection":"IntroSection-3y_m3","Content":"Content-25bQY",
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571297");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684154");
           });
       }
     }
@@ -372,7 +372,7 @@ module.exports = {"ScheduleSection":"ScheduleSection-336wZ","Content":"Content-1
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571745");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684042");
           });
       }
     }
@@ -410,7 +410,7 @@ module.exports = {"SessionItem":"SessionItem-24a3B","TimeIndicator":"TimeIndicat
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572174");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684690");
           });
       }
     }
@@ -448,7 +448,7 @@ module.exports = {"SessionPair":"SessionPair-Wjc6J","SessionItem":"SessionItem-3
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572251");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684801");
           });
       }
     }
@@ -486,7 +486,7 @@ module.exports = {"TrackList":"TrackList-LBwS1","Label":"Label-2NB9_","SessionWr
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572063");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684518");
           });
       }
     }
@@ -524,7 +524,7 @@ module.exports = {"TrackPair":"TrackPair-1i1fn","LabelWrap":"LabelWrap-1nKNK","L
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572079");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684535");
           });
       }
     }
@@ -562,7 +562,7 @@ module.exports = {"Sidebar":"Sidebar-3-uEG","Dim":"Dim-26jPW","Content":"Content
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571574");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586683882");
           });
       }
     }
@@ -600,7 +600,7 @@ module.exports = {"SpeakerInfo":"SpeakerInfo-1WmKA","CloseBtn":"CloseBtn-GzkR6",
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571836");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684207");
           });
       }
     }
@@ -638,7 +638,7 @@ module.exports = {"SpeakersSection":"SpeakersSection-2-hTv","Content":"Content-3
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571929");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684348");
           });
       }
     }
@@ -676,7 +676,7 @@ module.exports = {"SpeakerProfile":"SpeakerProfile-kQVs0","ContentWrap":"Content
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572339");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684901");
           });
       }
     }
@@ -714,7 +714,7 @@ module.exports = {"SpeakersRow":"SpeakersRow-3urQG"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572095");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684550");
           });
       }
     }
@@ -752,7 +752,7 @@ module.exports = {"SponsorsSection":"SponsorsSection-1Y9Ax","Content":"Content-c
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806571974");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684424");
           });
       }
     }
@@ -790,7 +790,7 @@ module.exports = {"SponsorLogo":"SponsorLogo-um7hC","Anchor":"Anchor-2rV5o","Ima
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806572217");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586684751");
           });
       }
     }
@@ -828,7 +828,7 @@ module.exports = {"Content":"Content-1ZaE6"};;
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1538806570442");
+            injectCss(link, link.href.split("?")[0] + "?unix=1539586681489");
           });
       }
     }
@@ -837,4 +837,4 @@ module.exports = {"Content":"Content-1ZaE6"};;
 /***/ })
 
 })
-//# sourceMappingURL=styles.173de9f227c2363d44a1.hot-update.js.map
+//# sourceMappingURL=styles.15be94f7803245f1b4a7.hot-update.js.map

@@ -8479,6 +8479,11 @@ var companyList = [new Company({
   level: SupportLevel.NONE,
   link: 'https://www.wanted.co.kr/',
   logo: 'static/images/company/wanted/logo.png'
+}), new Company({
+  name: '레이니스트',
+  level: SupportLevel.PLATINUM,
+  link: 'https://banksalad.com/',
+  logo: 'static/images/company/rainist/logo.png'
 })];
 var getCompanyByName = function getCompanyByName() {
   var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
@@ -8572,7 +8577,7 @@ var speakerList = [new Speaker({
   name: '서재원',
   profileImage: 'static/images/speaker/seo_jaewon.jpg',
   presentTitle: 'TC39 스펙에 대한 주관적 참견 시점',
-  presentDesc: '실용적인 기술보다 학문적인 기술을 좋아하는 동네 아저씨입니다. 자바스크립트 표준에 대한 이야기와 며몇 프로포절에 참견을 한 경험을 들려드립니다.',
+  presentDesc: '저와 애증의 관계인 자바스크립트의 미래를 만들어 본 경험을 여러분들과 나누기 위해 온 중학생입니다.',
   company: Object(_Company__WEBPACK_IMPORTED_MODULE_1__["getCompanyByName"])('엔젤스윙'),
   track: 2,
   order: 1
