@@ -6481,6 +6481,7 @@ function (_React$Component) {
         className: _HeroSection_scss__WEBPACK_IMPORTED_MODULE_4___default.a.SocialItem
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://www.facebook.com/groups/webfrontend",
+        title: "\uD504\uB860\uD2B8\uC5D4\uB4DC\uAC1C\uBC1C\uADF8\uB8F9",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "blind"
@@ -6488,6 +6489,7 @@ function (_React$Component) {
         className: _HeroSection_scss__WEBPACK_IMPORTED_MODULE_4___default.a.SocialItem
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://www.facebook.com/feconf.kr",
+        title: "FEConf \uD398\uC774\uC2A4\uBD81 \uD398\uC774\uC9C0",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "blind"
@@ -6495,6 +6497,7 @@ function (_React$Component) {
         className: _HeroSection_scss__WEBPACK_IMPORTED_MODULE_4___default.a.SocialItem
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "mailto:feconf@googlegroups.com",
+        title: "FEConf \uC774\uBA54\uC77C",
         target: "_blank"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         className: "blind"
