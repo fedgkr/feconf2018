@@ -135,6 +135,12 @@ export const companyList = [
     link: 'https://www.wanted.co.kr/',
     logo: 'static/images/company/wanted/logo.png',
   }),
+  new Company({
+    name: '레이니스트',
+    level: SupportLevel.PLATINUM,
+    link: 'https://banksalad.com/',
+    logo: 'static/images/company/rainist/logo.png',
+  }),
 ];
 
 export const getCompanyByName = (name = '') => {
