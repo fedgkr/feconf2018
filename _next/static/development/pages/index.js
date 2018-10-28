@@ -8528,7 +8528,7 @@ var EtcData = function EtcData() {
   _classCallCheck(this, EtcData);
 };
 
-_defineProperty(EtcData, "deadline", 1541138400000);
+_defineProperty(EtcData, "deadline", 1541206800000);
 
 _defineProperty(EtcData, "sessionOrderMappingTime", {
   1: '11:10 - 11:50',

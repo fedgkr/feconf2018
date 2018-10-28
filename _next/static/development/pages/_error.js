@@ -6142,7 +6142,7 @@ if (hadRuntime) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __NEXT_REGISTER_PAGE('/_error', function() {
-module.exports = __webpack_require__(/*! /Users/user/WebstormProjects/feconf2018/node_modules/next/dist/pages/_error.js */"../node_modules/next/dist/pages/_error.js");
+module.exports = __webpack_require__(/*! /Users/codemilli/git/private/feconf2018/node_modules/next/dist/pages/_error.js */"../node_modules/next/dist/pages/_error.js");
 
 return { page: module.exports.default }});
 
