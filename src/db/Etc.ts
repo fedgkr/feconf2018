@@ -1,5 +1,5 @@
 export class EtcData {
-  public static deadline = 1541138400000;
+  public static deadline = 1541206800000;
 
   public static sessionOrderMappingTime = {
     1: '11:10 - 11:50',
