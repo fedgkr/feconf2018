@@ -99,7 +99,12 @@ export class HeroSection extends React.Component<Props, State> {
 
   private getLeftTime(date: number) {
     const { deadline } = this.props;
-    const t = deadline - date;
+    let t = deadline - date;
+
+    if (t <= 0) {
+      t = 0;
+    }
+
     const seconds = Math.floor((t / 1000) % 60);
     const minutes = Math.floor((t / (1000 * 60)) % 60);
     const hours = Math.floor((t / (1000 * 60 * 60)) % 24);
