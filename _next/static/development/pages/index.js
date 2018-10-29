@@ -6560,6 +6560,11 @@ function (_React$Component) {
     value: function getLeftTime(date) {
       var deadline = this.props.deadline;
       var t = deadline - date;
+
+      if (t <= 0) {
+        t = 0;
+      }
+
       var seconds = Math.floor(t / 1000 % 60);
       var minutes = Math.floor(t / (1000 * 60) % 60);
       var hours = Math.floor(t / (1000 * 60 * 60) % 24);
