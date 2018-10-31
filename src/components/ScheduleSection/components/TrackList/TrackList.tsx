@@ -17,7 +17,10 @@ export class TrackList extends React.Component<TrackListProps> {
       <div className={css.TrackList}>
         {trackList.map(track => (
           <Fragment key={track}>
-            <div className={css.Label}>Track {track}</div>
+            <div className={css.Label}>
+              <span>Track {track}</span><br />
+              <span>({track === 1 ? '오디토리움' : '컨퍼런스룸'})</span>
+            </div>
             <div className={css.SessionWrap}>
               <SessionItem
                 time={EtcData.sessionOrderMappingTime[1]}

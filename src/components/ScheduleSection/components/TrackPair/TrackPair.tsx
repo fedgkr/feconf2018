@@ -15,8 +15,14 @@ export class TrackPair extends React.Component<TrackPairProps> {
     return (
       <div className={css.TrackPair}>
         <div className={css.LabelWrap}>
-          <div className={css.Label}>Track 1</div>
-          <div className={css.Label}>Track 2</div>
+          <div className={css.Label}>
+            <span>Track 1</span><br />
+            <span>(오디토리움)</span>
+          </div>
+          <div className={css.Label}>
+            <span>Track 2</span><br />
+            <span>(컨퍼런스룸)</span>
+          </div>
           <div className="clear" />
         </div>
         <div className={css.SessionWrap}>
