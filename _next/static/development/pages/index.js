@@ -7432,7 +7432,7 @@ function (_React$Component) {
           key: track
         }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
           className: _TrackList_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Label
-        }, "Track ", track), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+        }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "Track ", track), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "(", track === 1 ? '오디토리움' : '컨퍼런스룸', ")")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
           className: _TrackList_scss__WEBPACK_IMPORTED_MODULE_4___default.a.SessionWrap
         }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_SessionItem_SessionItem__WEBPACK_IMPORTED_MODULE_3__["SessionItem"], {
           time: db_Etc__WEBPACK_IMPORTED_MODULE_0__["EtcData"].sessionOrderMappingTime[1],
@@ -7539,9 +7539,9 @@ function (_React$Component) {
         className: _TrackPair_scss__WEBPACK_IMPORTED_MODULE_4___default.a.LabelWrap
       }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
         className: _TrackPair_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Label
-      }, "Track 1"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "Track 1"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "(\uC624\uB514\uD1A0\uB9AC\uC6C0)")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
         className: _TrackPair_scss__WEBPACK_IMPORTED_MODULE_4___default.a.Label
-      }, "Track 2"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "Track 2"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("span", null, "(\uCEE8\uD37C\uB7F0\uC2A4\uB8F8)")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
         className: "clear"
       })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
         className: _TrackPair_scss__WEBPACK_IMPORTED_MODULE_4___default.a.SessionWrap
