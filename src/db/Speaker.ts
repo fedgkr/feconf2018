@@ -144,7 +144,7 @@ export const speakerList: Speaker[] = [
     presentTitle: 'Front-End 프로젝트의 Test code 작성 경험기',
     presentDesc:
       '퍼블리싱 위주의 업무를 하다가 제대로 된 프론트엔드 개발을 하고 싶어 퇴사한 이후, 충분히 고민하고 마음대로 틀려보는 개발을 하며 성장하고 있습니다. 그러던 중 테스트 코드를 처음 작성하며 느꼈던 경험들을 개인 블로그에 적어 올린 것이 계기가 되어 발표할 기회를 얻게 되었습니다.',
-    link: 'https://drive.google.com/file/d/1oiBAdr20fbmjUofwkKzOPydJLREoGzEM/view',
+    link: 'https://www.slideshare.net/ahreumkim393/feconf-2018-frontend-test-code',
     track: 1,
     order: 6,
   }),
