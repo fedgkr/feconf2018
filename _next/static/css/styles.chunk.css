@@ -877,9 +877,11 @@
       color: #333; }
       .SpeakerInfo-1WmKA .SpeakerWrap-3Dthq .Present-3xRgg .Title-2-3dF {
         font-weight: 700; }
+        .SpeakerInfo-1WmKA .SpeakerWrap-3Dthq .Present-3xRgg .Title-2-3dF p {
+          padding: 4px 0; }
         .SpeakerInfo-1WmKA .SpeakerWrap-3Dthq .Present-3xRgg .Title-2-3dF a {
           text-decoration: none;
-          color: #0366d6; }
+          color: #a821d2; }
       .SpeakerInfo-1WmKA .SpeakerWrap-3Dthq .Present-3xRgg .Track-LMVOy {
         margin-top: 4px; }
       .SpeakerInfo-1WmKA .SpeakerWrap-3Dthq .Present-3xRgg .Desc-2RXau {
