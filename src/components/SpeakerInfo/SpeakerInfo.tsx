@@ -39,8 +39,11 @@ export class SpeakerInfo extends React.Component<SpeakerInfoProps> {
           </div>
           <div className={css.Present}>
             <div className={css.Title}>
-              <span>{speaker.presentTitle}</span>{'  '}
-              {speaker.link ? <a href={speaker.link}>[Link]</a> : null}
+              <span>{speaker.presentTitle}</span><br />
+              <p>
+                {speaker.link ? <a href={speaker.link}>[슬라이드]</a> : null}{'  '}
+                {speaker.videoLink ? <a href={speaker.videoLink}>[영상]</a> : null}
+              </p>
             </div>
             <div className={css.Track}>
               <span>

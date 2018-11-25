@@ -60,9 +60,12 @@
       .Title {
         font-weight: 700;
 
+        p {
+          padding: 4px 0;
+        }
         a {
           text-decoration: none;
-          color: #0366d6;
+          color: $main-color;
         }
       }
       .Track {

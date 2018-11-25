@@ -2,7 +2,7 @@ import cc from 'classcat';
 import { Company } from 'db/Company';
 import React from 'react';
 import css from './SponsorLogo.scss';
-import { GAService } from '../../../service/ga.service';
+import { GAService } from '../../../../service/ga.service';
 
 interface Props {
   company: Company;

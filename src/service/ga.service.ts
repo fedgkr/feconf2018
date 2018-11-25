@@ -1,4 +1,4 @@
-import { Company } from '../../db/Company';
+import { Company } from '../db/Company';
 
 export enum GA_CATEGORY {
   LINK = 'LINK',
