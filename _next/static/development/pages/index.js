@@ -8530,7 +8530,7 @@ var speakerList = [new Speaker({
   profileImage: 'static/images/speaker/hea_guenhang.jpg',
   presentTitle: '미국개발자 vs 한국개발자',
   presentDesc: 'Currently teaching at Vanilla Coding. Former Frontend Team Lead at Nike World Headquarters in Oregon, United States.',
-  link: 'https://drive.google.com/file/d/1QaaXIFU6-rIOrwlaAWxCOa4BFnMAVcJo/view',
+  link: 'static/file/Ken.pdf',
   videoLink: 'https://www.youtube.com/watch?v=xbdFnay429E&list=PLZl3coZhX98oeg76bUDTagfySnBJin3FE&index=13',
   company: Object(_Company__WEBPACK_IMPORTED_MODULE_1__["getCompanyByName"])('바닐라코딩'),
   track: 1,
